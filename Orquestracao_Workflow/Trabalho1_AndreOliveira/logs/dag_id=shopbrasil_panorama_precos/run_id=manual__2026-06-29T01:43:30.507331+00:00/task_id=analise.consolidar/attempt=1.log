@@ -1,0 +1,19 @@
+[2026-06-29T01:43:57.577+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-29T01:43:57.619+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.analise.consolidar manual__2026-06-29T01:43:30.507331+00:00 [queued]>
+[2026-06-29T01:43:57.630+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.analise.consolidar manual__2026-06-29T01:43:30.507331+00:00 [queued]>
+[2026-06-29T01:43:57.631+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2026-06-29T01:43:57.644+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): analise.consolidar> on 2026-06-29 01:43:30.507331+00:00
+[2026-06-29T01:43:57.648+0000] {standard_task_runner.py:64} INFO - Started process 397 to run task
+[2026-06-29T01:43:57.652+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'shopbrasil_panorama_precos', 'analise.consolidar', 'manual__2026-06-29T01:43:30.507331+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/shopbrasil_panorama_precos.py', '--cfg-path', '/tmp/tmplyexhc3p']
+[2026-06-29T01:43:57.654+0000] {standard_task_runner.py:91} INFO - Job 23: Subtask analise.consolidar
+[2026-06-29T01:43:57.715+0000] {task_command.py:426} INFO - Running <TaskInstance: shopbrasil_panorama_precos.analise.consolidar manual__2026-06-29T01:43:30.507331+00:00 [running]> on host d5421e3621c7
+[2026-06-29T01:43:57.993+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='shopbrasil_data' AIRFLOW_CTX_DAG_ID='shopbrasil_panorama_precos' AIRFLOW_CTX_TASK_ID='analise.consolidar' AIRFLOW_CTX_EXECUTION_DATE='2026-06-29T01:43:30.507331+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-29T01:43:30.507331+00:00'
+[2026-06-29T01:43:57.993+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-29T01:43:58.006+0000] {transform.py:55} INFO - Consolidadas métricas de 4 categorias
+[2026-06-29T01:43:58.007+0000] {shopbrasil_panorama_precos.py:260} INFO - Métricas consolidadas: ['electronics', 'jewelery', "men's clothing", "women's clothing"]
+[2026-06-29T01:43:58.007+0000] {python.py:237} INFO - Done. Returned value was: [{'categoria': 'electronics', 'preco_medio': 332.5, 'preco_min': 64.0, 'preco_max': 999.99, 'qtd_produtos': 6}, {'categoria': 'jewelery', 'preco_medio': 221.0, 'preco_min': 9.99, 'preco_max': 695.0, 'qtd_produtos': 4}, {'categoria': "men's clothing", 'preco_medio': 51.06, 'preco_min': 15.99, 'preco_max': 109.95, 'qtd_produtos': 4}, {'categoria': "women's clothing", 'preco_medio': 26.29, 'preco_min': 7.95, 'preco_max': 56.99, 'qtd_produtos': 6}]
+[2026-06-29T01:43:58.008+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-29T01:43:58.039+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=shopbrasil_panorama_precos, task_id=analise.consolidar, run_id=manual__2026-06-29T01:43:30.507331+00:00, execution_date=20260629T014330, start_date=20260629T014357, end_date=20260629T014358
+[2026-06-29T01:43:58.082+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-29T01:43:58.127+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-29T01:43:58.133+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
