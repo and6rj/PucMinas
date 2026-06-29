@@ -1,0 +1,133 @@
+[2026-06-21T00:00:03.721+0000] {processor.py:161} INFO - Started process (PID=5880) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:00:03.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:00:03.732+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:03.730+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:00:03.751+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:00:03.844+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:03.843+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:00:03.885+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:03.884+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:00:03.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.243 seconds
+[2026-06-21T00:00:34.218+0000] {processor.py:161} INFO - Started process (PID=5932) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:00:34.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:00:34.225+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:34.225+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:00:34.245+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:00:34.348+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:34.348+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:00:34.415+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:34.414+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:00:34.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.290 seconds
+[2026-06-21T00:01:05.340+0000] {processor.py:161} INFO - Started process (PID=5984) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:01:05.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:01:05.351+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:05.350+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:01:05.380+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:01:05.499+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:05.499+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:01:05.541+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:05.540+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:01:05.601+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.288 seconds
+[2026-06-21T00:01:36.020+0000] {processor.py:161} INFO - Started process (PID=6036) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:01:36.023+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:01:36.034+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:36.032+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:01:36.050+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:01:36.160+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:36.159+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:01:36.194+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:36.193+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:01:36.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.250 seconds
+[2026-06-21T00:02:06.599+0000] {processor.py:161} INFO - Started process (PID=6087) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:02:06.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:02:06.608+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:06.607+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:02:06.630+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:02:06.767+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:06.765+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:02:06.817+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:06.816+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:02:06.907+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.324 seconds
+[2026-06-21T00:02:37.823+0000] {processor.py:161} INFO - Started process (PID=6139) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:02:37.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:02:37.830+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:37.828+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:02:37.864+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:02:38.022+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:38.016+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:02:38.108+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:38.107+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:02:38.229+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.439 seconds
+[2026-06-21T00:03:08.405+0000] {processor.py:161} INFO - Started process (PID=6185) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:03:08.413+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:03:08.421+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:08.420+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:03:08.439+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:03:08.558+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:08.556+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:03:08.620+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:08.618+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:03:08.687+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.295 seconds
+[2026-06-21T00:03:39.272+0000] {processor.py:161} INFO - Started process (PID=6237) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:03:39.279+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:03:39.292+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:39.284+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:03:39.346+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:03:39.501+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:39.497+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:03:39.552+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:39.552+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:03:39.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.373 seconds
+[2026-06-21T00:04:10.276+0000] {processor.py:161} INFO - Started process (PID=6290) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:04:10.279+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:04:10.284+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:10.283+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:04:10.304+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:04:10.420+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:10.420+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:04:10.487+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:10.487+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:04:10.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.280 seconds
+[2026-06-21T00:04:44.241+0000] {processor.py:161} INFO - Started process (PID=6341) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:04:44.254+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:04:44.289+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:44.288+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:04:44.354+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:04:44.640+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:44.639+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:04:44.734+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:44.733+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:04:45.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.995 seconds
+[2026-06-21T00:05:15.751+0000] {processor.py:161} INFO - Started process (PID=6392) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:05:15.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:05:15.764+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:15.763+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:05:15.796+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:05:15.913+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:15.913+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:05:15.962+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:15.962+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:05:16.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.300 seconds
+[2026-06-21T00:05:46.797+0000] {processor.py:161} INFO - Started process (PID=6443) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:05:46.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:05:46.820+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:46.819+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:05:46.848+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:05:46.977+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:46.976+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:05:47.010+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:47.010+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:05:47.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.358 seconds
+[2026-06-21T00:06:17.977+0000] {processor.py:161} INFO - Started process (PID=6491) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:06:17.988+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:06:17.999+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:17.997+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:06:18.025+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:06:18.146+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:18.145+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:06:18.190+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:18.190+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:06:18.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.310 seconds
+[2026-06-21T00:06:48.541+0000] {processor.py:161} INFO - Started process (PID=6545) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:06:48.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:06:48.559+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:48.557+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:06:48.591+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:06:48.692+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:48.692+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:06:48.721+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:48.721+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:06:48.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.242 seconds
+[2026-06-21T00:07:19.044+0000] {processor.py:161} INFO - Started process (PID=6595) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:07:19.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:07:19.052+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:19.051+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:07:19.067+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:07:19.144+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:19.144+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:07:19.170+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:19.169+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:07:19.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.187 seconds
+[2026-06-21T00:07:49.519+0000] {processor.py:161} INFO - Started process (PID=6647) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:07:49.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:07:49.523+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:49.522+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:07:49.535+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:07:49.593+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:49.592+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:07:49.619+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:49.619+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:07:49.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.136 seconds
+[2026-06-21T00:08:20.984+0000] {processor.py:161} INFO - Started process (PID=6699) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:08:21.158+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:08:21.161+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:21.161+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:08:21.191+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:08:21.355+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:21.355+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:08:21.450+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:21.450+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:08:21.636+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.680 seconds
+[2026-06-21T00:08:52.173+0000] {processor.py:161} INFO - Started process (PID=6745) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:08:52.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:08:52.177+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:52.177+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:08:52.188+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:08:52.275+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:52.273+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:08:52.300+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:52.300+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:08:52.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.182 seconds
+[2026-06-21T00:09:23.198+0000] {processor.py:161} INFO - Started process (PID=6798) to work on /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:09:23.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/retry_simples.py for tasks to queue
+[2026-06-21T00:09:23.210+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:23.210+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:09:23.222+0000] {processor.py:840} INFO - DAG(s) 'retry_simples' retrieved from /opt/airflow/dags/retry_simples.py
+[2026-06-21T00:09:23.357+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:23.357+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:09:23.389+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:23.389+0000] {dag.py:3947} INFO - Setting next_dagrun for retry_simples to None, run_after=None
+[2026-06-21T00:09:23.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/retry_simples.py took 0.296 seconds

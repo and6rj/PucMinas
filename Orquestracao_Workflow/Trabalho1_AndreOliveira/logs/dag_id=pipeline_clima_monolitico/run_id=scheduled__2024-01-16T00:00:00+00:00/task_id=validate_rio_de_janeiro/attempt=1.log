@@ -1,0 +1,17 @@
+[2026-06-10T22:09:40.523+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T22:09:40.617+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.validate_rio_de_janeiro scheduled__2024-01-16T00:00:00+00:00 [queued]>
+[2026-06-10T22:09:40.646+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.validate_rio_de_janeiro scheduled__2024-01-16T00:00:00+00:00 [queued]>
+[2026-06-10T22:09:40.647+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-10T22:09:40.679+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): validate_rio_de_janeiro> on 2024-01-16 00:00:00+00:00
+[2026-06-10T22:09:40.690+0000] {standard_task_runner.py:64} INFO - Started process 912 to run task
+[2026-06-10T22:09:40.704+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline_clima_monolitico', 'validate_rio_de_janeiro', 'scheduled__2024-01-16T00:00:00+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/dag_monolitico.py', '--cfg-path', '/tmp/tmpyhr2ep8y']
+[2026-06-10T22:09:40.718+0000] {standard_task_runner.py:91} INFO - Job 109: Subtask validate_rio_de_janeiro
+[2026-06-10T22:09:40.861+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_clima_monolitico.validate_rio_de_janeiro scheduled__2024-01-16T00:00:00+00:00 [running]> on host 924392a8df6f
+[2026-06-10T22:09:41.278+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_team' AIRFLOW_CTX_DAG_ID='pipeline_clima_monolitico' AIRFLOW_CTX_TASK_ID='validate_rio_de_janeiro' AIRFLOW_CTX_EXECUTION_DATE='2024-01-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-16T00:00:00+00:00'
+[2026-06-10T22:09:41.283+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T22:09:41.286+0000] {python.py:237} INFO - Done. Returned value was: True
+[2026-06-10T22:09:41.287+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T22:09:41.382+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline_clima_monolitico, task_id=validate_rio_de_janeiro, run_id=scheduled__2024-01-16T00:00:00+00:00, execution_date=20240116T000000, start_date=20260610T220940, end_date=20260610T220941
+[2026-06-10T22:09:41.893+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-10T22:09:42.039+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-10T22:09:42.046+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

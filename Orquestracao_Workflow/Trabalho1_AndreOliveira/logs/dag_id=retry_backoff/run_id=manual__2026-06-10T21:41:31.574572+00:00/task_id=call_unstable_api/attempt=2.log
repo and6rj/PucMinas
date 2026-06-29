@@ -1,0 +1,46 @@
+[2026-06-10T21:41:43.884+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T21:41:43.923+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retry_backoff.call_unstable_api manual__2026-06-10T21:41:31.574572+00:00 [queued]>
+[2026-06-10T21:41:43.935+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retry_backoff.call_unstable_api manual__2026-06-10T21:41:31.574572+00:00 [queued]>
+[2026-06-10T21:41:43.935+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 4
+[2026-06-10T21:41:43.949+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): call_unstable_api> on 2026-06-10 21:41:31.574572+00:00
+[2026-06-10T21:41:43.954+0000] {standard_task_runner.py:64} INFO - Started process 2411 to run task
+[2026-06-10T21:41:43.957+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retry_backoff', 'call_unstable_api', 'manual__2026-06-10T21:41:31.574572+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/retry_backoff.py', '--cfg-path', '/tmp/tmpz60rkbrd']
+[2026-06-10T21:41:43.960+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask call_unstable_api
+[2026-06-10T21:41:44.014+0000] {task_command.py:426} INFO - Running <TaskInstance: retry_backoff.call_unstable_api manual__2026-06-10T21:41:31.574572+00:00 [running]> on host d9bb0f8c9833
+[2026-06-10T21:41:44.156+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retry_backoff' AIRFLOW_CTX_TASK_ID='call_unstable_api' AIRFLOW_CTX_EXECUTION_DATE='2026-06-10T21:41:31.574572+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-10T21:41:31.574572+00:00'
+[2026-06-10T21:41:44.157+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T21:41:44.167+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T21:41:44.168+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/retry_backoff.py", line 19, in call_unstable_api
+    response.raise_for_status()  # lança exceção se status >= 400
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: http://fake-api:5000/data
+[2026-06-10T21:41:44.187+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=retry_backoff, task_id=call_unstable_api, run_id=manual__2026-06-10T21:41:31.574572+00:00, execution_date=20260610T214131, start_date=20260610T214143, end_date=20260610T214144
+[2026-06-10T21:41:44.205+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 14 for task call_unstable_api (500 Server Error: Internal Server Error for url: http://fake-api:5000/data; 2411)
+[2026-06-10T21:41:44.250+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-10T21:41:44.282+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-10T21:41:44.285+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

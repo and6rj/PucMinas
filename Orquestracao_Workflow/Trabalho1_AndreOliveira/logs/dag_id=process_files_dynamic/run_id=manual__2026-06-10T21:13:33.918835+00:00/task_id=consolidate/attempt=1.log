@@ -1,0 +1,19 @@
+[2026-06-10T21:13:37.706+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T21:13:37.732+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_files_dynamic.consolidate manual__2026-06-10T21:13:33.918835+00:00 [queued]>
+[2026-06-10T21:13:37.738+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_files_dynamic.consolidate manual__2026-06-10T21:13:33.918835+00:00 [queued]>
+[2026-06-10T21:13:37.739+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-10T21:13:37.747+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): consolidate> on 2026-06-10 21:13:33.918835+00:00
+[2026-06-10T21:13:37.750+0000] {standard_task_runner.py:64} INFO - Started process 1040 to run task
+[2026-06-10T21:13:37.753+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_files_dynamic', 'consolidate', 'manual__2026-06-10T21:13:33.918835+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/com_dinamic_mapping.py', '--cfg-path', '/tmp/tmp13scuk50']
+[2026-06-10T21:13:37.755+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask consolidate
+[2026-06-10T21:13:37.827+0000] {task_command.py:426} INFO - Running <TaskInstance: process_files_dynamic.consolidate manual__2026-06-10T21:13:33.918835+00:00 [running]> on host d9bb0f8c9833
+[2026-06-10T21:13:37.973+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_files_dynamic' AIRFLOW_CTX_TASK_ID='consolidate' AIRFLOW_CTX_EXECUTION_DATE='2026-06-10T21:13:33.918835+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-10T21:13:33.918835+00:00'
+[2026-06-10T21:13:37.974+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T21:13:37.989+0000] {logging_mixin.py:188} INFO - Todos os arquivos: ['arquivo_1.csv processado', 'arquivo_2.csv processado', 'arquivo_3.csv processado']
+[2026-06-10T21:13:37.990+0000] {python.py:237} INFO - Done. Returned value was: ['arquivo_1.csv processado', 'arquivo_2.csv processado', 'arquivo_3.csv processado']
+[2026-06-10T21:13:37.992+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T21:13:37.994+0000] {xcom.py:237} WARNING - Coercing mapped lazy proxy return value from task consolidate (DAG process_files_dynamic, run manual__2026-06-10T21:13:33.918835+00:00) to list, which may degrade performance. Review resource requirements for this operation, and call list() to suppress this message. See Dynamic Task Mapping documentation for more information about lazy proxy objects.
+[2026-06-10T21:13:38.108+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_files_dynamic, task_id=consolidate, run_id=manual__2026-06-10T21:13:33.918835+00:00, execution_date=20260610T211333, start_date=20260610T211337, end_date=20260610T211338
+[2026-06-10T21:13:38.165+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-10T21:13:38.193+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-10T21:13:38.196+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,40 @@
+[2026-06-28T19:01:42.933+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-28T19:01:42.969+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.ingestao.validar_produtos manual__2026-06-28T19:01:40.506782+00:00 [queued]>
+[2026-06-28T19:01:42.980+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.ingestao.validar_produtos manual__2026-06-28T19:01:40.506782+00:00 [queued]>
+[2026-06-28T19:01:42.981+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2026-06-28T19:01:42.998+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): ingestao.validar_produtos> on 2026-06-28 19:01:40.506782+00:00
+[2026-06-28T19:01:43.003+0000] {standard_task_runner.py:64} INFO - Started process 26769 to run task
+[2026-06-28T19:01:43.008+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'shopbrasil_panorama_precos', 'ingestao.validar_produtos', 'manual__2026-06-28T19:01:40.506782+00:00', '--job-id', '834', '--raw', '--subdir', 'DAGS_FOLDER/shopbrasil_panorama_precos.py', '--cfg-path', '/tmp/tmp5rucyieg']
+[2026-06-28T19:01:43.010+0000] {standard_task_runner.py:91} INFO - Job 834: Subtask ingestao.validar_produtos
+[2026-06-28T19:01:43.069+0000] {task_command.py:426} INFO - Running <TaskInstance: shopbrasil_panorama_precos.ingestao.validar_produtos manual__2026-06-28T19:01:40.506782+00:00 [running]> on host cc8c651b391b
+[2026-06-28T19:01:43.324+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='shopbrasil_data' AIRFLOW_CTX_DAG_ID='shopbrasil_panorama_precos' AIRFLOW_CTX_TASK_ID='ingestao.validar_produtos' AIRFLOW_CTX_EXECUTION_DATE='2026-06-28T19:01:40.506782+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-28T19:01:40.506782+00:00'
+[2026-06-28T19:01:43.324+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-28T19:01:43.326+0000] {shopbrasil_panorama_precos.py:188} INFO - Iniciando validação de 20 produtos
+[2026-06-28T19:01:43.326+0000] {validate.py:51} INFO - ✓ produto id=1 validado — categoria=men's clothing — preço=109.95
+[2026-06-28T19:01:43.326+0000] {validate.py:51} INFO - ✓ produto id=2 validado — categoria=men's clothing — preço=22.30
+[2026-06-28T19:01:43.326+0000] {validate.py:51} INFO - ✓ produto id=3 validado — categoria=men's clothing — preço=55.99
+[2026-06-28T19:01:43.327+0000] {validate.py:51} INFO - ✓ produto id=4 validado — categoria=men's clothing — preço=15.99
+[2026-06-28T19:01:43.327+0000] {validate.py:51} INFO - ✓ produto id=5 validado — categoria=jewelery — preço=695.00
+[2026-06-28T19:01:43.327+0000] {validate.py:51} INFO - ✓ produto id=6 validado — categoria=jewelery — preço=168.00
+[2026-06-28T19:01:43.327+0000] {validate.py:51} INFO - ✓ produto id=7 validado — categoria=jewelery — preço=9.99
+[2026-06-28T19:01:43.327+0000] {validate.py:51} INFO - ✓ produto id=8 validado — categoria=jewelery — preço=10.99
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=9 validado — categoria=electronics — preço=64.00
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=10 validado — categoria=electronics — preço=109.00
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=11 validado — categoria=electronics — preço=109.00
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=12 validado — categoria=electronics — preço=114.00
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=13 validado — categoria=electronics — preço=599.00
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=14 validado — categoria=electronics — preço=999.99
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=15 validado — categoria=women's clothing — preço=56.99
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=16 validado — categoria=women's clothing — preço=29.95
+[2026-06-28T19:01:43.328+0000] {validate.py:51} INFO - ✓ produto id=17 validado — categoria=women's clothing — preço=39.99
+[2026-06-28T19:01:43.329+0000] {validate.py:51} INFO - ✓ produto id=18 validado — categoria=women's clothing — preço=9.85
+[2026-06-28T19:01:43.329+0000] {validate.py:51} INFO - ✓ produto id=19 validado — categoria=women's clothing — preço=7.95
+[2026-06-28T19:01:43.329+0000] {validate.py:51} INFO - ✓ produto id=20 validado — categoria=women's clothing — preço=12.99
+[2026-06-28T19:01:43.329+0000] {validate.py:59} INFO - Validação OK — 20 produtos, 4 categorias
+[2026-06-28T19:01:43.329+0000] {shopbrasil_panorama_precos.py:196} INFO - Total de produtos validados: 20
+[2026-06-28T19:01:43.329+0000] {python.py:237} INFO - Done. Returned value was: [{'id': 1, 'price': 109.95, 'category': "men's clothing"}, {'id': 2, 'price': 22.3, 'category': "men's clothing"}, {'id': 3, 'price': 55.99, 'category': "men's clothing"}, {'id': 4, 'price': 15.99, 'category': "men's clothing"}, {'id': 5, 'price': 695.0, 'category': 'jewelery'}, {'id': 6, 'price': 168.0, 'category': 'jewelery'}, {'id': 7, 'price': 9.99, 'category': 'jewelery'}, {'id': 8, 'price': 10.99, 'category': 'jewelery'}, {'id': 9, 'price': 64.0, 'category': 'electronics'}, {'id': 10, 'price': 109.0, 'category': 'electronics'}, {'id': 11, 'price': 109.0, 'category': 'electronics'}, {'id': 12, 'price': 114.0, 'category': 'electronics'}, {'id': 13, 'price': 599.0, 'category': 'electronics'}, {'id': 14, 'price': 999.99, 'category': 'electronics'}, {'id': 15, 'price': 56.99, 'category': "women's clothing"}, {'id': 16, 'price': 29.95, 'category': "women's clothing"}, {'id': 17, 'price': 39.99, 'category': "women's clothing"}, {'id': 18, 'price': 9.85, 'category': "women's clothing"}, {'id': 19, 'price': 7.95, 'category': "women's clothing"}, {'id': 20, 'price': 12.99, 'category': "women's clothing"}]
+[2026-06-28T19:01:43.330+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-28T19:01:43.357+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=shopbrasil_panorama_precos, task_id=ingestao.validar_produtos, run_id=manual__2026-06-28T19:01:40.506782+00:00, execution_date=20260628T190140, start_date=20260628T190142, end_date=20260628T190143
+[2026-06-28T19:01:43.388+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-28T19:01:43.427+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-28T19:01:43.430+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

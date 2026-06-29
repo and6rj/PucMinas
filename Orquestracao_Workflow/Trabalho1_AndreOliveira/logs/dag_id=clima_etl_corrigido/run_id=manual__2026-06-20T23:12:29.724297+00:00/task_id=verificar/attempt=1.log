@@ -1,0 +1,24 @@
+[2026-06-20T23:12:57.615+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-20T23:12:57.684+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clima_etl_corrigido.verificar manual__2026-06-20T23:12:29.724297+00:00 [queued]>
+[2026-06-20T23:12:57.702+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clima_etl_corrigido.verificar manual__2026-06-20T23:12:29.724297+00:00 [queued]>
+[2026-06-20T23:12:57.703+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2026-06-20T23:12:57.732+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): verificar> on 2026-06-20 23:12:29.724297+00:00
+[2026-06-20T23:12:57.739+0000] {standard_task_runner.py:64} INFO - Started process 1249 to run task
+[2026-06-20T23:12:57.747+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'clima_etl_corrigido', 'verificar', 'manual__2026-06-20T23:12:29.724297+00:00', '--job-id', '735', '--raw', '--subdir', 'DAGS_FOLDER/clima_etl_corrigido.py', '--cfg-path', '/tmp/tmpdf3onp_0']
+[2026-06-20T23:12:57.753+0000] {standard_task_runner.py:91} INFO - Job 735: Subtask verificar
+[2026-06-20T23:12:57.860+0000] {task_command.py:426} INFO - Running <TaskInstance: clima_etl_corrigido.verificar manual__2026-06-20T23:12:29.724297+00:00 [running]> on host cab3a2a0a567
+[2026-06-20T23:12:58.080+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lab' AIRFLOW_CTX_DAG_ID='clima_etl_corrigido' AIRFLOW_CTX_TASK_ID='verificar' AIRFLOW_CTX_EXECUTION_DATE='2026-06-20T23:12:29.724297+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-20T23:12:29.724297+00:00'
+[2026-06-20T23:12:58.082+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-20T23:12:58.294+0000] {base.py:84} INFO - Using connection ID 'postgres_lab' for task execution.
+[2026-06-20T23:12:58.308+0000] {sql.py:495} INFO - Running statement: SELECT COUNT(*), ROUND(AVG(temperatura_c)::numeric, 2) FROM clima WHERE dag_run_id = %s, parameters: ('manual__2026-06-20T23:12:29.724297+00:00',)
+[2026-06-20T23:12:58.314+0000] {sql.py:504} INFO - Rows affected: 1
+[2026-06-20T23:12:58.316+0000] {clima_etl_corrigido.py:256} INFO - === VERIFICAÇÃO ===
+[2026-06-20T23:12:58.316+0000] {clima_etl_corrigido.py:257} INFO - Registros na tabela para manual__2026-06-20T23:12:29.724297+00:00: 72 (esperado: 72)
+[2026-06-20T23:12:58.316+0000] {clima_etl_corrigido.py:258} INFO - Temperatura média geral: 19.97°C
+[2026-06-20T23:12:58.317+0000] {clima_etl_corrigido.py:265} INFO - ✓ Verificação OK!
+[2026-06-20T23:12:58.317+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-20T23:12:58.318+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-20T23:12:58.339+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=clima_etl_corrigido, task_id=verificar, run_id=manual__2026-06-20T23:12:29.724297+00:00, execution_date=20260620T231229, start_date=20260620T231257, end_date=20260620T231258
+[2026-06-20T23:12:58.436+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-20T23:12:58.494+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-20T23:12:58.498+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

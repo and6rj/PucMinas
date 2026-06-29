@@ -1,0 +1,65 @@
+[2026-06-10T22:50:47.867+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T22:50:47.975+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.transform_sao_paulo scheduled__2024-06-16T00:00:00+00:00 [queued]>
+[2026-06-10T22:50:48.008+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.transform_sao_paulo scheduled__2024-06-16T00:00:00+00:00 [queued]>
+[2026-06-10T22:50:48.009+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-10T22:50:48.068+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): transform_sao_paulo> on 2024-06-16 00:00:00+00:00
+[2026-06-10T22:50:48.085+0000] {standard_task_runner.py:64} INFO - Started process 8221 to run task
+[2026-06-10T22:50:48.096+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline_clima_monolitico', 'transform_sao_paulo', 'scheduled__2024-06-16T00:00:00+00:00', '--job-id', '1427', '--raw', '--subdir', 'DAGS_FOLDER/dag_monolitico.py', '--cfg-path', '/tmp/tmpmqw33aje']
+[2026-06-10T22:50:48.101+0000] {standard_task_runner.py:91} INFO - Job 1427: Subtask transform_sao_paulo
+[2026-06-10T22:50:48.236+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_clima_monolitico.transform_sao_paulo scheduled__2024-06-16T00:00:00+00:00 [running]> on host 924392a8df6f
+[2026-06-10T22:50:48.602+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_team' AIRFLOW_CTX_DAG_ID='pipeline_clima_monolitico' AIRFLOW_CTX_TASK_ID='transform_sao_paulo' AIRFLOW_CTX_EXECUTION_DATE='2024-06-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-16T00:00:00+00:00'
+[2026-06-10T22:50:48.605+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T22:50:48.650+0000] {python.py:237} INFO - Done. Returned value was: [{'hora': Timestamp('2026-06-10 00:00:00'), 'temperatura_c': 18.1, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 01:00:00'), 'temperatura_c': 17.1, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 02:00:00'), 'temperatura_c': 16.2, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 03:00:00'), 'temperatura_c': 15.6, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 04:00:00'), 'temperatura_c': 15.1, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 05:00:00'), 'temperatura_c': 14.5, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 06:00:00'), 'temperatura_c': 13.4, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 07:00:00'), 'temperatura_c': 12.7, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 08:00:00'), 'temperatura_c': 12.3, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 09:00:00'), 'temperatura_c': 12.1, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 10:00:00'), 'temperatura_c': 12.0, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 11:00:00'), 'temperatura_c': 13.6, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 12:00:00'), 'temperatura_c': 16.8, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 13:00:00'), 'temperatura_c': 19.3, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 14:00:00'), 'temperatura_c': 21.2, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 15:00:00'), 'temperatura_c': 22.7, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 16:00:00'), 'temperatura_c': 23.7, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 17:00:00'), 'temperatura_c': 24.3, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 18:00:00'), 'temperatura_c': 24.5, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 19:00:00'), 'temperatura_c': 24.2, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 20:00:00'), 'temperatura_c': 22.4, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 21:00:00'), 'temperatura_c': 19.4, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 22:00:00'), 'temperatura_c': 17.8, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}, {'hora': Timestamp('2026-06-10 23:00:00'), 'temperatura_c': 17.3, 'precipitacao_mm': 0.0, 'cidade': 'São Paulo'}]
+[2026-06-10T22:50:48.652+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T22:50:48.672+0000] {xcom.py:675} ERROR - Object of type Timestamp is not JSON serializable. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config or make sure to decorate your object with attr.
+[2026-06-10T22:50:48.674+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/json.py", line 91, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/serialization/serde.py", line 189, in serialize
+    raise TypeError(f"cannot serialize object of type {cls}")
+TypeError: cannot serialize object of type <class 'pandas._libs.tslibs.timestamps.Timestamp'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 486, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3197, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/xcom.py", line 246, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/xcom.py", line 673, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/json.py", line 104, in encode
+    return super().encode(o)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/json.py", line 93, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+[2026-06-10T22:50:48.708+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=pipeline_clima_monolitico, task_id=transform_sao_paulo, run_id=scheduled__2024-06-16T00:00:00+00:00, execution_date=20240616T000000, start_date=20260610T225047, end_date=20260610T225048
+[2026-06-10T22:50:48.744+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 1427 for task transform_sao_paulo (Object of type Timestamp is not JSON serializable; 8221)
+[2026-06-10T22:50:48.807+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-10T22:50:48.853+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-10T22:50:48.855+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,17 @@
+[2026-06-10T21:41:55.170+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T21:41:55.207+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retry_backoff.call_unstable_api manual__2026-06-10T21:41:31.574572+00:00 [queued]>
+[2026-06-10T21:41:55.216+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retry_backoff.call_unstable_api manual__2026-06-10T21:41:31.574572+00:00 [queued]>
+[2026-06-10T21:41:55.217+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 4
+[2026-06-10T21:41:55.230+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): call_unstable_api> on 2026-06-10 21:41:31.574572+00:00
+[2026-06-10T21:41:55.233+0000] {standard_task_runner.py:64} INFO - Started process 2418 to run task
+[2026-06-10T21:41:55.236+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'retry_backoff', 'call_unstable_api', 'manual__2026-06-10T21:41:31.574572+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/retry_backoff.py', '--cfg-path', '/tmp/tmpmbvugv10']
+[2026-06-10T21:41:55.238+0000] {standard_task_runner.py:91} INFO - Job 15: Subtask call_unstable_api
+[2026-06-10T21:41:55.312+0000] {task_command.py:426} INFO - Running <TaskInstance: retry_backoff.call_unstable_api manual__2026-06-10T21:41:31.574572+00:00 [running]> on host d9bb0f8c9833
+[2026-06-10T21:41:55.435+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='retry_backoff' AIRFLOW_CTX_TASK_ID='call_unstable_api' AIRFLOW_CTX_EXECUTION_DATE='2026-06-10T21:41:31.574572+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-10T21:41:31.574572+00:00'
+[2026-06-10T21:41:55.436+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T21:41:55.441+0000] {python.py:237} INFO - Done. Returned value was: {'status': 'ok', 'chamada': 3, 'dados': [1, 2, 3]}
+[2026-06-10T21:41:55.442+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T21:41:55.577+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=retry_backoff, task_id=call_unstable_api, run_id=manual__2026-06-10T21:41:31.574572+00:00, execution_date=20260610T214131, start_date=20260610T214155, end_date=20260610T214155
+[2026-06-10T21:41:55.608+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-10T21:41:55.631+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-10T21:41:55.635+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
