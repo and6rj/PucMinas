@@ -1,4 +1,4 @@
-# Trabalho 1 — Containerização com Docker Compose
+# Trabalho 1 — Trabalho Prático Unidade 1 Docker
 
 Implementação da estrutura containerizada para o jogo de adivinhação [guess_game](https://github.com/fams/guess_game), desenvolvido originalmente em **Python 3.12** (Flask) e **Node 18.17** (React).
 
