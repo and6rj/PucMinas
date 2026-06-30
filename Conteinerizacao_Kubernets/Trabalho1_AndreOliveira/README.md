@@ -4,6 +4,8 @@ Implementação da estrutura containerizada para o jogo de adivinhação [guess_
 
 Este projeto **não altera o código-fonte** do jogo. Toda a containerização foi feita por meio de Dockerfiles, configuração do NGINX e orquestração com Docker Compose.
 
+**Repositório:** [github.com/and6rj/PucMinas/tree/main/Conteinerizacao_Kubernets/](https://github.com/and6rj/PucMinas/tree/main/Conteinerizacao_Kubernets/)
+
 ---
 
 ## Índice
@@ -78,8 +80,8 @@ O usuário acessa **apenas a porta 80** do host. O backend e o banco de dados **
 Se ainda não tiver os arquivos localmente:
 
 ```bash
-git clone <url-do-seu-repositorio>
-cd Trabalho1
+git clone https://github.com/and6rj/PucMinas.git
+cd Conteinerizacao_Kubernets/Trabalho1_AndreOliveira
 ```
 
 Certifique-se de que a pasta `guess_game/` contém o código-fonte original do jogo (backend Flask + frontend React).
@@ -480,6 +482,7 @@ docker compose up --build -d
 
 ## Referências
 
+- Repositório deste trabalho: [github.com/and6rj/PucMinas/tree/main/Conteinerizacao_Kubernets/Trabalho1_AndreOliveira](https://github.com/and6rj/PucMinas/tree/main/Conteinerizacao_Kubernets/Trabalho1_AndreOliveira)
 - Repositório original do jogo: [github.com/fams/guess_game](https://github.com/fams/guess_game)
 - Documentação Docker Compose: [docs.docker.com/compose](https://docs.docker.com/compose/)
 - Documentação NGINX (proxy reverso): [nginx.org/en/docs/http/ngx_http_proxy_module.html](https://nginx.org/en/docs/http/ngx_http_proxy_module.html)
