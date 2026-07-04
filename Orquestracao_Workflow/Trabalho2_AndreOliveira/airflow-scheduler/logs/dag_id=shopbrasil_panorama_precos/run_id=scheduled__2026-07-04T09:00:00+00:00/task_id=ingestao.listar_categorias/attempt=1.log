@@ -1,0 +1,26 @@
+[2026-07-04T16:03:16.828+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-04T16:03:16.854+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.ingestao.listar_categorias scheduled__2026-07-04T09:00:00+00:00 [queued]>
+[2026-07-04T16:03:16.868+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.ingestao.listar_categorias scheduled__2026-07-04T09:00:00+00:00 [queued]>
+[2026-07-04T16:03:16.868+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2026-07-04T16:03:16.888+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): ingestao.listar_categorias> on 2026-07-04 09:00:00+00:00
+[2026-07-04T16:03:16.898+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=283) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-07-04T16:03:16.900+0000] {standard_task_runner.py:72} INFO - Started process 284 to run task
+[2026-07-04T16:03:16.901+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'shopbrasil_panorama_precos', 'ingestao.listar_categorias', 'scheduled__2026-07-04T09:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/shopbrasil_panorama_precos.py', '--cfg-path', '/tmp/tmpb917zsw3']
+[2026-07-04T16:03:16.904+0000] {standard_task_runner.py:105} INFO - Job 7: Subtask ingestao.listar_categorias
+[2026-07-04T16:03:17.169+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='shopbrasil_data' AIRFLOW_CTX_DAG_ID='shopbrasil_panorama_precos' AIRFLOW_CTX_TASK_ID='ingestao.listar_categorias' AIRFLOW_CTX_EXECUTION_DATE='2026-07-04T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-07-04T09:00:00+00:00'
+[2026-07-04T16:03:17.177+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-04T16:03:17.192+0000] {shopbrasil_panorama_precos.py:220} INFO - Listando categorias a partir de 20 produtos | worker=f809651dadcb
+[2026-07-04T16:03:17.193+0000] {categories.py:29} INFO - ✓ categoria=electronics — 6 produto(s)
+[2026-07-04T16:03:17.193+0000] {categories.py:29} INFO - ✓ categoria=jewelery — 4 produto(s)
+[2026-07-04T16:03:17.194+0000] {categories.py:29} INFO - ✓ categoria=men's clothing — 4 produto(s)
+[2026-07-04T16:03:17.195+0000] {categories.py:29} INFO - ✓ categoria=women's clothing — 6 produto(s)
+[2026-07-04T16:03:17.195+0000] {categories.py:31} INFO - Total de categorias listadas: 4
+[2026-07-04T16:03:17.198+0000] {shopbrasil_panorama_precos.py:232} INFO - Categorias para fan-out: ['electronics', 'jewelery', "men's clothing", "women's clothing"]
+[2026-07-04T16:03:17.199+0000] {python.py:240} INFO - Done. Returned value was: ['electronics', 'jewelery', "men's clothing", "women's clothing"]
+[2026-07-04T16:03:17.260+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-04T16:03:17.261+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=shopbrasil_panorama_precos, task_id=ingestao.listar_categorias, run_id=scheduled__2026-07-04T09:00:00+00:00, execution_date=20260704T090000, start_date=20260704T160316, end_date=20260704T160317
+[2026-07-04T16:03:17.321+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-07-04T16:03:17.465+0000] {taskinstance.py:3895} INFO - 4 downstream tasks scheduled from follow-on schedule check
+[2026-07-04T16:03:17.469+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

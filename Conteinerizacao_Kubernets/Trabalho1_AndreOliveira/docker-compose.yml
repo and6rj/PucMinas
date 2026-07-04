@@ -45,7 +45,7 @@ services:
       dockerfile: nginx/Dockerfile
     container_name: frontend
     ports:
-      - "80:80"
+      - "8081:80"
     depends_on:
       - backend
     networks:

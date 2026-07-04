@@ -6,7 +6,7 @@ COPY guess_game/frontend/package*.json ./
 RUN npm install
 
 COPY guess_game/frontend/ ./
-ENV REACT_APP_BACKEND_URL=http://localhost
+ENV REACT_APP_BACKEND_URL=http://localhost:8081
 RUN npm run build
 
 FROM nginx:alpine

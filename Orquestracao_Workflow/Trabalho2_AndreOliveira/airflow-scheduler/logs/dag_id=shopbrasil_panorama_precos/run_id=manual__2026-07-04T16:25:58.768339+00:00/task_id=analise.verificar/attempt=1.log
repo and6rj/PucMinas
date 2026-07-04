@@ -1,0 +1,41 @@
+[2026-07-04T16:26:21.731+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-04T16:26:21.794+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.analise.verificar manual__2026-07-04T16:25:58.768339+00:00 [queued]>
+[2026-07-04T16:26:21.819+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.analise.verificar manual__2026-07-04T16:25:58.768339+00:00 [queued]>
+[2026-07-04T16:26:21.820+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2026-07-04T16:26:21.865+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): analise.verificar> on 2026-07-04 16:25:58.768339+00:00
+[2026-07-04T16:26:21.877+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=129) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-07-04T16:26:21.882+0000] {standard_task_runner.py:72} INFO - Started process 130 to run task
+[2026-07-04T16:26:21.893+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'shopbrasil_panorama_precos', 'analise.verificar', 'manual__2026-07-04T16:25:58.768339+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/shopbrasil_panorama_precos.py', '--cfg-path', '/tmp/tmpqls1n6nj']
+[2026-07-04T16:26:21.907+0000] {standard_task_runner.py:105} INFO - Job 34: Subtask analise.verificar
+[2026-07-04T16:26:22.332+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='shopbrasil_data' AIRFLOW_CTX_DAG_ID='shopbrasil_panorama_precos' AIRFLOW_CTX_TASK_ID='analise.verificar' AIRFLOW_CTX_EXECUTION_DATE='2026-07-04T16:25:58.768339+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-07-04T16:25:58.768339+00:00'
+[2026-07-04T16:26:22.336+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-04T16:26:22.341+0000] {shopbrasil_panorama_precos.py:329} INFO - Verificando carga — total=4 | worker=872c8aed023e
+[2026-07-04T16:26:22.506+0000] {base.py:84} INFO - Retrieving connection 'postgres_lab'
+[2026-07-04T16:26:22.520+0000] {sql.py:544} INFO - Running statement: 
+        SELECT COUNT(*)
+        FROM precos_categoria
+        WHERE data_referencia = %s AND dag_run_id = %s
+        , parameters: ('2026-07-04', 'manual__2026-07-04T16:25:58.768339+00:00')
+[2026-07-04T16:26:22.525+0000] {sql.py:553} INFO - Rows affected: 1
+[2026-07-04T16:26:22.527+0000] {load.py:140} INFO - === VERIFICAÇÃO SHOPBRASIL ===
+[2026-07-04T16:26:22.528+0000] {load.py:141} INFO - Registros para 2026-07-04 (run manual__2026-07-04T16:25:58.768339+00:00): 4 (esperado: 4)
+[2026-07-04T16:26:22.541+0000] {sql.py:544} INFO - Running statement: 
+        SELECT categoria, preco_medio, preco_min, preco_max, qtd_produtos
+        FROM precos_categoria
+        WHERE data_referencia = %s AND dag_run_id = %s
+        ORDER BY categoria
+        , parameters: ('2026-07-04', 'manual__2026-07-04T16:25:58.768339+00:00')
+[2026-07-04T16:26:22.545+0000] {sql.py:553} INFO - Rows affected: 4
+[2026-07-04T16:26:22.547+0000] {load.py:164} INFO -   electronics | médio=332.50 | min=64.00 | max=999.99 | qtd=6
+[2026-07-04T16:26:22.548+0000] {load.py:164} INFO -   jewelery | médio=221.00 | min=9.99 | max=695.00 | qtd=4
+[2026-07-04T16:26:22.548+0000] {load.py:164} INFO -   men's clothing | médio=51.06 | min=15.99 | max=109.95 | qtd=4
+[2026-07-04T16:26:22.549+0000] {load.py:164} INFO -   women's clothing | médio=26.29 | min=7.95 | max=56.99 | qtd=6
+[2026-07-04T16:26:22.549+0000] {load.py:173} INFO - ✓ Verificação OK — painel pronto para o time de pricing
+[2026-07-04T16:26:22.550+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-07-04T16:26:22.563+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-04T16:26:22.563+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=shopbrasil_panorama_precos, task_id=analise.verificar, run_id=manual__2026-07-04T16:25:58.768339+00:00, execution_date=20260704T162558, start_date=20260704T162621, end_date=20260704T162622
+[2026-07-04T16:26:22.598+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-07-04T16:26:22.627+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-07-04T16:26:22.633+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

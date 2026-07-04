@@ -52,7 +52,14 @@ services:
 
     # Consome a fila da DAG ShopBrasil (default_args.queue = "shopbrasil")
     # e a fila default (DAGs de exemplo em dags/exemplos/)
-    command: celery worker -q shopbrasil,default
+    # Celery direto: -Q (filas) e -E (eventos para o Flower). O CLI
+    # `airflow celery worker` não aceita -E; sem eventos o Flower fica vazio.
+    command:
+      - bash
+      - -c
+      - >-
+        exec celery --app airflow.providers.celery.executors.celery_executor.app
+        worker -Q shopbrasil,default -E
 
     volumes:
       # Mapeia a DAG shopbrasil_panorama_precos.py e demais DAGs do scheduler

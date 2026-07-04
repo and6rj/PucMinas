@@ -1,0 +1,22 @@
+[2026-07-04T16:03:28.494+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-04T16:03:28.534+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.analise.carregar scheduled__2026-07-04T09:00:00+00:00 [queued]>
+[2026-07-04T16:03:28.555+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.analise.carregar scheduled__2026-07-04T09:00:00+00:00 [queued]>
+[2026-07-04T16:03:28.556+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2026-07-04T16:03:28.586+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): analise.carregar> on 2026-07-04 09:00:00+00:00
+[2026-07-04T16:03:28.599+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=278) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-07-04T16:03:28.602+0000] {standard_task_runner.py:72} INFO - Started process 279 to run task
+[2026-07-04T16:03:28.604+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'shopbrasil_panorama_precos', 'analise.carregar', 'scheduled__2026-07-04T09:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/shopbrasil_panorama_precos.py', '--cfg-path', '/tmp/tmp__amw3tg']
+[2026-07-04T16:03:28.606+0000] {standard_task_runner.py:105} INFO - Job 13: Subtask analise.carregar
+[2026-07-04T16:03:28.828+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='shopbrasil_data' AIRFLOW_CTX_DAG_ID='shopbrasil_panorama_precos' AIRFLOW_CTX_TASK_ID='analise.carregar' AIRFLOW_CTX_EXECUTION_DATE='2026-07-04T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-07-04T09:00:00+00:00'
+[2026-07-04T16:03:28.830+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-04T16:03:28.836+0000] {shopbrasil_panorama_precos.py:300} INFO - Gravando 4 registros — connection=postgres_lab | data=2026-07-04 | worker=c5da3f2e562f
+[2026-07-04T16:03:29.072+0000] {base.py:84} INFO - Retrieving connection 'postgres_lab'
+[2026-07-04T16:03:29.114+0000] {load.py:97} INFO - ✓ 4 registros inseridos em 'precos_categoria' | data=2026-07-04 | run_id=scheduled__2026-07-04T09:00:00+00:00
+[2026-07-04T16:03:29.115+0000] {python.py:240} INFO - Done. Returned value was: 4
+[2026-07-04T16:03:29.147+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-04T16:03:29.148+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=shopbrasil_panorama_precos, task_id=analise.carregar, run_id=scheduled__2026-07-04T09:00:00+00:00, execution_date=20260704T090000, start_date=20260704T160328, end_date=20260704T160329
+[2026-07-04T16:03:29.179+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-07-04T16:03:29.212+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-07-04T16:03:29.218+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

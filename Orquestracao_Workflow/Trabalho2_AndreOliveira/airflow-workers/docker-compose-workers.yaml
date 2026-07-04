@@ -40,7 +40,14 @@ x-worker-common: &worker-common
     _PIP_ADDITIONAL_REQUIREMENTS: "requests==2.32.3"
 
   # Fila shopbrasil = pipeline ShopBrasil; default = DAGs de exemplo da aula
-  command: celery worker -q shopbrasil,default
+  # Celery direto: -Q (filas) e -E (eventos para o Flower). O CLI
+  # `airflow celery worker` não aceita -E; sem eventos o Flower fica vazio.
+  command:
+    - bash
+    - -c
+    - >-
+      exec celery --app airflow.providers.celery.executors.celery_executor.app
+      worker -Q shopbrasil,default -E
 
   volumes:
     # Em produção: NFS apontando para a Máquina 1
