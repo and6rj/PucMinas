@@ -37,7 +37,7 @@ O desafio consiste em orquestrar três serviços com Docker Compose:
 
 ```
                     ┌─────────────────────────────────────────┐
-                    │              Host (porta 80)            │
+                    │             Host (porta 8081)           │
                     └────────────────────┬────────────────────┘
                                          │
                     ┌────────────────────▼────────────────────┐
@@ -57,7 +57,7 @@ O desafio consiste em orquestrar três serviços com Docker Compose:
                     └─────────────────────────────────────────┘
 ```
 
-O usuário acessa **apenas a porta 80** do host. O backend e o banco de dados **não são expostos** diretamente — ficam acessíveis somente na rede interna Docker.
+O usuário acessa **apenas a porta 8081** do host. O backend e o banco de dados **não são expostos** diretamente — ficam acessíveis somente na rede interna Docker.
 
 ---
 
@@ -149,7 +149,7 @@ docker compose logs -f db
 
 Abra no browser:
 
-**http://localhost:80**
+**http://localhost:8081**
 
 #### Criar um jogo
 
@@ -169,7 +169,7 @@ Abra no browser:
 #### Verificar saúde da API
 
 ```bash
-curl http://localhost/health
+curl http://localhost:8081/health
 ```
 
 Resposta esperada:
@@ -181,7 +181,7 @@ Resposta esperada:
 #### Criar um jogo
 
 ```bash
-curl -X POST http://localhost/create \
+curl -X POST http://localhost:8081/create \
   -H "Content-Type: application/json" \
   -d '{"password":"minhasenha"}'
 ```
@@ -197,7 +197,7 @@ Resposta esperada:
 Substitua `GAME_ID` pelo valor retornado na criação:
 
 ```bash
-curl -X POST http://localhost/guess/GAME_ID \
+curl -X POST http://localhost:8081/guess/GAME_ID \
   -H "Content-Type: application/json" \
   -d '{"guess":"minhasenha"}'
 ```
@@ -244,7 +244,7 @@ Nenhum arquivo dentro de `guess_game/` foi modificado. A integração com contai
 
 - Variáveis de ambiente no `docker-compose.yml` (prefixo `FLASK_`, lido nativamente pelo Flask).
 - Dockerfiles que apenas copiam e executam o código existente.
-- Build do React com `REACT_APP_BACKEND_URL=http://localhost` no `nginx/Dockerfile`.
+- Build do React com `REACT_APP_BACKEND_URL=http://localhost:8081` no `nginx/Dockerfile`.
 
 Essa abordagem respeita o requisito de não alterar o fonte e reduz risco de regressão.
 
@@ -257,19 +257,19 @@ Em vez de rodar o React com `npm start` em um container de desenvolvimento, o fr
 - Menor consumo de recursos (sem processo Node em runtime).
 - NGINX é mais eficiente para arquivos estáticos.
 - O mesmo container NGINX faz **proxy reverso** das rotas de API (`/create`, `/guess/`, `/health`) para o backend.
-- O browser acessa tudo pela mesma origem (`http://localhost`), evitando problemas de CORS e mixed content.
+- O browser acessa tudo pela mesma origem (`http://localhost:8081`), evitando problemas de CORS e mixed content.
 
-### 4. `REACT_APP_BACKEND_URL=http://localhost`
+### 4. `REACT_APP_BACKEND_URL=http://localhost:8081`
 
 O React chama a API usando essa variável de ambiente, definida **no momento do build** (não em runtime).
 
-Como o NGINX escuta na porta 80 do host e encaminha `/create` e `/guess/` para o Flask, o browser faz requisições para `http://localhost/create` — mesma origem da página. Não é necessário expor a porta 5000 do Flask ao host.
+Como o NGINX expõe a porta **8081** no host (mapeada para a porta 80 interna do container) e encaminha `/create` e `/guess/` para o Flask, o browser faz requisições para `http://localhost:8081/create` — mesma origem da página. Não é necessário expor a porta 5000 do Flask ao host.
 
 ### 5. Duas redes Docker (`front-tier` e `back-tier`)
 
 | Rede          | Serviços conectados     | Função                                      |
 |---------------|-------------------------|---------------------------------------------|
-| `front-tier`  | `frontend`              | Isola a exposição pública (porta 80)        |
+| `front-tier`  | `frontend`              | Isola a exposição pública (porta 8081)      |
 | `back-tier`   | `frontend`, `backend`, `db` | Comunicação interna entre serviços      |
 
 O NGINX participa das **duas redes**: recebe tráfego externo e alcança o backend internamente. O banco de dados fica **somente** na `back-tier`, sem acesso direto do host.
@@ -400,19 +400,19 @@ docker compose ps
 docker compose ps | grep backend
 
 # 3. API respondendo
-curl http://localhost/health
+curl http://localhost:8081/health
 
 # 4. Fluxo completo
-curl -X POST http://localhost/create \
+curl -X POST http://localhost:8081/create \
   -H "Content-Type: application/json" \
   -d '{"password":"teste123"}'
 # Copie o game_id retornado e use no comando abaixo:
-curl -X POST http://localhost/guess/GAME_ID \
+curl -X POST http://localhost:8081/guess/GAME_ID \
   -H "Content-Type: application/json" \
   -d '{"guess":"teste123"}'
 
 # 5. Frontend servindo HTML
-curl -s http://localhost/ | head -5
+curl -s http://localhost:8081/ | head -5
 ```
 
 ### Verificar balanceamento de carga
@@ -432,7 +432,7 @@ Deve retornar **3 endereços IP** distintos.
 docker stop trabalho1-backend-1
 
 # A API deve continuar respondendo
-curl http://localhost/health
+curl http://localhost:8081/health
 
 # Reiniciar a réplica
 docker start trabalho1-backend-1
@@ -464,11 +464,11 @@ O NGINX redescobre as instâncias automaticamente via DNS interno.
 
 | Problema | Causa provável | Solução |
 |----------|----------------|---------|
-| `connection refused` na porta 80 | Containers não iniciados | `docker compose up -d` e aguarde |
+| `connection refused` na porta 8081 | Containers não iniciados | `docker compose up -d` e aguarde |
 | Backend reiniciando em loop | Postgres ainda não pronto | Aguarde `postgres_db` ficar `healthy`; verifique logs com `docker compose logs db` |
 | Página em branco no browser | Build do frontend falhou | `docker compose build frontend --no-cache` |
 | `Game not found` | Game ID incorreto ou banco resetado | Crie um novo jogo; evite `docker compose down -v` se quiser manter dados |
-| Porta 80 ocupada | Outro serviço usando a porta | Pare o serviço conflitante ou altere `"80:80"` no compose |
+| Porta 8081 ocupada | Outro serviço usando a porta | Pare o serviço conflitante ou altere `"8081:80"` no compose |
 | Erro ao criar jogo no browser | Build antigo do React | Reconstrua o frontend: `docker compose build frontend && docker compose up -d frontend` |
 
 Para reiniciar toda a stack do zero (mantendo dados):
