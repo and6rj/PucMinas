@@ -1,0 +1,83 @@
+# =============================================================================
+# PROJETO: airflow-workers (Trabalho 2 — ShopBrasil + CeleryExecutor)
+# Serviços: airflow-worker-1, airflow-worker-2, airflow-worker-3
+#
+# Pré-requisito: projeto airflow-scheduler já deve estar rodando.
+#
+# DEV LOCAL (mesma máquina): workers entram na rede do projeto airflow-scheduler
+#   e acessam Postgres, Redis e postgres-lab pelos nomes dos containers.
+#
+# PRODUÇÃO (máquinas separadas): substitua os hostnames pelo IP real da Máquina 1
+#   e remova o bloco "networks" ao final.
+#
+# Como usar (rodar de dentro da pasta airflow-workers/):
+#   docker compose -f docker-compose-workers.yaml up -d
+#   docker compose -f docker-compose-workers.yaml down
+# =============================================================================
+
+name: airflow-workers
+
+x-worker-common: &worker-common
+  image: apache/airflow:2.10.3
+  user: "${AIRFLOW_UID:-50000}:0"
+  env_file:
+    - .env
+  environment:
+    # --- Executor ---
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+
+    # --- Aponta para Postgres e Redis do projeto airflow-scheduler ---
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres:5432/airflow
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@airflow-postgres:5432/airflow
+    AIRFLOW__CELERY__BROKER_URL: redis://airflow-redis:6379/0
+
+    # --- Configurações gerais ---
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DEFAULT_TIMEZONE: America/Sao_Paulo
+
+    # requests para FakeStore API (postgres provider já vem na imagem 2.10.3)
+    _PIP_ADDITIONAL_REQUIREMENTS: "requests==2.32.3"
+
+  # Fila shopbrasil = pipeline ShopBrasil; default = DAGs de exemplo da aula
+  command: celery worker -q shopbrasil,default
+
+  volumes:
+    # Em produção: NFS apontando para a Máquina 1
+    # Em dev local: volumes do projeto airflow-scheduler
+    - ../airflow-scheduler/dags:/opt/airflow/dags
+    - ../airflow-scheduler/logs:/opt/airflow/logs
+    - ../airflow-scheduler/plugins:/opt/airflow/plugins
+
+  healthcheck:
+    test:
+      - "CMD-SHELL"
+      - 'celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
+    interval: 30s
+    timeout: 10s
+    retries: 5
+    start_period: 30s
+
+  networks:
+    - scheduler-net
+
+# =============================================================================
+services:
+
+  airflow-worker-1:
+    <<: *worker-common
+    container_name: airflow-worker-1
+
+  airflow-worker-2:
+    <<: *worker-common
+    container_name: airflow-worker-2
+
+  airflow-worker-3:
+    <<: *worker-common
+    container_name: airflow-worker-3
+
+# =============================================================================
+networks:
+  scheduler-net:
+    external: true
+    name: airflow-scheduler_airflow-net

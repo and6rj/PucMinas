@@ -1,0 +1,849 @@
+[2026-07-04T06:28:22.123+0000] {processor.py:186} INFO - Started process (PID=123) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:28:22.124+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T06:28:22.130+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:28:22.129+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:28:31.120+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:30:02.038+0000] {processor.py:186} INFO - Started process (PID=145) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:30:02.210+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T06:30:02.215+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:30:02.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:30:02.666+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:30:03.324+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:30:03.324+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T06:30:41.833+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:30:41.833+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T06:30:45.435+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 43.405 seconds
+[2026-07-04T06:31:50.284+0000] {processor.py:186} INFO - Started process (PID=161) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:31:50.465+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T06:31:50.468+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:31:50.468+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:31:50.636+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:31:50.783+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:31:50.783+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T06:31:50.800+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:31:50.800+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T06:31:52.395+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 2.765 seconds
+[2026-07-04T06:33:11.755+0000] {processor.py:186} INFO - Started process (PID=172) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:33:11.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T06:33:11.912+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:33:11.911+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:33:11.929+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:33:27.157+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:33:27.155+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T06:33:27.206+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:33:27.205+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T06:59:54.254+0000] {processor.py:186} INFO - Started process (PID=67) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:59:54.444+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T06:59:54.448+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:59:54.447+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:59:55.012+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T06:59:55.381+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:59:55.380+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T06:59:56.336+0000] {logging_mixin.py:190} INFO - [2026-07-04T06:59:56.336+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T06:59:57.112+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 2.869 seconds
+[2026-07-04T07:00:27.296+0000] {processor.py:186} INFO - Started process (PID=78) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:00:27.345+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:00:27.348+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:00:27.348+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:00:27.359+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:00:27.419+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:00:27.419+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:00:27.452+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:00:27.451+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:00:27.492+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.203 seconds
+[2026-07-04T07:00:58.052+0000] {processor.py:186} INFO - Started process (PID=89) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:00:58.054+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:00:58.073+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:00:58.072+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:00:58.100+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:00:58.210+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:00:58.209+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:00:58.258+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:00:58.258+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:00:58.320+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.301 seconds
+[2026-07-04T07:01:28.862+0000] {processor.py:186} INFO - Started process (PID=100) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:01:28.890+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:01:28.895+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:01:28.894+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:01:28.944+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:01:29.048+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:01:29.048+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:01:29.103+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:01:29.103+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:01:29.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.281 seconds
+[2026-07-04T07:01:59.727+0000] {processor.py:186} INFO - Started process (PID=111) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:01:59.759+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:01:59.762+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:01:59.762+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:01:59.785+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:01:59.836+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:01:59.836+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:01:59.865+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:01:59.865+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:01:59.892+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.173 seconds
+[2026-07-04T07:02:30.415+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:02:30.417+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:02:30.419+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:02:30.419+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:02:30.462+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:02:30.516+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:02:30.516+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:02:30.592+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:02:30.591+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:02:30.720+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.312 seconds
+[2026-07-04T07:03:00.852+0000] {processor.py:186} INFO - Started process (PID=126) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:03:00.907+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:03:00.909+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:03:00.909+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:03:00.918+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:03:00.961+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:03:00.960+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:03:01.005+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:03:01.005+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:03:01.045+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.200 seconds
+[2026-07-04T07:03:31.301+0000] {processor.py:186} INFO - Started process (PID=136) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:03:31.302+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:03:31.315+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:03:31.305+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:03:31.372+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:03:31.409+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:03:31.409+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:03:31.433+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:03:31.433+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:03:32.349+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.056 seconds
+[2026-07-04T07:04:02.786+0000] {processor.py:186} INFO - Started process (PID=147) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:04:02.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:04:02.835+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:04:02.819+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:04:02.876+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:04:03.161+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:04:03.160+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:04:03.171+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:04:03.171+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:04:03.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.420 seconds
+[2026-07-04T07:04:33.772+0000] {processor.py:186} INFO - Started process (PID=158) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:04:33.773+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:04:33.775+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:04:33.775+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:04:33.786+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:04:33.831+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:04:33.831+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:04:33.847+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:04:33.847+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:04:33.874+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.109 seconds
+[2026-07-04T07:05:04.461+0000] {processor.py:186} INFO - Started process (PID=170) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:05:04.945+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:05:04.948+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:05:04.948+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:05:04.962+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:05:05.398+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:05:05.397+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:05:05.421+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:05:05.421+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:05:05.790+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.337 seconds
+[2026-07-04T07:05:37.043+0000] {processor.py:186} INFO - Started process (PID=181) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:05:37.135+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:05:37.162+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:05:37.162+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:05:44.312+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:05:48.370+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:05:48.369+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:06:24.729+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:06:24.728+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:06:24.789+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 47.776 seconds
+[2026-07-04T07:06:55.668+0000] {processor.py:186} INFO - Started process (PID=199) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:06:55.669+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:06:55.673+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:06:55.673+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:06:55.685+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:06:55.740+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:06:55.740+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:06:55.766+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:06:55.765+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:06:55.809+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.149 seconds
+[2026-07-04T07:07:32.108+0000] {processor.py:186} INFO - Started process (PID=210) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:07:35.864+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:07:40.530+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:07:40.020+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:08:27.570+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:20:53.005+0000] {processor.py:186} INFO - Started process (PID=60) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:20:53.048+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:20:53.052+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:20:53.052+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:20:53.079+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:20:53.478+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:20:53.477+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:20:53.553+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:20:53.553+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:20:53.715+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.716 seconds
+[2026-07-04T07:21:24.766+0000] {processor.py:186} INFO - Started process (PID=71) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:21:24.926+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:21:24.929+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:21:24.929+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:21:24.938+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:21:24.972+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:21:24.972+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:21:24.993+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:21:24.993+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:21:25.321+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.564 seconds
+[2026-07-04T07:21:55.714+0000] {processor.py:186} INFO - Started process (PID=82) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:21:55.741+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:21:55.743+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:21:55.743+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:21:55.753+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:21:55.817+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:21:55.817+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:21:55.847+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:21:55.847+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:21:55.898+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.192 seconds
+[2026-07-04T07:22:26.877+0000] {processor.py:186} INFO - Started process (PID=92) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:22:26.893+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:22:26.917+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:22:26.917+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:22:27.520+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:22:28.032+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:22:28.031+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:22:28.059+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:22:28.059+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:22:28.107+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.266 seconds
+[2026-07-04T07:22:58.633+0000] {processor.py:186} INFO - Started process (PID=102) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:22:58.634+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:22:58.637+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:22:58.636+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:22:58.650+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:22:58.691+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:22:58.690+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:22:58.723+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:22:58.723+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:22:59.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.409 seconds
+[2026-07-04T07:23:29.548+0000] {processor.py:186} INFO - Started process (PID=105) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:23:30.040+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:23:30.045+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:23:30.044+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:23:30.143+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:23:30.336+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:23:30.336+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:23:30.446+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:23:30.446+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:23:30.551+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.010 seconds
+[2026-07-04T07:24:00.633+0000] {processor.py:186} INFO - Started process (PID=115) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:24:00.669+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:24:00.704+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:24:00.704+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:24:00.861+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:24:01.871+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:24:01.870+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:24:07.605+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:24:07.605+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:24:09.090+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 8.462 seconds
+[2026-07-04T07:24:39.846+0000] {processor.py:186} INFO - Started process (PID=126) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:24:39.871+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:24:39.898+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:24:39.872+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:24:39.908+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:24:39.967+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:24:39.967+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:24:39.997+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:24:39.997+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:24:40.466+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.629 seconds
+[2026-07-04T07:25:11.076+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:25:11.091+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:25:11.092+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:25:11.092+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:25:11.122+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:25:11.154+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:25:11.154+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:25:11.412+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:25:11.412+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:25:11.452+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.382 seconds
+[2026-07-04T07:25:42.059+0000] {processor.py:186} INFO - Started process (PID=148) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:25:42.060+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:25:42.061+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:25:42.061+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:25:42.089+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:25:42.170+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:25:42.170+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:25:42.185+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:25:42.185+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:25:42.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.164 seconds
+[2026-07-04T07:26:13.040+0000] {processor.py:186} INFO - Started process (PID=159) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:26:13.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:26:13.063+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:26:13.063+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:26:13.074+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:26:13.112+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:26:13.112+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:26:13.126+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:26:13.126+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:26:13.155+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.121 seconds
+[2026-07-04T07:26:44.055+0000] {processor.py:186} INFO - Started process (PID=170) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:26:44.056+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:26:44.059+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:26:44.058+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:26:44.075+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:26:44.129+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:26:44.128+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:26:44.160+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:26:44.160+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:26:44.360+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.313 seconds
+[2026-07-04T07:27:14.605+0000] {processor.py:186} INFO - Started process (PID=194) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:27:14.607+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:27:14.608+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:27:14.608+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:27:14.623+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:27:14.665+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:27:14.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:27:14.855+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:27:14.855+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:27:14.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.281 seconds
+[2026-07-04T07:27:45.753+0000] {processor.py:186} INFO - Started process (PID=228) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:27:45.755+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:27:45.756+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:27:45.756+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:27:45.772+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:27:45.839+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:27:45.838+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:27:45.857+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:27:45.857+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:27:45.881+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.142 seconds
+[2026-07-04T07:28:16.470+0000] {processor.py:186} INFO - Started process (PID=239) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:28:16.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:28:16.501+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:28:16.501+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:28:16.552+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:28:16.595+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:28:16.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:28:16.618+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:28:16.617+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:28:16.649+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.205 seconds
+[2026-07-04T07:28:47.299+0000] {processor.py:186} INFO - Started process (PID=251) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:28:47.388+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:28:47.390+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:28:47.389+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:28:47.398+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:28:47.440+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:28:47.439+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:28:47.760+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:28:47.760+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:28:47.914+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.621 seconds
+[2026-07-04T07:29:18.092+0000] {processor.py:186} INFO - Started process (PID=262) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:29:18.119+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:29:18.121+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:29:18.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:29:18.156+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:29:18.716+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:29:18.715+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:29:18.734+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:29:18.734+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:29:18.811+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.731 seconds
+[2026-07-04T07:29:49.131+0000] {processor.py:186} INFO - Started process (PID=272) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:29:50.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:29:50.586+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:29:50.586+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:29:50.595+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:29:50.681+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:29:50.680+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:29:50.694+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:29:50.694+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:29:50.737+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.611 seconds
+[2026-07-04T07:30:20.809+0000] {processor.py:186} INFO - Started process (PID=290) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:30:20.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:30:20.857+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:30:20.856+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:30:20.880+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:30:20.916+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:30:20.916+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:30:20.934+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:30:20.934+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:30:20.963+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.162 seconds
+[2026-07-04T07:30:51.240+0000] {processor.py:186} INFO - Started process (PID=335) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:30:51.242+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:30:51.244+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:30:51.244+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:30:51.262+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:30:51.341+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:30:51.340+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:30:51.366+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:30:51.366+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:30:51.414+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.182 seconds
+[2026-07-04T07:31:21.536+0000] {processor.py:186} INFO - Started process (PID=346) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:31:21.539+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:31:21.540+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:31:21.540+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:31:21.550+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:31:21.586+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:31:21.585+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:31:21.600+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:31:21.600+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:31:21.621+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.093 seconds
+[2026-07-04T07:31:52.146+0000] {processor.py:186} INFO - Started process (PID=361) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:31:52.225+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:31:52.227+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:31:52.226+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:31:52.244+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:31:52.278+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:31:52.278+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:31:52.295+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:31:52.295+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:31:52.327+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.188 seconds
+[2026-07-04T07:32:22.704+0000] {processor.py:186} INFO - Started process (PID=372) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:32:22.706+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:32:22.710+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:32:22.710+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:32:22.723+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:32:22.756+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:32:22.756+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:32:22.773+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:32:22.773+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:32:22.800+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.102 seconds
+[2026-07-04T07:32:53.229+0000] {processor.py:186} INFO - Started process (PID=383) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:32:53.231+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:32:53.233+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:32:53.232+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:32:53.248+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:32:53.296+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:32:53.296+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:32:53.321+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:32:53.320+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:32:53.409+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.187 seconds
+[2026-07-04T07:33:24.035+0000] {processor.py:186} INFO - Started process (PID=395) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:33:24.036+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:33:24.038+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:33:24.037+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:33:24.048+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:33:24.085+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:33:24.085+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:33:24.101+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:33:24.101+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:33:24.129+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.102 seconds
+[2026-07-04T07:33:54.493+0000] {processor.py:186} INFO - Started process (PID=406) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:33:54.495+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:33:54.497+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:33:54.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:33:54.510+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:33:54.561+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:33:54.561+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:33:54.580+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:33:54.580+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:33:54.662+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.175 seconds
+[2026-07-04T07:34:24.931+0000] {processor.py:186} INFO - Started process (PID=417) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:34:24.932+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:34:24.933+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:34:24.933+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:34:24.943+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:34:24.992+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:34:24.992+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:34:25.010+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:34:25.010+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:34:25.047+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.121 seconds
+[2026-07-04T07:34:55.573+0000] {processor.py:186} INFO - Started process (PID=428) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:34:55.602+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:34:55.604+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:34:55.604+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:34:55.613+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:34:55.646+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:34:55.646+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:34:55.663+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:34:55.663+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:34:55.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.118 seconds
+[2026-07-04T07:35:26.585+0000] {processor.py:186} INFO - Started process (PID=440) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:35:26.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:35:26.586+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:35:26.586+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:35:26.600+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:35:26.656+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:35:26.656+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:35:26.679+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:35:26.679+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:35:26.701+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.124 seconds
+[2026-07-04T07:35:57.073+0000] {processor.py:186} INFO - Started process (PID=450) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:35:57.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:35:57.102+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:35:57.102+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:35:57.160+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:35:57.932+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:35:57.931+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:35:58.058+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:35:58.057+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:35:58.304+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.303 seconds
+[2026-07-04T07:36:29.438+0000] {processor.py:186} INFO - Started process (PID=455) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:36:29.439+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:36:29.440+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:36:29.440+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:36:29.487+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:36:29.720+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:36:29.718+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:36:29.781+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:36:29.780+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:36:29.872+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.441 seconds
+[2026-07-04T07:37:03.389+0000] {processor.py:186} INFO - Started process (PID=466) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:37:03.502+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:37:03.504+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:37:03.503+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:37:19.893+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:52:19.462+0000] {processor.py:186} INFO - Started process (PID=58) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:52:19.497+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:52:19.506+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:52:19.506+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:52:19.558+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:52:19.899+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:52:19.898+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:52:20.044+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:52:20.044+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:52:20.096+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.700 seconds
+[2026-07-04T07:52:50.506+0000] {processor.py:186} INFO - Started process (PID=68) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:52:50.551+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:52:50.623+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:52:50.622+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:52:50.770+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:52:51.753+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:52:51.753+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:52:52.355+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:52:52.354+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:52:52.726+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 2.381 seconds
+[2026-07-04T07:53:23.054+0000] {processor.py:186} INFO - Started process (PID=78) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:53:23.071+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:53:23.075+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:53:23.074+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:53:23.130+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:53:23.245+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:53:23.244+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T07:53:23.316+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:53:23.316+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T07:53:23.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.312 seconds
+[2026-07-04T07:53:57.479+0000] {processor.py:186} INFO - Started process (PID=88) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:53:58.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T07:54:02.563+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:54:02.370+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T07:54:42.081+0000] {logging_mixin.py:190} INFO - [2026-07-04T07:54:40.173+0000] {timeout.py:68} ERROR - Process timed out, PID: 88
+[2026-07-04T08:19:40.400+0000] {processor.py:186} INFO - Started process (PID=74) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:19:40.490+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:19:40.494+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:19:40.493+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:19:40.512+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:19:40.800+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:19:40.800+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:19:41.060+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:19:41.060+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:19:41.131+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.740 seconds
+[2026-07-04T08:20:11.847+0000] {processor.py:186} INFO - Started process (PID=84) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:20:11.892+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:20:11.921+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:20:11.920+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:20:11.958+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:20:12.525+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:20:12.524+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:20:20.228+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:20:20.227+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:20:27.534+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 15.699 seconds
+[2026-07-04T08:20:58.453+0000] {processor.py:186} INFO - Started process (PID=94) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:20:58.454+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:20:58.461+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:20:58.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:20:59.064+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:21:00.782+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:21:00.782+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:21:00.992+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:21:00.991+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:21:01.262+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 2.819 seconds
+[2026-07-04T08:21:32.312+0000] {processor.py:186} INFO - Started process (PID=102) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:21:32.436+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:21:32.441+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:21:32.439+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:21:33.075+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:21:34.754+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:21:34.754+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:21:35.830+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:21:35.829+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:21:37.645+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 5.495 seconds
+[2026-07-04T08:22:08.513+0000] {processor.py:186} INFO - Started process (PID=113) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:22:08.548+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:22:08.655+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:22:08.637+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:22:08.675+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:22:08.998+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:22:08.998+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:22:09.445+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:22:09.445+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:22:10.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.558 seconds
+[2026-07-04T08:22:40.337+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:22:40.340+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:22:40.343+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:22:40.342+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:22:40.356+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:22:40.403+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:22:40.403+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:22:40.430+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:22:40.429+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:22:40.509+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.182 seconds
+[2026-07-04T08:23:11.120+0000] {processor.py:186} INFO - Started process (PID=126) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:23:11.669+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:23:11.674+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:23:11.674+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:23:11.695+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:23:11.753+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:23:11.753+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:23:11.780+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:23:11.780+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:23:12.339+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.226 seconds
+[2026-07-04T08:23:42.519+0000] {processor.py:186} INFO - Started process (PID=137) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:23:42.520+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:23:42.523+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:23:42.523+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:23:42.541+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:23:42.592+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:23:42.592+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:23:42.817+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:23:42.816+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:23:43.220+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.711 seconds
+[2026-07-04T08:24:13.591+0000] {processor.py:186} INFO - Started process (PID=148) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:24:13.595+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:24:13.601+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:24:13.601+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:24:13.612+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:24:13.649+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:24:13.649+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:24:13.664+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:24:13.664+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:24:13.699+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.119 seconds
+[2026-07-04T08:24:44.134+0000] {processor.py:186} INFO - Started process (PID=159) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:24:44.136+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:24:44.139+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:24:44.139+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:24:44.152+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:24:44.202+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:24:44.202+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:24:44.226+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:24:44.226+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:24:44.248+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.124 seconds
+[2026-07-04T08:25:14.735+0000] {processor.py:186} INFO - Started process (PID=170) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:25:14.738+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:25:14.741+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:25:14.741+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:25:14.756+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:25:14.790+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:25:14.790+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:25:14.817+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:25:14.817+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:25:15.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.342 seconds
+[2026-07-04T08:25:45.393+0000] {processor.py:186} INFO - Started process (PID=182) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:25:45.395+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:25:45.398+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:25:45.398+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:25:45.419+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:25:45.597+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:25:45.596+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:25:45.865+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:25:45.865+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:25:45.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.527 seconds
+[2026-07-04T08:26:16.505+0000] {processor.py:186} INFO - Started process (PID=193) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:26:16.559+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:26:16.562+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:26:16.562+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:26:16.788+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:26:16.846+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:26:16.846+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:26:16.868+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:26:16.868+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:26:16.920+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.420 seconds
+[2026-07-04T08:26:47.527+0000] {processor.py:186} INFO - Started process (PID=205) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:26:47.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:26:47.533+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:26:47.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:26:47.547+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:26:47.594+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:26:47.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:26:47.615+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:26:47.615+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:26:47.677+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.171 seconds
+[2026-07-04T08:27:18.061+0000] {processor.py:186} INFO - Started process (PID=215) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:27:18.079+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:27:18.082+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:27:18.082+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:27:18.097+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:27:18.249+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:27:18.249+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:27:18.269+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:27:18.268+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:27:18.312+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.259 seconds
+[2026-07-04T08:27:48.853+0000] {processor.py:186} INFO - Started process (PID=220) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:27:48.856+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:27:48.859+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:27:48.858+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:27:48.878+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:27:48.924+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:27:48.923+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:27:48.954+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:27:48.953+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:27:49.004+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.163 seconds
+[2026-07-04T08:28:19.555+0000] {processor.py:186} INFO - Started process (PID=231) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:28:19.576+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:28:19.586+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:28:19.585+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:28:19.603+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:28:19.674+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:28:19.674+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:28:19.694+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:28:19.694+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:28:20.095+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.549 seconds
+[2026-07-04T08:28:50.326+0000] {processor.py:186} INFO - Started process (PID=243) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:28:50.328+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:28:50.331+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:28:50.331+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:28:50.364+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:28:50.425+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:28:50.425+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:28:50.450+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:28:50.449+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:28:51.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.894 seconds
+[2026-07-04T08:29:21.807+0000] {processor.py:186} INFO - Started process (PID=254) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:29:21.846+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:29:21.850+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:29:21.849+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:29:21.866+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:29:21.977+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:29:21.976+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:29:22.005+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:29:22.005+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:29:22.669+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.869 seconds
+[2026-07-04T08:29:53.299+0000] {processor.py:186} INFO - Started process (PID=264) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:29:53.332+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:29:53.337+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:29:53.337+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:29:53.362+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:29:53.444+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:29:53.443+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:29:53.461+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:29:53.461+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:29:53.499+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.214 seconds
+[2026-07-04T08:30:23.858+0000] {processor.py:186} INFO - Started process (PID=276) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:30:23.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:30:23.872+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:30:23.872+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:30:23.909+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:30:24.013+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:30:24.013+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:30:24.071+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:30:24.064+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:30:24.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.487 seconds
+[2026-07-04T08:30:54.413+0000] {processor.py:186} INFO - Started process (PID=288) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:30:54.441+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:30:54.445+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:30:54.444+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:30:54.455+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:30:54.507+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:30:54.507+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:30:54.531+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:30:54.531+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:30:54.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.160 seconds
+[2026-07-04T08:31:24.920+0000] {processor.py:186} INFO - Started process (PID=297) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:31:24.922+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:31:24.930+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:31:24.929+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:31:24.958+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:31:25.115+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:31:25.114+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:31:25.158+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:31:25.158+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:31:25.257+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.364 seconds
+[2026-07-04T08:31:55.324+0000] {processor.py:186} INFO - Started process (PID=301) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:31:55.327+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:31:55.331+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:31:55.331+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:31:55.353+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:31:55.417+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:31:55.416+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:31:55.442+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:31:55.442+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:31:55.494+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.186 seconds
+[2026-07-04T08:37:41.852+0000] {processor.py:186} INFO - Started process (PID=67) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:37:41.915+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:37:41.918+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:37:41.918+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:37:41.934+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:37:42.106+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:37:42.106+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:37:42.144+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:37:42.144+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:37:42.230+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.397 seconds
+[2026-07-04T08:38:13.218+0000] {processor.py:186} INFO - Started process (PID=77) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:38:13.255+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:38:13.260+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:38:13.260+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:38:13.329+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:38:13.406+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:38:13.406+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:38:13.441+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:38:13.441+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:38:13.509+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.299 seconds
+[2026-07-04T08:38:44.298+0000] {processor.py:186} INFO - Started process (PID=87) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:38:44.300+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:38:44.306+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:38:44.304+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:38:44.326+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:38:44.464+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:38:44.464+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:38:44.506+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:38:44.506+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:38:44.612+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.335 seconds
+[2026-07-04T08:39:14.849+0000] {processor.py:186} INFO - Started process (PID=97) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:39:14.851+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:39:14.855+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:39:14.854+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:39:14.917+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:39:15.409+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:39:15.409+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:39:15.438+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:39:15.437+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:39:15.507+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.677 seconds
+[2026-07-04T08:39:46.177+0000] {processor.py:186} INFO - Started process (PID=101) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:39:46.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:39:46.185+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:39:46.185+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:39:46.201+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:39:46.279+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:39:46.279+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:39:46.307+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:39:46.307+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:39:46.355+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.196 seconds
+[2026-07-04T08:40:17.116+0000] {processor.py:186} INFO - Started process (PID=112) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:40:17.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:40:17.538+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:40:17.537+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:40:17.618+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:40:18.624+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:40:18.566+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:40:19.125+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:40:19.124+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:40:20.247+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 3.146 seconds
+[2026-07-04T08:40:50.849+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:40:51.798+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:40:51.803+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:40:51.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:40:52.956+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:40:57.775+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:40:57.775+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:40:58.058+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:40:58.058+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:40:59.456+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 8.621 seconds
+[2026-07-04T08:41:30.318+0000] {processor.py:186} INFO - Started process (PID=131) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:41:30.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:41:30.354+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:41:30.353+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:41:32.305+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:41:38.275+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:41:38.274+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:41:49.697+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:41:49.697+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:41:50.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 20.494 seconds
+[2026-07-04T08:42:21.670+0000] {processor.py:186} INFO - Started process (PID=141) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:42:21.687+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:42:21.698+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:42:21.698+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:42:21.717+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:42:21.836+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:42:21.835+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:42:21.880+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:42:21.879+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:42:22.019+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.373 seconds
+[2026-07-04T08:42:52.508+0000] {processor.py:186} INFO - Started process (PID=151) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:42:52.510+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:42:52.515+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:42:52.514+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:42:52.526+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:42:52.601+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:42:52.601+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:42:52.623+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:42:52.623+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:42:52.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.249 seconds
+[2026-07-04T08:43:23.068+0000] {processor.py:186} INFO - Started process (PID=161) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:43:23.291+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:43:23.297+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:43:23.296+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:43:23.314+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:43:23.504+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:43:23.503+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T08:43:23.534+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:43:23.534+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T08:43:23.991+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.945 seconds
+[2026-07-04T08:44:28.478+0000] {processor.py:186} INFO - Started process (PID=166) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:44:29.863+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T08:44:29.868+0000] {logging_mixin.py:190} INFO - [2026-07-04T08:44:29.867+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T08:44:56.203+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:18:27.308+0000] {processor.py:186} INFO - Started process (PID=74) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:18:28.615+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:18:28.619+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:18:28.618+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:18:28.637+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:18:29.518+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:18:29.517+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:18:30.658+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:18:30.658+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:18:31.105+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 3.820 seconds
+[2026-07-04T09:19:01.343+0000] {processor.py:186} INFO - Started process (PID=84) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:19:01.344+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:19:01.346+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:19:01.346+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:19:01.354+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:19:01.383+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:19:01.382+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:19:01.395+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:19:01.395+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:19:01.417+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.079 seconds
+[2026-07-04T09:19:32.305+0000] {processor.py:186} INFO - Started process (PID=95) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:19:32.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:19:32.352+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:19:32.352+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:19:32.361+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:19:32.389+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:19:32.389+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:19:32.401+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:19:32.401+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:19:32.422+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.123 seconds
+[2026-07-04T09:20:03.346+0000] {processor.py:186} INFO - Started process (PID=107) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:20:03.347+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:20:03.350+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:20:03.349+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:20:03.360+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:20:03.389+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:20:03.389+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:20:03.401+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:20:03.401+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:20:03.421+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.081 seconds
+[2026-07-04T09:20:34.230+0000] {processor.py:186} INFO - Started process (PID=119) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:20:34.231+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:20:34.233+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:20:34.232+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:20:34.240+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:20:34.266+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:20:34.266+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:20:34.278+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:20:34.278+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:20:34.298+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.074 seconds
+[2026-07-04T09:21:05.000+0000] {processor.py:186} INFO - Started process (PID=130) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:21:05.003+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:21:05.012+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:21:05.011+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:21:05.034+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:21:05.116+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:21:05.116+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:21:05.144+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:21:05.144+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:21:05.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.187 seconds
+[2026-07-04T09:21:35.768+0000] {processor.py:186} INFO - Started process (PID=140) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:21:35.776+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:21:35.778+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:21:35.778+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:21:35.789+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:21:35.830+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:21:35.830+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:21:35.845+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:21:35.845+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:21:35.876+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.113 seconds
+[2026-07-04T09:22:06.650+0000] {processor.py:186} INFO - Started process (PID=145) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:22:06.652+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:22:06.656+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:22:06.655+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:22:06.672+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:22:06.717+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:22:06.717+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:22:06.954+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:22:06.953+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:22:07.025+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.385 seconds
+[2026-07-04T09:22:37.057+0000] {processor.py:186} INFO - Started process (PID=155) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:22:37.059+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:22:37.061+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:22:37.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:22:37.069+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:22:37.103+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:22:37.103+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:22:37.236+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:22:37.236+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:22:37.254+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.203 seconds
+[2026-07-04T09:23:07.457+0000] {processor.py:186} INFO - Started process (PID=166) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:23:07.459+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:23:07.461+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:23:07.460+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:23:07.471+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:23:07.500+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:23:07.500+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:23:07.512+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:23:07.512+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:23:07.535+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.084 seconds
+[2026-07-04T09:23:38.548+0000] {processor.py:186} INFO - Started process (PID=178) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:23:38.549+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:23:38.551+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:23:38.551+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:23:38.561+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:23:38.594+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:23:38.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:23:38.608+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:23:38.608+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:23:38.636+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.095 seconds
+[2026-07-04T09:24:09.535+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:24:09.536+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:24:09.538+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:24:09.538+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:24:09.547+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:24:09.578+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:24:09.578+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:24:09.742+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:24:09.741+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:24:09.828+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.299 seconds
+[2026-07-04T09:24:39.982+0000] {processor.py:186} INFO - Started process (PID=201) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:24:39.983+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:24:39.985+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:24:39.985+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:24:39.994+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:24:40.164+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:24:40.163+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:24:40.176+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:24:40.176+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:24:40.203+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.227 seconds
+[2026-07-04T09:25:11.218+0000] {processor.py:186} INFO - Started process (PID=212) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:25:11.220+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:25:11.222+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:25:11.222+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:25:11.231+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:25:11.263+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:25:11.263+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:25:11.275+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:25:11.275+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:25:11.297+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.086 seconds
+[2026-07-04T09:25:42.108+0000] {processor.py:186} INFO - Started process (PID=223) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:25:42.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:25:42.111+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:25:42.111+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:25:42.120+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:25:42.153+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:25:42.152+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:25:42.165+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:25:42.165+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:25:42.190+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.090 seconds
+[2026-07-04T09:26:13.232+0000] {processor.py:186} INFO - Started process (PID=234) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:26:13.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:26:13.236+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:26:13.235+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:26:13.248+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:26:13.280+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:26:13.280+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:26:13.438+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:26:13.438+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:26:13.461+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.235 seconds
+[2026-07-04T09:26:43.571+0000] {processor.py:186} INFO - Started process (PID=245) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:26:43.573+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:26:43.575+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:26:43.575+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:26:43.584+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:26:43.755+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:26:43.754+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:26:43.766+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:26:43.766+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:26:43.784+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.219 seconds
+[2026-07-04T09:27:14.611+0000] {processor.py:186} INFO - Started process (PID=256) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:27:14.613+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:27:14.616+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:27:14.615+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:27:14.625+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:27:14.656+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:27:14.655+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:27:14.671+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:27:14.671+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:27:14.700+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.096 seconds
+[2026-07-04T09:27:45.545+0000] {processor.py:186} INFO - Started process (PID=267) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:27:45.549+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:27:45.551+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:27:45.551+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:27:45.559+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:27:45.586+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:27:45.586+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:27:45.598+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:27:45.598+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:27:45.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.079 seconds
+[2026-07-04T09:28:16.313+0000] {processor.py:186} INFO - Started process (PID=277) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:28:16.315+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:28:16.317+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:28:16.317+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:28:16.326+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:28:16.355+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:28:16.355+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:28:16.536+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:28:16.536+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:28:16.570+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.262 seconds
+[2026-07-04T09:28:47.025+0000] {processor.py:186} INFO - Started process (PID=288) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:28:47.026+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:28:47.029+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:28:47.029+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:28:47.037+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:28:47.206+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:28:47.204+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:28:47.225+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:28:47.224+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:28:47.248+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.232 seconds
+[2026-07-04T09:29:18.038+0000] {processor.py:186} INFO - Started process (PID=299) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:29:18.040+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:29:18.042+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:29:18.041+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:29:18.050+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:29:18.080+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:29:18.080+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:29:18.092+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:29:18.092+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:29:18.116+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.084 seconds
+[2026-07-04T09:29:49.097+0000] {processor.py:186} INFO - Started process (PID=310) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:29:49.099+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:29:49.102+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:29:49.101+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:29:49.116+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:29:49.146+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:29:49.145+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:29:49.160+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:29:49.160+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:29:49.186+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.095 seconds
+[2026-07-04T09:30:19.691+0000] {processor.py:186} INFO - Started process (PID=321) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:30:19.695+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:30:19.698+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:30:19.697+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:30:19.708+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:30:19.738+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:30:19.738+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:30:19.886+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:30:19.885+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:30:19.909+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.224 seconds
+[2026-07-04T09:30:49.931+0000] {processor.py:186} INFO - Started process (PID=331) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:30:49.933+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:30:49.935+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:30:49.935+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:30:49.946+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:30:49.974+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:30:49.974+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:30:50.114+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:30:50.114+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:30:50.137+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.212 seconds
+[2026-07-04T09:31:20.690+0000] {processor.py:186} INFO - Started process (PID=343) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:31:20.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:31:20.694+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:31:20.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:31:20.703+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:31:20.739+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:31:20.739+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:31:20.758+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:31:20.758+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:31:20.786+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.103 seconds
+[2026-07-04T09:31:51.668+0000] {processor.py:186} INFO - Started process (PID=353) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:31:51.670+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:31:51.672+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:31:51.672+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:31:51.681+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:31:51.711+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:31:51.711+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:31:51.726+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:31:51.725+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:31:51.751+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.089 seconds
+[2026-07-04T09:32:22.583+0000] {processor.py:186} INFO - Started process (PID=358) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:32:22.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:32:22.586+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:32:22.586+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:32:22.595+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:32:22.627+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:32:22.626+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:32:22.793+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:32:22.793+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:32:22.816+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.239 seconds
+[2026-07-04T09:32:53.111+0000] {processor.py:186} INFO - Started process (PID=369) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:32:53.113+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:32:53.115+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:32:53.115+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:32:53.126+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:32:53.315+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:32:53.314+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:32:53.326+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:32:53.325+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:32:53.349+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.244 seconds
+[2026-07-04T09:33:24.093+0000] {processor.py:186} INFO - Started process (PID=381) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:33:24.096+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:33:24.103+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:33:24.102+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:33:24.122+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:33:24.185+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:33:24.184+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:33:24.215+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:33:24.215+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:33:24.350+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.276 seconds
+[2026-07-04T09:33:54.858+0000] {processor.py:186} INFO - Started process (PID=392) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:33:54.860+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:33:54.878+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:33:54.877+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:33:54.923+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:33:55.059+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:33:55.059+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:33:55.118+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:33:55.118+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:33:55.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.391 seconds
+[2026-07-04T09:34:26.068+0000] {processor.py:186} INFO - Started process (PID=403) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:34:26.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:34:26.099+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:34:26.099+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:34:26.109+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:34:26.139+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:34:26.139+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:34:26.326+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:34:26.326+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:34:26.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 0.322 seconds
+[2026-07-04T09:34:56.498+0000] {processor.py:186} INFO - Started process (PID=414) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:34:56.521+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:34:56.525+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:34:56.524+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:34:56.710+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:34:57.948+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:34:57.948+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-04T09:34:58.014+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:34:58.013+0000] {dag.py:4180} INFO - Setting next_dagrun for example_distributed_celery_fixed_sleep to None, run_after=None
+[2026-07-04T09:34:58.270+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/exemplos/example_distributed_2.py took 1.781 seconds
+[2026-07-04T09:35:32.430+0000] {processor.py:186} INFO - Started process (PID=425) to work on /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:35:32.646+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/exemplos/example_distributed_2.py for tasks to queue
+[2026-07-04T09:35:32.649+0000] {logging_mixin.py:190} INFO - [2026-07-04T09:35:32.649+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/exemplos/example_distributed_2.py
+[2026-07-04T09:36:09.261+0000] {processor.py:925} INFO - DAG(s) 'example_distributed_celery_fixed_sleep' retrieved from /opt/airflow/dags/exemplos/example_distributed_2.py

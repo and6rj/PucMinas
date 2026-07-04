@@ -1,0 +1,27 @@
+[2026-07-04T04:11:45.381+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-04T04:11:45.413+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_distributed_celery_fixed_sleep.tarefa_2 manual__2026-07-04T04:11:29.327919+00:00 [queued]>
+[2026-07-04T04:11:45.429+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_distributed_celery_fixed_sleep.tarefa_2 manual__2026-07-04T04:11:29.327919+00:00 [queued]>
+[2026-07-04T04:11:45.430+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2026-07-04T04:11:46.964+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): tarefa_2> on 2026-07-04 04:11:29.327919+00:00
+[2026-07-04T04:11:46.973+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_distributed_celery_fixed_sleep', 'tarefa_2', 'manual__2026-07-04T04:11:29.327919+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/example_distributed_2.py', '--cfg-path', '/tmp/tmpg2ry1tzc']
+[2026-07-04T04:11:46.975+0000] {standard_task_runner.py:105} INFO - Job 9: Subtask tarefa_2
+[2026-07-04T04:11:47.732+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=686) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-07-04T04:11:47.735+0000] {standard_task_runner.py:72} INFO - Started process 687 to run task
+[2026-07-04T04:12:02.926+0000] {task_command.py:467} INFO - Running <TaskInstance: example_distributed_celery_fixed_sleep.tarefa_2 manual__2026-07-04T04:11:29.327919+00:00 [running]> on host 0a004a5af647
+[2026-07-04T04:12:03.093+0000] {job.py:229} INFO - Heartbeat recovered after 19.17 seconds
+[2026-07-04T04:12:03.465+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_distributed_celery_fixed_sleep' AIRFLOW_CTX_TASK_ID='tarefa_2' AIRFLOW_CTX_EXECUTION_DATE='2026-07-04T04:11:29.327919+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-07-04T04:11:29.327919+00:00'
+[2026-07-04T04:12:03.467+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-07-04T04:12:03.604+0000] {logging_mixin.py:190} INFO - ==================================================
+[2026-07-04T04:12:03.604+0000] {logging_mixin.py:190} INFO - Tarefa: 2
+[2026-07-04T04:12:03.605+0000] {logging_mixin.py:190} INFO - Worker: 0a004a5af647
+[2026-07-04T04:12:03.606+0000] {logging_mixin.py:190} INFO - Início: 2026-07-04 04:12:03.606063
+[2026-07-04T04:12:03.606+0000] {logging_mixin.py:190} INFO - ==================================================
+[2026-07-04T04:12:23.658+0000] {logging_mixin.py:190} INFO - Tarefa 2 finalizada em 0a004a5af647
+[2026-07-04T04:12:23.659+0000] {python.py:240} INFO - Done. Returned value was: {'tarefa': 2, 'worker': '0a004a5af647'}
+[2026-07-04T04:12:23.761+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-07-04T04:12:23.761+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=example_distributed_celery_fixed_sleep, task_id=tarefa_2, run_id=manual__2026-07-04T04:11:29.327919+00:00, execution_date=20260704T041129, start_date=20260704T041145, end_date=20260704T041223
+[2026-07-04T04:12:23.844+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-07-04T04:12:23.873+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-07-04T04:12:23.932+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,275 @@
+# =============================================================================
+# PROJETO: airflow-scheduler (Trabalho 2 — ShopBrasil + CeleryExecutor)
+# Serviços: Postgres (meta), Postgres (lab), Redis, Redis Commander,
+#           Webserver, Scheduler, Triggerer, Flower, Fake API
+#
+# Como usar (rodar de dentro da pasta airflow-scheduler/):
+#   docker compose -f docker-compose-scheduler.yaml up -d
+#   docker compose -f docker-compose-scheduler.yaml down
+#
+# Em seguida, suba os workers em airflow-workers/.
+# =============================================================================
+
+name: airflow-scheduler
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.10.3
+  # Roda com o mesmo UID do host — resolve permissão nos volumes montados
+  user: "${AIRFLOW_UID:-50000}:0"
+  env_file:
+    - .env
+  environment: &airflow-common-env
+    # --- Executor distribuído ---
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+
+    # --- Banco de dados de metadados ---
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+
+    # --- Celery: broker (Redis) e result backend (Postgres) ---
+    AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres:5432/airflow
+
+    # --- Identidade e timezone ---
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DEFAULT_TIMEZONE: America/Sao_Paulo
+    AIRFLOW__WEBSERVER__DEFAULT_UI_TIMEZONE: America/Sao_Paulo
+    AIRFLOW__WEBSERVER__SECRET_KEY: "lab-secret-key-trabalho2"
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+    # Menos workers gunicorn + timeout maior — evita crash em máquinas com poucos recursos
+    AIRFLOW__WEBSERVER__WORKERS: "2"
+    AIRFLOW__WEBSERVER__WEB_SERVER_MASTER_TIMEOUT: "300"
+    AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth"
+
+    # --- Logging ---
+    AIRFLOW__LOGGING__LOGGING_LEVEL: INFO
+
+    # requests para FakeStore API (postgres provider já vem na imagem 2.10.3)
+    _PIP_ADDITIONAL_REQUIREMENTS: "requests==2.32.3"
+
+  volumes:
+    # Em produção seriam exportados via NFS para os workers
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+    postgres-lab:
+      condition: service_healthy
+
+  networks:
+    - airflow-net
+
+# =============================================================================
+services:
+
+  # ---------------------------------------------------------------------------
+  # PostgreSQL — metadados do Airflow e result backend do Celery
+  # ---------------------------------------------------------------------------
+  postgres:
+    image: postgres:13
+    container_name: airflow-postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+      start_period: 10s
+    networks:
+      - airflow-net
+
+  # ---------------------------------------------------------------------------
+  # PostgreSQL analítico — destino do ETL ShopBrasil (precos_categoria)
+  # ---------------------------------------------------------------------------
+  postgres-lab:
+    image: postgres:16
+    container_name: airflow-lab-db
+    environment:
+      POSTGRES_USER: lab
+      POSTGRES_PASSWORD: lab123
+      POSTGRES_DB: labdb
+    volumes:
+      - postgres-lab-data:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "lab", "-d", "labdb"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    networks:
+      - airflow-net
+
+  # ---------------------------------------------------------------------------
+  # Redis — message broker para o Celery distribuir as tasks aos workers
+  # ---------------------------------------------------------------------------
+  redis:
+    image: redis:7.2
+    container_name: airflow-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 5
+      start_period: 10s
+    networks:
+      - airflow-net
+
+  # ---------------------------------------------------------------------------
+  # Redis Commander — UI para inspecionar filas no Redis
+  # Acesse: http://localhost:8081
+  # ---------------------------------------------------------------------------
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: airflow-redis-commander
+    environment:
+      REDIS_HOSTS: "local:redis:6379"
+    ports:
+      - "8081:8081"
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - airflow-net
+
+  # ---------------------------------------------------------------------------
+  # Init — migra metadados, cria admin, connection e pool ShopBrasil
+  # ---------------------------------------------------------------------------
+  airflow-init:
+    <<: *airflow-common
+    container_name: airflow-dist-init
+    user: "0:0"
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        mkdir -p /opt/airflow/logs /opt/airflow/dags /opt/airflow/plugins
+        chown -R "${AIRFLOW_UID}:0" /opt/airflow/{logs,dags,plugins}
+        chmod -R 777 /opt/airflow/logs
+        airflow db migrate
+        airflow users create \
+          --username ${_AIRFLOW_WWW_USER_USERNAME:-airflow} \
+          --password ${_AIRFLOW_WWW_USER_PASSWORD:-airflow} \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com || true
+        airflow connections delete postgres_lab 2>/dev/null || true
+        airflow connections add postgres_lab \
+          --conn-type postgres \
+          --conn-host airflow-lab-db \
+          --conn-login lab \
+          --conn-password lab123 \
+          --conn-schema labdb \
+          --conn-port 5432
+        airflow pools set ecommerce_pool 2 "ShopBrasil — métricas por categoria (max 2 paralelas)"
+        echo "=== Airflow Celery inicializado. UI: http://localhost:8080 | Flower: http://localhost:5555 ==="
+    environment:
+      <<: *airflow-common-env
+    restart: "no"
+
+  # ---------------------------------------------------------------------------
+  # Webserver — UI principal do Airflow
+  # Acesse: http://localhost:8080
+  # ---------------------------------------------------------------------------
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: airflow-webserver
+    command: webserver
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 120s
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # ---------------------------------------------------------------------------
+  # Scheduler — lê as DAGs, cria task instances e envia para a fila do Redis
+  # ---------------------------------------------------------------------------
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: airflow-scheduler
+    command: scheduler
+    healthcheck:
+      test: ["CMD", "airflow", "jobs", "check", "--job-type", "SchedulerJob", "--hostname", "$${HOSTNAME}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # ---------------------------------------------------------------------------
+  # Triggerer — gerencia tasks com deferrable operators (async)
+  # ---------------------------------------------------------------------------
+  airflow-triggerer:
+    <<: *airflow-common
+    container_name: airflow-triggerer
+    command: triggerer
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # ---------------------------------------------------------------------------
+  # Flower — UI de monitoramento dos workers Celery
+  # Acesse: http://localhost:5555
+  # ---------------------------------------------------------------------------
+  airflow-flower:
+    <<: *airflow-common
+    container_name: airflow-flower
+    command: celery flower
+    ports:
+      - "5555:5555"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # ---------------------------------------------------------------------------
+  # Fake API — lab auxiliar de retries (opcional)
+  # ---------------------------------------------------------------------------
+  fake-api:
+    build: ./fake-api
+    container_name: fake-api
+    ports:
+      - "5001:5000"
+    networks:
+      - airflow-net
+
+# =============================================================================
+volumes:
+  postgres-data:
+  postgres-lab-data:
+
+networks:
+  airflow-net:
+    driver: bridge

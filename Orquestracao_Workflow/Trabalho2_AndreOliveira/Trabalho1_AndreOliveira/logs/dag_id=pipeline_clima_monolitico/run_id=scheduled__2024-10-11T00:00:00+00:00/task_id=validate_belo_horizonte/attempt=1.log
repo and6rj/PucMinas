@@ -1,0 +1,16 @@
+[2026-06-10T23:11:13.006+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T23:11:13.103+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.validate_belo_horizonte scheduled__2024-10-11T00:00:00+00:00 [queued]>
+[2026-06-10T23:11:13.123+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.validate_belo_horizonte scheduled__2024-10-11T00:00:00+00:00 [queued]>
+[2026-06-10T23:11:13.124+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-10T23:11:13.151+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): validate_belo_horizonte> on 2024-10-11 00:00:00+00:00
+[2026-06-10T23:11:13.165+0000] {standard_task_runner.py:64} INFO - Started process 12880 to run task
+[2026-06-10T23:11:13.172+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline_clima_monolitico', 'validate_belo_horizonte', 'scheduled__2024-10-11T00:00:00+00:00', '--job-id', '2425', '--raw', '--subdir', 'DAGS_FOLDER/dag_monolitico.py', '--cfg-path', '/tmp/tmp9smjpzw0']
+[2026-06-10T23:11:13.176+0000] {standard_task_runner.py:91} INFO - Job 2425: Subtask validate_belo_horizonte
+[2026-06-10T23:11:13.308+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_clima_monolitico.validate_belo_horizonte scheduled__2024-10-11T00:00:00+00:00 [running]> on host 924392a8df6f
+[2026-06-10T23:11:13.590+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_team' AIRFLOW_CTX_DAG_ID='pipeline_clima_monolitico' AIRFLOW_CTX_TASK_ID='validate_belo_horizonte' AIRFLOW_CTX_EXECUTION_DATE='2024-10-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-11T00:00:00+00:00'
+[2026-06-10T23:11:13.596+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T23:11:13.598+0000] {python.py:237} INFO - Done. Returned value was: True
+[2026-06-10T23:11:13.599+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T23:11:13.669+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline_clima_monolitico, task_id=validate_belo_horizonte, run_id=scheduled__2024-10-11T00:00:00+00:00, execution_date=20241011T000000, start_date=20260610T231113, end_date=20260610T231113
+[2026-06-10T23:11:13.752+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-10T23:11:13.781+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

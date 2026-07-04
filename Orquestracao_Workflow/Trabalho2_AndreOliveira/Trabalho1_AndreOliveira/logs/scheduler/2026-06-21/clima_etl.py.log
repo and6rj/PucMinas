@@ -1,0 +1,140 @@
+[2026-06-21T00:00:02.349+0000] {processor.py:161} INFO - Started process (PID=5867) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:00:02.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:00:02.359+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:02.359+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:00:02.396+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:00:02.488+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:02.487+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:00:02.561+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:02.560+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:00:02.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.287 seconds
+[2026-06-21T00:00:32.835+0000] {processor.py:161} INFO - Started process (PID=5919) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:00:32.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:00:32.841+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:32.841+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:00:32.871+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:00:32.943+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:32.943+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:00:33.002+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:33.002+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:00:33.068+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.247 seconds
+[2026-06-21T00:01:03.883+0000] {processor.py:161} INFO - Started process (PID=5974) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:01:03.893+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:01:03.900+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:03.899+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:01:03.944+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:01:04.089+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:04.089+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:01:04.192+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:04.191+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:01:04.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.398 seconds
+[2026-06-21T00:01:34.615+0000] {processor.py:161} INFO - Started process (PID=6026) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:01:34.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:01:34.629+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:34.628+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:01:34.671+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:01:34.765+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:34.765+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:01:34.863+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:34.863+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:01:34.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.324 seconds
+[2026-06-21T00:02:05.182+0000] {processor.py:161} INFO - Started process (PID=6077) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:02:05.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:02:05.192+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:05.192+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:02:05.231+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:02:05.393+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:05.393+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:02:05.480+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:05.479+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:02:05.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.385 seconds
+[2026-06-21T00:02:36.187+0000] {processor.py:161} INFO - Started process (PID=6129) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:02:36.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:02:36.201+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:36.200+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:02:36.274+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:02:36.409+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:36.408+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:02:36.504+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:36.503+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:02:36.617+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.457 seconds
+[2026-06-21T00:03:06.971+0000] {processor.py:161} INFO - Started process (PID=6175) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:03:06.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:03:06.985+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:06.983+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:03:07.033+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:03:07.152+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:07.152+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:03:07.232+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:07.231+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:03:07.322+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.371 seconds
+[2026-06-21T00:03:37.776+0000] {processor.py:161} INFO - Started process (PID=6227) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:03:37.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:03:37.781+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:37.781+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:03:37.829+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:03:37.935+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:37.933+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:03:38.040+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:38.040+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:03:38.125+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.361 seconds
+[2026-06-21T00:04:09.177+0000] {processor.py:161} INFO - Started process (PID=6280) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:04:09.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:04:09.185+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:09.185+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:04:09.222+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:04:09.309+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:09.308+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:04:09.358+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:09.356+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:04:09.429+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.261 seconds
+[2026-06-21T00:04:41.497+0000] {processor.py:161} INFO - Started process (PID=6330) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:04:41.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:04:41.540+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:41.536+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:04:41.698+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:04:42.384+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:42.382+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:04:43.065+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:43.064+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:04:43.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 2.129 seconds
+[2026-06-21T00:05:14.301+0000] {processor.py:161} INFO - Started process (PID=6383) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:05:14.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:05:14.307+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:14.306+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:05:14.372+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:05:14.485+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:14.484+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:05:14.570+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:14.570+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:05:14.640+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.370 seconds
+[2026-06-21T00:05:45.047+0000] {processor.py:161} INFO - Started process (PID=6429) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:05:45.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:05:45.090+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:45.087+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:05:45.151+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:05:45.332+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:45.328+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:05:45.473+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:45.466+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:05:45.559+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.530 seconds
+[2026-06-21T00:06:16.355+0000] {processor.py:161} INFO - Started process (PID=6481) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:06:16.361+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:06:16.366+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:16.366+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:06:16.418+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:06:16.595+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:16.595+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:06:16.680+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:16.679+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:06:16.753+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.424 seconds
+[2026-06-21T00:06:46.899+0000] {processor.py:161} INFO - Started process (PID=6530) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:06:46.901+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:06:46.916+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:46.915+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:06:46.947+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:06:47.049+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:47.048+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:06:47.099+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:47.099+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:06:47.139+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.253 seconds
+[2026-06-21T00:07:17.488+0000] {processor.py:161} INFO - Started process (PID=6582) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:07:17.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:07:17.494+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:17.493+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:07:17.523+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:07:17.766+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:17.766+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:07:17.844+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:17.844+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:07:17.945+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.472 seconds
+[2026-06-21T00:07:48.461+0000] {processor.py:161} INFO - Started process (PID=6635) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:07:48.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:07:48.680+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:48.679+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:07:49.046+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:07:49.303+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:49.302+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:07:49.345+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:49.345+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:07:49.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.951 seconds
+[2026-06-21T00:08:19.570+0000] {processor.py:161} INFO - Started process (PID=6686) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:08:19.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:08:19.603+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:19.602+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:08:19.783+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:08:19.963+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:19.963+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:08:20.026+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:20.025+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:08:20.346+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.789 seconds
+[2026-06-21T00:08:50.917+0000] {processor.py:161} INFO - Started process (PID=6735) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:08:50.952+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:08:50.954+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:50.954+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:08:50.975+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:08:51.023+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:51.022+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:08:51.058+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:51.057+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:08:51.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.200 seconds
+[2026-06-21T00:09:21.758+0000] {processor.py:161} INFO - Started process (PID=6788) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:09:21.775+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:09:21.778+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:21.777+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:09:21.809+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:09:21.927+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:21.927+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:09:21.983+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:21.983+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:09:22.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 0.301 seconds
+[2026-06-21T00:09:52.610+0000] {processor.py:161} INFO - Started process (PID=6840) to work on /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:09:52.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/clima_etl.py for tasks to queue
+[2026-06-21T00:09:52.612+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:52.612+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:09:52.623+0000] {processor.py:840} INFO - DAG(s) 'clima_etl' retrieved from /opt/airflow/dags/clima_etl.py
+[2026-06-21T00:09:53.207+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:53.207+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:09:53.424+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:53.424+0000] {dag.py:3947} INFO - Setting next_dagrun for clima_etl to 2026-06-20 06:00:00+00:00, run_after=2026-06-21 06:00:00+00:00
+[2026-06-21T00:09:57.104+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/clima_etl.py took 4.521 seconds

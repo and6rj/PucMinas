@@ -1,0 +1,138 @@
+[2026-06-21T00:00:03.707+0000] {processor.py:161} INFO - Started process (PID=5877) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:00:03.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:00:03.714+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:03.712+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:00:03.736+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:00:03.833+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:03.833+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:00:03.879+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:03.879+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:00:03.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.278 seconds
+[2026-06-21T00:00:34.202+0000] {processor.py:161} INFO - Started process (PID=5929) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:00:34.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:00:34.213+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:34.213+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:00:34.232+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:00:34.336+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:34.336+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:00:34.387+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:34.385+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:00:34.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.273 seconds
+[2026-06-21T00:01:05.312+0000] {processor.py:161} INFO - Started process (PID=5981) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:01:05.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:01:05.321+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:05.320+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:01:05.352+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:01:05.479+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:05.478+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:01:05.532+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:05.531+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:01:05.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.315 seconds
+[2026-06-21T00:01:35.992+0000] {processor.py:161} INFO - Started process (PID=6033) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:01:35.994+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:01:36.000+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:35.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:01:36.022+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:01:36.117+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:36.116+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:01:36.148+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:36.148+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:01:36.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.257 seconds
+[2026-06-21T00:02:06.581+0000] {processor.py:161} INFO - Started process (PID=6084) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:02:06.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:02:06.590+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:06.588+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:02:06.621+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:02:06.756+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:06.754+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:02:06.791+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:06.791+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:02:06.895+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.327 seconds
+[2026-06-21T00:02:37.765+0000] {processor.py:161} INFO - Started process (PID=6136) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:02:37.770+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:02:37.775+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:37.774+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:02:37.802+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:02:37.944+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:37.943+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:02:38.038+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:38.038+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:02:38.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.434 seconds
+[2026-06-21T00:03:08.392+0000] {processor.py:161} INFO - Started process (PID=6182) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:03:08.395+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:03:08.398+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:08.397+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:03:08.422+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:03:08.532+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:08.531+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:03:08.579+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:08.578+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:03:08.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.276 seconds
+[2026-06-21T00:03:39.233+0000] {processor.py:161} INFO - Started process (PID=6234) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:03:39.237+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:03:39.251+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:39.250+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:03:39.308+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:03:39.474+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:39.474+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:03:39.559+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:39.557+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:03:39.629+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.418 seconds
+[2026-06-21T00:04:10.268+0000] {processor.py:161} INFO - Started process (PID=6287) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:04:10.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:04:10.275+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:10.274+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:04:10.294+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:04:10.398+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:10.397+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:04:10.447+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:10.446+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:04:10.527+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.330 seconds
+[2026-06-21T00:04:44.024+0000] {processor.py:161} INFO - Started process (PID=6337) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:04:44.028+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:04:44.038+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:44.036+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:04:44.127+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:04:44.475+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:44.474+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:04:44.608+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:44.608+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:04:44.827+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.814 seconds
+[2026-06-21T00:05:15.734+0000] {processor.py:161} INFO - Started process (PID=6390) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:05:15.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:05:15.741+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:15.741+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:05:15.769+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:05:15.889+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:15.888+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:05:15.926+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:15.926+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:05:16.001+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.293 seconds
+[2026-06-21T00:05:46.809+0000] {processor.py:161} INFO - Started process (PID=6442) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:05:46.865+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:05:46.870+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:46.870+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:05:46.898+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:05:47.037+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:47.036+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:05:47.124+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:47.124+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:05:47.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.467 seconds
+[2026-06-21T00:06:17.915+0000] {processor.py:161} INFO - Started process (PID=6488) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:06:17.919+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:06:17.928+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:17.923+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:06:17.958+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:06:18.066+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:18.065+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:06:18.098+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:18.098+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:06:18.163+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.291 seconds
+[2026-06-21T00:06:48.249+0000] {processor.py:161} INFO - Started process (PID=6540) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:06:48.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:06:48.256+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:48.256+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:06:48.278+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:06:48.377+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:48.375+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:06:48.406+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:48.406+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:06:48.452+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.223 seconds
+[2026-06-21T00:07:19.029+0000] {processor.py:161} INFO - Started process (PID=6592) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:07:19.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:07:19.035+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:19.034+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:07:19.048+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:07:19.149+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:19.149+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:07:19.174+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:19.173+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:07:19.224+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.209 seconds
+[2026-06-21T00:07:49.450+0000] {processor.py:161} INFO - Started process (PID=6642) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:07:49.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:07:49.454+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:49.453+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:07:49.466+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:07:49.532+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:49.532+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:07:49.553+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:49.552+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:07:49.589+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.150 seconds
+[2026-06-21T00:08:20.503+0000] {processor.py:161} INFO - Started process (PID=6694) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:08:20.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:08:20.530+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:20.530+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:08:20.557+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:08:20.848+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:20.847+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:08:20.883+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:20.883+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:08:21.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.686 seconds
+[2026-06-21T00:08:52.174+0000] {processor.py:161} INFO - Started process (PID=6742) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:08:52.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:08:52.178+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:52.178+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:08:52.189+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:08:52.265+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:52.265+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:08:52.286+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:52.286+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:08:52.317+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.164 seconds
+[2026-06-21T00:09:23.115+0000] {processor.py:161} INFO - Started process (PID=6795) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:09:23.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:09:23.145+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:23.145+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:09:23.163+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:09:23.316+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:23.316+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:09:23.343+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:23.342+0000] {dag.py:3947} INFO - Setting next_dagrun for callbacks_example to None, run_after=None
+[2026-06-21T00:09:23.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/callback_sucesso_falha.py took 0.379 seconds
+[2026-06-21T00:09:57.174+0000] {processor.py:161} INFO - Started process (PID=6847) to work on /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:09:57.576+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/callback_sucesso_falha.py for tasks to queue
+[2026-06-21T00:09:57.579+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:57.579+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:09:57.722+0000] {processor.py:840} INFO - DAG(s) 'callbacks_example' retrieved from /opt/airflow/dags/callback_sucesso_falha.py
+[2026-06-21T00:10:01.882+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:10:01.882+0000] {process_utils.py:263} INFO - Waiting up to 5 seconds for processes to exit...

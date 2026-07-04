@@ -1,0 +1,19 @@
+[2026-06-28T18:48:37.730+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-28T18:48:37.774+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.analise.calcular_metricas manual__2026-06-28T18:33:37.649899+00:00 map_index=1 [queued]>
+[2026-06-28T18:48:37.796+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shopbrasil_panorama_precos.analise.calcular_metricas manual__2026-06-28T18:33:37.649899+00:00 map_index=1 [queued]>
+[2026-06-28T18:48:37.796+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2026-06-28T18:48:37.812+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): analise.calcular_metricas> on 2026-06-28 18:33:37.649899+00:00
+[2026-06-28T18:48:37.815+0000] {standard_task_runner.py:64} INFO - Started process 25212 to run task
+[2026-06-28T18:48:37.818+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'shopbrasil_panorama_precos', 'analise.calcular_metricas', 'manual__2026-06-28T18:33:37.649899+00:00', '--job-id', '797', '--raw', '--subdir', 'DAGS_FOLDER/shopbrasil_panorama_precos.py', '--cfg-path', '/tmp/tmptt58dztt', '--map-index', '1']
+[2026-06-28T18:48:37.821+0000] {standard_task_runner.py:91} INFO - Job 797: Subtask analise.calcular_metricas
+[2026-06-28T18:48:37.898+0000] {task_command.py:426} INFO - Running <TaskInstance: shopbrasil_panorama_precos.analise.calcular_metricas manual__2026-06-28T18:33:37.649899+00:00 map_index=1 [running]> on host cc8c651b391b
+[2026-06-28T18:48:38.269+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='shopbrasil_data' AIRFLOW_CTX_DAG_ID='shopbrasil_panorama_precos' AIRFLOW_CTX_TASK_ID='analise.calcular_metricas' AIRFLOW_CTX_EXECUTION_DATE='2026-06-28T18:33:37.649899+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-28T18:33:37.649899+00:00'
+[2026-06-28T18:48:38.269+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-28T18:48:38.271+0000] {shopbrasil_panorama_precos.py:240} INFO - Calculando métricas — categoria=jewelery | pool=ecommerce_pool
+[2026-06-28T18:48:38.271+0000] {transform.py:40} INFO - ✓ jewelery — médio=221.00 | min=9.99 | max=695.00 | qtd=4
+[2026-06-28T18:48:38.272+0000] {python.py:237} INFO - Done. Returned value was: {'categoria': 'jewelery', 'preco_medio': 221.0, 'preco_min': 9.99, 'preco_max': 695.0, 'qtd_produtos': 4}
+[2026-06-28T18:48:38.272+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-28T18:48:38.333+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=shopbrasil_panorama_precos, task_id=analise.calcular_metricas, run_id=manual__2026-06-28T18:33:37.649899+00:00, map_index=1, execution_date=20260628T183337, start_date=20260628T184837, end_date=20260628T184838
+[2026-06-28T18:48:38.380+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-28T18:48:38.425+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-28T18:48:38.429+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

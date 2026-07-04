@@ -1,0 +1,17 @@
+[2026-06-10T21:13:35.247+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T21:13:35.280+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_files_dynamic.list_files manual__2026-06-10T21:13:33.918835+00:00 [queued]>
+[2026-06-10T21:13:35.286+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_files_dynamic.list_files manual__2026-06-10T21:13:33.918835+00:00 [queued]>
+[2026-06-10T21:13:35.286+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-10T21:13:35.296+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): list_files> on 2026-06-10 21:13:33.918835+00:00
+[2026-06-10T21:13:35.302+0000] {standard_task_runner.py:64} INFO - Started process 1032 to run task
+[2026-06-10T21:13:35.306+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_files_dynamic', 'list_files', 'manual__2026-06-10T21:13:33.918835+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/com_dinamic_mapping.py', '--cfg-path', '/tmp/tmpoak4zeyq']
+[2026-06-10T21:13:35.307+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask list_files
+[2026-06-10T21:13:35.371+0000] {task_command.py:426} INFO - Running <TaskInstance: process_files_dynamic.list_files manual__2026-06-10T21:13:33.918835+00:00 [running]> on host d9bb0f8c9833
+[2026-06-10T21:13:35.499+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_files_dynamic' AIRFLOW_CTX_TASK_ID='list_files' AIRFLOW_CTX_EXECUTION_DATE='2026-06-10T21:13:33.918835+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-10T21:13:33.918835+00:00'
+[2026-06-10T21:13:35.501+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T21:13:35.502+0000] {python.py:237} INFO - Done. Returned value was: ['arquivo_1.csv', 'arquivo_2.csv', 'arquivo_3.csv']
+[2026-06-10T21:13:35.502+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T21:13:35.656+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_files_dynamic, task_id=list_files, run_id=manual__2026-06-10T21:13:33.918835+00:00, execution_date=20260610T211333, start_date=20260610T211335, end_date=20260610T211335
+[2026-06-10T21:13:35.720+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-10T21:13:35.812+0000] {taskinstance.py:3503} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2026-06-10T21:13:35.815+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

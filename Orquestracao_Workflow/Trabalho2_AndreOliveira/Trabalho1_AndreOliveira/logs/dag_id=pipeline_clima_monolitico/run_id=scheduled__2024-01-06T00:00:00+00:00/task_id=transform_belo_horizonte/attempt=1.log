@@ -1,0 +1,64 @@
+[2026-06-10T22:09:45.158+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T22:09:45.342+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.transform_belo_horizonte scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2026-06-10T22:09:45.370+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.transform_belo_horizonte scheduled__2024-01-06T00:00:00+00:00 [queued]>
+[2026-06-10T22:09:45.371+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-10T22:09:45.410+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): transform_belo_horizonte> on 2024-01-06 00:00:00+00:00
+[2026-06-10T22:09:45.446+0000] {standard_task_runner.py:64} INFO - Started process 972 to run task
+[2026-06-10T22:09:45.456+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline_clima_monolitico', 'transform_belo_horizonte', 'scheduled__2024-01-06T00:00:00+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/dag_monolitico.py', '--cfg-path', '/tmp/tmpbj7xjt_2']
+[2026-06-10T22:09:45.466+0000] {standard_task_runner.py:91} INFO - Job 128: Subtask transform_belo_horizonte
+[2026-06-10T22:09:45.723+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_clima_monolitico.transform_belo_horizonte scheduled__2024-01-06T00:00:00+00:00 [running]> on host 924392a8df6f
+[2026-06-10T22:09:46.242+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_team' AIRFLOW_CTX_DAG_ID='pipeline_clima_monolitico' AIRFLOW_CTX_TASK_ID='transform_belo_horizonte' AIRFLOW_CTX_EXECUTION_DATE='2024-01-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-01-06T00:00:00+00:00'
+[2026-06-10T22:09:46.244+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T22:09:46.304+0000] {python.py:237} INFO - Done. Returned value was: [{'hora': Timestamp('2026-06-10 00:00:00'), 'temperatura_c': 18.2, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 01:00:00'), 'temperatura_c': 17.2, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 02:00:00'), 'temperatura_c': 16.1, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 03:00:00'), 'temperatura_c': 15.5, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 04:00:00'), 'temperatura_c': 15.3, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 05:00:00'), 'temperatura_c': 14.6, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 06:00:00'), 'temperatura_c': 13.9, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 07:00:00'), 'temperatura_c': 13.4, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 08:00:00'), 'temperatura_c': 13.3, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 09:00:00'), 'temperatura_c': 13.1, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 10:00:00'), 'temperatura_c': 13.6, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 11:00:00'), 'temperatura_c': 16.1, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 12:00:00'), 'temperatura_c': 19.8, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 13:00:00'), 'temperatura_c': 22.5, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 14:00:00'), 'temperatura_c': 24.1, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 15:00:00'), 'temperatura_c': 25.1, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 16:00:00'), 'temperatura_c': 25.7, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 17:00:00'), 'temperatura_c': 26.0, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 18:00:00'), 'temperatura_c': 26.2, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 19:00:00'), 'temperatura_c': 25.4, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 20:00:00'), 'temperatura_c': 24.2, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 21:00:00'), 'temperatura_c': 22.3, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 22:00:00'), 'temperatura_c': 21.6, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}, {'hora': Timestamp('2026-06-10 23:00:00'), 'temperatura_c': 20.5, 'precipitacao_mm': 0.0, 'cidade': 'Belo Horizonte'}]
+[2026-06-10T22:09:46.317+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T22:09:46.374+0000] {xcom.py:675} ERROR - Object of type Timestamp is not JSON serializable. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config or make sure to decorate your object with attr.
+[2026-06-10T22:09:46.397+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/json.py", line 91, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/serialization/serde.py", line 189, in serialize
+    raise TypeError(f"cannot serialize object of type {cls}")
+TypeError: cannot serialize object of type <class 'pandas._libs.tslibs.timestamps.Timestamp'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 486, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3197, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/xcom.py", line 246, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/xcom.py", line 673, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/json.py", line 104, in encode
+    return super().encode(o)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/json.py", line 93, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+[2026-06-10T22:09:46.476+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=pipeline_clima_monolitico, task_id=transform_belo_horizonte, run_id=scheduled__2024-01-06T00:00:00+00:00, execution_date=20240106T000000, start_date=20260610T220945, end_date=20260610T220946
+[2026-06-10T22:09:46.517+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 128 for task transform_belo_horizonte (Object of type Timestamp is not JSON serializable; 972)
+[2026-06-10T22:09:46.589+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-10T22:09:46.631+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

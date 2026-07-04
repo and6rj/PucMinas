@@ -1,0 +1,263 @@
+[2026-06-30T00:00:22.530+0000] {processor.py:161} INFO - Started process (PID=693) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:00:22.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:00:22.536+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:00:22.535+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:00:22.713+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:00:24.925+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:00:24.924+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:00:24.983+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:00:24.983+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:00:25.451+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 2.932 seconds
+[2026-06-30T00:01:00.833+0000] {processor.py:161} INFO - Started process (PID=703) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:01:01.264+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:01:01.272+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:01:01.270+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:01:01.318+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:01:02.845+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:01:02.844+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:01:02.917+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:01:02.917+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:01:03.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 3.192 seconds
+[2026-06-30T00:01:36.570+0000] {processor.py:161} INFO - Started process (PID=714) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:01:36.572+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:01:36.577+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:01:36.576+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:01:36.719+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:01:40.687+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:01:40.687+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:01:40.934+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:01:40.933+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:01:41.303+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 4.760 seconds
+[2026-06-30T00:02:13.910+0000] {processor.py:161} INFO - Started process (PID=719) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:02:14.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:02:14.044+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:02:14.043+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:02:14.180+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:03:53.789+0000] {processor.py:161} INFO - Started process (PID=733) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:03:55.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:03:56.008+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:03:55.886+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:04:08.131+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:05:48.655+0000] {processor.py:161} INFO - Started process (PID=736) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:05:49.387+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:05:49.391+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:05:49.389+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:06:20.837+0000] {processor.py:161} INFO - Started process (PID=750) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:06:20.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:06:20.926+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:06:20.925+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:06:20.940+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:06:21.763+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:06:21.763+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:06:21.810+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:06:21.810+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:06:22.836+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 2.004 seconds
+[2026-06-30T00:06:53.906+0000] {processor.py:161} INFO - Started process (PID=760) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:06:54.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:06:54.162+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:06:54.162+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:06:54.178+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:06:54.234+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:06:54.232+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:06:54.261+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:06:54.261+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:06:54.290+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.391 seconds
+[2026-06-30T00:07:24.554+0000] {processor.py:161} INFO - Started process (PID=772) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:07:24.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:07:24.556+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:07:24.556+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:07:24.571+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:07:24.613+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:07:24.612+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:07:24.639+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:07:24.639+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:07:24.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.118 seconds
+[2026-06-30T00:07:55.697+0000] {processor.py:161} INFO - Started process (PID=783) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:07:55.727+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:07:55.729+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:07:55.728+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:07:55.744+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:07:55.784+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:07:55.784+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:07:55.810+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:07:55.809+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:07:55.839+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.148 seconds
+[2026-06-30T00:08:26.973+0000] {processor.py:161} INFO - Started process (PID=794) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:08:26.974+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:08:26.975+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:08:26.975+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:08:26.991+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:08:27.032+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:08:27.032+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:08:27.053+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:08:27.052+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:08:27.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.118 seconds
+[2026-06-30T00:08:57.128+0000] {processor.py:161} INFO - Started process (PID=805) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:08:57.130+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:08:57.131+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:08:57.130+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:08:57.145+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:08:57.183+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:08:57.183+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:08:57.206+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:08:57.206+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:08:57.233+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.110 seconds
+[2026-06-30T00:09:28.135+0000] {processor.py:161} INFO - Started process (PID=816) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:09:28.136+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:09:28.137+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:09:28.137+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:09:28.152+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:09:28.193+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:09:28.193+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:09:28.215+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:09:28.214+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:09:28.240+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.113 seconds
+[2026-06-30T00:09:59.775+0000] {processor.py:161} INFO - Started process (PID=827) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:09:59.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:09:59.795+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:09:59.794+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:09:59.809+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:09:59.851+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:09:59.850+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:09:59.873+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:09:59.872+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:09:59.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.130 seconds
+[2026-06-30T00:10:30.234+0000] {processor.py:161} INFO - Started process (PID=838) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:10:30.235+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:10:30.236+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:10:30.236+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:10:30.251+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:10:30.294+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:10:30.294+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:10:30.316+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:10:30.315+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:10:30.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.114 seconds
+[2026-06-30T00:11:00.847+0000] {processor.py:161} INFO - Started process (PID=849) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:11:00.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:11:00.849+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:11:00.849+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:11:00.866+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:11:00.918+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:11:00.917+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:11:00.955+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:11:00.954+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:11:00.986+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.146 seconds
+[2026-06-30T00:11:31.856+0000] {processor.py:161} INFO - Started process (PID=860) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:11:31.856+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:11:31.857+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:11:31.857+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:11:31.871+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:11:31.910+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:11:31.909+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:11:31.938+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:11:31.938+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:11:31.962+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.112 seconds
+[2026-06-30T00:12:02.846+0000] {processor.py:161} INFO - Started process (PID=871) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:12:02.848+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:12:02.849+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:12:02.848+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:12:02.870+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:12:02.912+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:12:02.912+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:12:02.934+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:12:02.934+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:12:02.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.130 seconds
+[2026-06-30T00:12:33.900+0000] {processor.py:161} INFO - Started process (PID=882) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:12:33.901+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:12:33.902+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:12:33.902+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:12:33.917+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:12:33.966+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:12:33.965+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:12:34.001+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:12:34.001+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:12:34.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.209 seconds
+[2026-06-30T00:13:05.810+0000] {processor.py:161} INFO - Started process (PID=893) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:13:05.813+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:13:05.815+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:13:05.814+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:13:05.886+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:13:06.176+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:13:06.175+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:13:06.713+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:13:06.713+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:13:08.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 2.241 seconds
+[2026-06-30T00:13:38.085+0000] {processor.py:161} INFO - Started process (PID=904) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:13:38.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:13:38.088+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:13:38.087+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:13:38.111+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:13:38.182+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:13:38.181+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:13:38.218+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:13:38.218+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:13:38.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.296 seconds
+[2026-06-30T00:14:09.266+0000] {processor.py:161} INFO - Started process (PID=909) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:14:09.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:14:09.269+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:14:09.268+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:14:09.287+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:14:09.331+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:14:09.331+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:14:09.351+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:14:09.351+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:14:09.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.251 seconds
+[2026-06-30T00:14:40.429+0000] {processor.py:161} INFO - Started process (PID=920) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:14:40.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:14:40.431+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:14:40.430+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:14:40.445+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:14:40.482+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:14:40.481+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:14:40.501+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:14:40.501+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:14:40.527+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.103 seconds
+[2026-06-30T00:15:11.237+0000] {processor.py:161} INFO - Started process (PID=931) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:15:11.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:15:11.240+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:15:11.239+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:15:11.256+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:15:11.298+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:15:11.297+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:15:11.324+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:15:11.324+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:15:11.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.118 seconds
+[2026-06-30T00:15:41.510+0000] {processor.py:161} INFO - Started process (PID=942) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:15:41.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:15:41.512+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:15:41.512+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:15:41.528+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:15:41.570+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:15:41.569+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:15:41.593+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:15:41.592+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:15:41.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.121 seconds
+[2026-06-30T00:16:12.219+0000] {processor.py:161} INFO - Started process (PID=954) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:16:12.220+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:16:12.221+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:16:12.221+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:16:12.236+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:16:12.289+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:16:12.289+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:16:12.311+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:16:12.311+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:16:12.333+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.119 seconds
+[2026-06-30T00:16:42.735+0000] {processor.py:161} INFO - Started process (PID=965) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:16:42.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:16:42.742+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:16:42.741+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:16:42.834+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:16:43.041+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:16:43.041+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:16:43.079+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:16:43.078+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:16:43.115+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.390 seconds
+[2026-06-30T00:17:13.249+0000] {processor.py:161} INFO - Started process (PID=976) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:17:13.250+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:17:13.251+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:17:13.250+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:17:13.268+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:17:13.311+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:17:13.311+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:17:13.336+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:17:13.336+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:17:13.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.118 seconds
+[2026-06-30T00:17:44.163+0000] {processor.py:161} INFO - Started process (PID=987) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:17:44.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:17:44.165+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:17:44.164+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:17:44.179+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:17:44.216+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:17:44.216+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:17:44.235+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:17:44.235+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:17:44.264+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.106 seconds
+[2026-06-30T00:18:14.892+0000] {processor.py:161} INFO - Started process (PID=998) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:18:14.893+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:18:14.894+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:18:14.893+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:18:14.906+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:18:14.944+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:18:14.943+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:18:14.964+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:18:14.964+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:18:14.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.112 seconds
+[2026-06-30T00:18:45.396+0000] {processor.py:161} INFO - Started process (PID=1009) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:18:45.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:18:45.402+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:18:45.402+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:18:45.416+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:18:45.454+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:18:45.454+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:18:45.475+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:18:45.475+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:18:45.503+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.112 seconds
+[2026-06-30T00:19:15.580+0000] {processor.py:161} INFO - Started process (PID=1020) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:19:15.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:19:15.582+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:19:15.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:19:15.596+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:19:15.637+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:19:15.637+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:19:15.658+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:19:15.658+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:19:15.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.111 seconds
+[2026-06-30T00:19:46.322+0000] {processor.py:161} INFO - Started process (PID=1031) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:19:46.322+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:19:46.323+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:19:46.323+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:19:46.336+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:19:46.375+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:19:46.374+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:19:46.396+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:19:46.396+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:19:46.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.106 seconds
+[2026-06-30T00:20:16.514+0000] {processor.py:161} INFO - Started process (PID=1042) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:20:16.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:20:16.516+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:20:16.516+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:20:16.530+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:20:16.569+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:20:16.568+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:20:16.591+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:20:16.590+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:20:16.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.113 seconds
+[2026-06-30T00:20:47.018+0000] {processor.py:161} INFO - Started process (PID=1053) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:20:47.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T00:20:47.020+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:20:47.019+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:20:47.033+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T00:20:47.072+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:20:47.072+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T00:20:47.096+0000] {logging_mixin.py:188} INFO - [2026-06-30T00:20:47.095+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T00:20:47.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.111 seconds
+[2026-06-30T01:38:56.267+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:38:56.342+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T01:38:56.348+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:38:56.347+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:38:56.450+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:38:56.604+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:38:56.604+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T01:38:56.668+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:38:56.668+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T01:38:56.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.460 seconds
+[2026-06-30T01:39:27.299+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:39:27.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T01:39:27.513+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:39:27.513+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:39:27.598+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:39:27.987+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:39:27.987+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T01:39:28.008+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:39:28.007+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T01:39:28.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.882 seconds
+[2026-06-30T01:39:58.375+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:39:58.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T01:39:58.379+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:39:58.379+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:39:58.393+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:39:58.449+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:39:58.447+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T01:39:58.651+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:39:58.651+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T01:39:58.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.309 seconds
+[2026-06-30T01:56:34.328+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:56:34.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/shopbrasil_panorama_precos.py for tasks to queue
+[2026-06-30T01:56:34.356+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:56:34.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:56:34.374+0000] {processor.py:840} INFO - DAG(s) 'shopbrasil_panorama_precos' retrieved from /opt/airflow/dags/shopbrasil_panorama_precos.py
+[2026-06-30T01:56:34.419+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:56:34.419+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-30T01:56:34.454+0000] {logging_mixin.py:188} INFO - [2026-06-30T01:56:34.454+0000] {dag.py:3947} INFO - Setting next_dagrun for shopbrasil_panorama_precos to 2026-06-30 09:00:00+00:00, run_after=2026-06-30 09:00:00+00:00
+[2026-06-30T01:56:34.498+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/shopbrasil_panorama_precos.py took 0.179 seconds

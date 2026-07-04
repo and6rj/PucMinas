@@ -1,0 +1,79 @@
+# =============================================================================
+# PROJETO: airflow-workers (versão dinâmica / escalável)
+# Serviços: airflow-worker (quantidade definida em tempo de execução via --scale)
+#
+# Pipeline monitorado:
+#   shopbrasil_panorama_precos  (fila Celery: shopbrasil)
+#   DAG: ../airflow-scheduler/dags/shopbrasil_panorama_precos.py
+#   Plugins: ../airflow-scheduler/plugins/shopbrasil/
+#
+# Pré-requisito: projeto airflow-scheduler já deve estar rodando.
+# Antes de subir esta versão, derrube os workers fixos:
+#   docker compose -f docker-compose-workers.yaml down
+#
+# Como usar (rodar de dentro da pasta airflow-workers/):
+#
+#   Subir com N workers:
+#     docker compose -f docker-compose-workers-dynamic.yaml up -d --scale airflow-worker=5
+#
+#   Aumentar sem derrubar os que já estão rodando:
+#     docker compose -f docker-compose-workers-dynamic.yaml up -d --no-recreate --scale airflow-worker=8
+#
+#   Reduzir workers:
+#     docker compose -f docker-compose-workers-dynamic.yaml up -d --scale airflow-worker=2
+#
+#   Derrubar todos os workers:
+#     docker compose -f docker-compose-workers-dynamic.yaml down
+# =============================================================================
+
+name: airflow-workers
+
+services:
+
+  airflow-worker:
+    image: apache/airflow:2.10.3
+    user: "${AIRFLOW_UID:-50000}:0"
+    env_file:
+      - .env
+    environment:
+      AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+
+      # Metadados + broker do projeto airflow-scheduler
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres:5432/airflow
+      AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@airflow-postgres:5432/airflow
+      AIRFLOW__CELERY__BROKER_URL: redis://airflow-redis:6379/0
+
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DEFAULT_TIMEZONE: America/Sao_Paulo
+
+      # requests para FakeStore API (postgres provider já vem na imagem 2.10.3)
+      _PIP_ADDITIONAL_REQUIREMENTS: "requests==2.32.3"
+
+    # Consome a fila da DAG ShopBrasil (default_args.queue = "shopbrasil")
+    # e a fila default (DAGs de exemplo em dags/exemplos/)
+    command: celery worker -q shopbrasil,default
+
+    volumes:
+      # Mapeia a DAG shopbrasil_panorama_precos.py e demais DAGs do scheduler
+      - ../airflow-scheduler/dags:/opt/airflow/dags
+      - ../airflow-scheduler/logs:/opt/airflow/logs
+      # Plugins shopbrasil (validate, transform, load, callbacks, ...)
+      - ../airflow-scheduler/plugins:/opt/airflow/plugins
+
+    healthcheck:
+      test:
+        - "CMD-SHELL"
+        - 'celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 45s
+
+    networks:
+      - scheduler-net
+
+networks:
+  scheduler-net:
+    external: true
+    name: airflow-scheduler_airflow-net

@@ -1,0 +1,45 @@
+[2026-06-10T22:30:11.951+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T22:30:11.996+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.fetch_sao_paulo scheduled__2024-03-26T00:00:00+00:00 [queued]>
+[2026-06-10T22:30:12.008+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_clima_monolitico.fetch_sao_paulo scheduled__2024-03-26T00:00:00+00:00 [queued]>
+[2026-06-10T22:30:12.008+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-10T22:30:12.023+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_sao_paulo> on 2024-03-26 00:00:00+00:00
+[2026-06-10T22:30:12.032+0000] {standard_task_runner.py:64} INFO - Started process 4363 to run task
+[2026-06-10T22:30:12.035+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline_clima_monolitico', 'fetch_sao_paulo', 'scheduled__2024-03-26T00:00:00+00:00', '--job-id', '700', '--raw', '--subdir', 'DAGS_FOLDER/dag_monolitico.py', '--cfg-path', '/tmp/tmplg285k5r']
+[2026-06-10T22:30:12.038+0000] {standard_task_runner.py:91} INFO - Job 700: Subtask fetch_sao_paulo
+[2026-06-10T22:30:12.104+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_clima_monolitico.fetch_sao_paulo scheduled__2024-03-26T00:00:00+00:00 [running]> on host 924392a8df6f
+[2026-06-10T22:30:12.213+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_team' AIRFLOW_CTX_DAG_ID='pipeline_clima_monolitico' AIRFLOW_CTX_TASK_ID='fetch_sao_paulo' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-26T00:00:00+00:00'
+[2026-06-10T22:30:12.214+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T22:30:12.977+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T22:30:12.978+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dag_monolitico.py", line 39, in fetch_sao_paulo
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=-23.5505&longitude=-46.6333&hourly=temperature_2m%2Cprecipitation&forecast_days=1
+[2026-06-10T22:30:12.991+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=pipeline_clima_monolitico, task_id=fetch_sao_paulo, run_id=scheduled__2024-03-26T00:00:00+00:00, execution_date=20240326T000000, start_date=20260610T223011, end_date=20260610T223012
+[2026-06-10T22:30:13.025+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 700 for task fetch_sao_paulo (429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=-23.5505&longitude=-46.6333&hourly=temperature_2m%2Cprecipitation&forecast_days=1; 4363)
+[2026-06-10T22:30:13.050+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-06-10T22:30:13.081+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-10T22:30:13.087+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

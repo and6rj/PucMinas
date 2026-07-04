@@ -1,0 +1,21 @@
+[2026-06-10T23:36:06.799+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-10T23:36:06.835+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: clima_etl.carregar manual__2026-06-10T23:36:01.676481+00:00 [queued]>
+[2026-06-10T23:36:06.842+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: clima_etl.carregar manual__2026-06-10T23:36:01.676481+00:00 [queued]>
+[2026-06-10T23:36:06.842+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 3
+[2026-06-10T23:36:06.856+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): carregar> on 2026-06-10 23:36:01.676481+00:00
+[2026-06-10T23:36:06.861+0000] {standard_task_runner.py:64} INFO - Started process 15106 to run task
+[2026-06-10T23:36:06.864+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'clima_etl', 'carregar', 'manual__2026-06-10T23:36:01.676481+00:00', '--job-id', '2491', '--raw', '--subdir', 'DAGS_FOLDER/clima_etl.py', '--cfg-path', '/tmp/tmpor2ztadc']
+[2026-06-10T23:36:06.864+0000] {standard_task_runner.py:91} INFO - Job 2491: Subtask carregar
+[2026-06-10T23:36:06.935+0000] {task_command.py:426} INFO - Running <TaskInstance: clima_etl.carregar manual__2026-06-10T23:36:01.676481+00:00 [running]> on host 924392a8df6f
+[2026-06-10T23:36:07.190+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lab' AIRFLOW_CTX_DAG_ID='clima_etl' AIRFLOW_CTX_TASK_ID='carregar' AIRFLOW_CTX_EXECUTION_DATE='2026-06-10T23:36:01.676481+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-10T23:36:01.676481+00:00'
+[2026-06-10T23:36:07.190+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-10T23:36:07.217+0000] {base.py:84} INFO - Using connection ID 'postgres_lab' for task execution.
+[2026-06-10T23:36:07.227+0000] {clima_etl.py:200} INFO - Idempotência: 72 registros anteriores removidos para 2026-06-10
+[2026-06-10T23:36:07.236+0000] {clima_etl.py:222} INFO - ✓ 72 registros inseridos na tabela 'clima'
+[2026-06-10T23:36:07.236+0000] {clima_etl.py:223} INFO -   run_id: manual__2026-06-10T23:36:01.676481+00:00 | data: 2026-06-10
+[2026-06-10T23:36:07.236+0000] {python.py:237} INFO - Done. Returned value was: 72
+[2026-06-10T23:36:07.236+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-10T23:36:07.266+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=clima_etl, task_id=carregar, run_id=manual__2026-06-10T23:36:01.676481+00:00, execution_date=20260610T233601, start_date=20260610T233606, end_date=20260610T233607
+[2026-06-10T23:36:07.318+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-06-10T23:36:07.352+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-06-10T23:36:07.354+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

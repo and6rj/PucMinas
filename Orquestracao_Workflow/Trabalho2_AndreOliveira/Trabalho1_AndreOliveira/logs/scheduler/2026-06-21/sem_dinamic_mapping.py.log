@@ -1,0 +1,133 @@
+[2026-06-21T00:00:06.703+0000] {processor.py:161} INFO - Started process (PID=5903) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:00:06.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:00:06.711+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:06.710+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:00:06.725+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:00:06.840+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:06.840+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:00:06.867+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:06.866+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:00:06.906+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.218 seconds
+[2026-06-21T00:00:37.874+0000] {processor.py:161} INFO - Started process (PID=5949) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:00:37.876+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:00:37.882+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:37.881+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:00:37.899+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:00:37.999+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:37.998+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:00:38.035+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:00:38.033+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:00:38.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.223 seconds
+[2026-06-21T00:01:08.744+0000] {processor.py:161} INFO - Started process (PID=6001) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:01:08.747+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:01:08.751+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:08.751+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:01:08.769+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:01:08.852+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:08.851+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:01:08.886+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:08.885+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:01:08.943+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.211 seconds
+[2026-06-21T00:01:39.363+0000] {processor.py:161} INFO - Started process (PID=6053) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:01:39.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:01:39.369+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:39.369+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:01:39.395+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:01:39.494+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:39.493+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:01:39.539+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:01:39.537+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:01:39.608+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.261 seconds
+[2026-06-21T00:02:10.387+0000] {processor.py:161} INFO - Started process (PID=6104) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:02:10.391+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:02:10.401+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:10.399+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:02:10.431+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:02:10.546+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:10.545+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:02:10.582+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:10.582+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:02:10.640+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.280 seconds
+[2026-06-21T00:02:41.544+0000] {processor.py:161} INFO - Started process (PID=6156) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:02:41.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:02:41.562+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:41.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:02:41.592+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:02:41.800+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:41.797+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:02:41.843+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:02:41.843+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:02:41.913+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.390 seconds
+[2026-06-21T00:03:12.185+0000] {processor.py:161} INFO - Started process (PID=6202) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:03:12.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:03:12.203+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:12.200+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:03:12.224+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:03:12.330+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:12.330+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:03:12.373+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:12.373+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:03:12.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.275 seconds
+[2026-06-21T00:03:43.121+0000] {processor.py:161} INFO - Started process (PID=6254) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:03:43.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:03:43.130+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:43.129+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:03:43.148+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:03:43.235+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:43.235+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:03:43.268+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:03:43.267+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:03:43.327+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.226 seconds
+[2026-06-21T00:04:13.958+0000] {processor.py:161} INFO - Started process (PID=6307) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:04:13.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:04:13.962+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:13.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:04:13.982+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:04:14.070+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:14.069+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:04:14.103+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:14.102+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:04:14.167+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.221 seconds
+[2026-06-21T00:04:47.661+0000] {processor.py:161} INFO - Started process (PID=6356) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:04:47.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:04:47.700+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:47.693+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:04:47.899+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:04:48.117+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:48.104+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:04:48.256+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:04:48.255+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:04:48.619+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.986 seconds
+[2026-06-21T00:05:19.337+0000] {processor.py:161} INFO - Started process (PID=6410) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:05:19.338+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:05:19.347+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:19.346+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:05:19.365+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:05:19.451+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:19.451+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:05:19.474+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:19.474+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:05:19.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.195 seconds
+[2026-06-21T00:05:50.090+0000] {processor.py:161} INFO - Started process (PID=6462) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:05:50.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:05:50.114+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:50.113+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:05:50.208+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:05:50.347+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:50.347+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:05:50.385+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:05:50.384+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:05:50.458+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.398 seconds
+[2026-06-21T00:06:20.687+0000] {processor.py:161} INFO - Started process (PID=6508) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:06:20.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:06:20.701+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:20.696+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:06:20.721+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:06:20.841+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:20.841+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:06:20.878+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:20.878+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:06:21.017+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.355 seconds
+[2026-06-21T00:06:51.881+0000] {processor.py:161} INFO - Started process (PID=6560) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:06:51.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:06:51.889+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:51.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:06:51.909+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:06:51.971+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:51.971+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:06:51.996+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:06:51.996+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:06:52.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.180 seconds
+[2026-06-21T00:07:22.428+0000] {processor.py:161} INFO - Started process (PID=6612) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:07:22.430+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:07:22.432+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:22.431+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:07:22.450+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:07:22.520+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:22.519+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:07:22.546+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:22.545+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:07:22.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.163 seconds
+[2026-06-21T00:07:52.719+0000] {processor.py:161} INFO - Started process (PID=6664) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:07:52.722+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:07:52.724+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:52.724+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:07:52.740+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:07:52.801+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:52.800+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:07:52.819+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:07:52.819+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:07:52.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.147 seconds
+[2026-06-21T00:08:23.302+0000] {processor.py:161} INFO - Started process (PID=6716) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:08:23.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:08:23.306+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:23.305+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:08:23.319+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:08:23.482+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:23.481+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:08:23.567+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:23.567+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:08:23.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.349 seconds
+[2026-06-21T00:08:54.551+0000] {processor.py:161} INFO - Started process (PID=6769) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:08:54.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:08:54.556+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:54.555+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:08:54.568+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:08:54.623+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:54.623+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:08:54.642+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:08:54.642+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:08:54.676+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.133 seconds
+[2026-06-21T00:09:24.877+0000] {processor.py:161} INFO - Started process (PID=6815) to work on /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:09:24.890+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sem_dinamic_mapping.py for tasks to queue
+[2026-06-21T00:09:24.893+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:24.892+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:09:24.908+0000] {processor.py:840} INFO - DAG(s) 'process_files_hardcoded' retrieved from /opt/airflow/dags/sem_dinamic_mapping.py
+[2026-06-21T00:09:24.971+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:24.971+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-21T00:09:24.997+0000] {logging_mixin.py:188} INFO - [2026-06-21T00:09:24.997+0000] {dag.py:3947} INFO - Setting next_dagrun for process_files_hardcoded to None, run_after=None
+[2026-06-21T00:09:25.040+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sem_dinamic_mapping.py took 0.172 seconds
