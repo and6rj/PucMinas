@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/292604473535515067/4b6c42f82a724c09a40229f7bbe0334c/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '292604473535515067'
+lifecycle_stage: active
+run_id: 4b6c42f82a724c09a40229f7bbe0334c
+run_name: polite-hare-953
+run_uuid: 4b6c42f82a724c09a40229f7bbe0334c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783638710369
+status: 1
+tags: []
+user_id: ubuntu

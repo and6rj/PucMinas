@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/292604473535515067/db1210d483b44321b2d6521aacd28344/artifacts
+end_time: 1783636803115
+entry_point_name: ''
+experiment_id: '292604473535515067'
+lifecycle_stage: active
+run_id: db1210d483b44321b2d6521aacd28344
+run_name: GradientBoosting
+run_uuid: db1210d483b44321b2d6521aacd28344
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783636787446
+status: 3
+tags: []
+user_id: ubuntu
