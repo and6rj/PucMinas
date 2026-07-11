@@ -1,0 +1,46 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# WORKERS (a "caixa verde", replicável): executam os flows.
+#
+# Responsabilidade: executar. NÃO orquestra nem agenda.
+# Orquestração fica no repo prefect-distribuido-scheduler.
+#
+# Pode rodar na mesma máquina do scheduler ou em qualquer outra —
+# basta o PREFECT_API_URL no .env apontar para o scheduler correto.
+#
+# Subir 3 workers (distribuição local):
+#   docker compose -f docker-compose.worker.yml up -d --scale prefect-worker=3
+#
+# Registrar deployments:
+#   docker compose -f docker-compose.worker.yml run --rm prefect-worker python deploy.py
+#
+# Ver logs de todos os workers:
+#   docker compose -f docker-compose.worker.yml logs -f
+# ══════════════════════════════════════════════════════════════════════════════
+
+services:
+  prefect-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+
+    # Lê PREFECT_API_URL do .env — aponta o worker para o scheduler correto.
+    # Cenário A (mesma máquina): http://host.docker.internal:4201/api
+    # Cenário B (outra máquina): http://IP-DO-SCHEDULER:4201/api
+    env_file: .env
+
+    # Reinicia automaticamente se o worker cair (ex: falha de rede transitória).
+    # "unless-stopped" = reinicia sempre, exceto quando parado manualmente.
+    restart: unless-stopped
+
+    # Sem container_name — obrigatório para --scale funcionar.
+    # Com container_name fixo, o Docker não consegue criar múltiplas réplicas
+    # do mesmo serviço (nomes de container precisam ser únicos).
+
+    # ── extra_hosts ────────────────────────────────────────────────────────────
+    # Resolve host.docker.internal para o IP do host no Linux.
+    # No Mac e Windows o Docker Desktop já faz isso automaticamente.
+    # No Linux sem esta entrada, host.docker.internal não existe e o worker
+    # não consegue alcançar o scheduler rodando no host.
+    # Em outra máquina/nuvem: remova esta entrada e ajuste PREFECT_API_URL no .env.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

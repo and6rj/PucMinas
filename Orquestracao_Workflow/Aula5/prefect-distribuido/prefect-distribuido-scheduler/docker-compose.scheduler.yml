@@ -1,0 +1,108 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# PREFECT SCHEDULER — backend completo (server + UI + API + postgres + init)
+#
+# Responsabilidade: orquestrar. NÃO executa código de flow.
+# Código de flow e workers ficam no repo prefect-distribuido-workers.
+#
+# Subir:
+#   docker compose -f docker-compose.scheduler.yml up -d
+#
+# UI:
+#   http://localhost:4201
+#
+# Parar (mantém os dados):
+#   docker compose -f docker-compose.scheduler.yml down
+#
+# Parar e apagar o banco (reset completo):
+#   docker compose -f docker-compose.scheduler.yml down -v
+# ══════════════════════════════════════════════════════════════════════════════
+
+services:
+
+  # ── POSTGRES ───────────────────────────────────────────────────────────────
+  # Banco de metadados do Prefect.
+  # Substitui o SQLite padrão para suportar múltiplas conexões simultâneas
+  # dos workers sem erros de lock, e persiste dados entre reinícios via volume.
+  # Credenciais lidas do .env (POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB).
+  postgres:
+    image: postgres:16-alpine
+    container_name: prefect-postgres
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      # Volume nomeado — persiste entre `down` e `up`. Use `down -v` para resetar.
+      - prefect_postgres:/var/lib/postgresql/data
+    healthcheck:
+      # Garante que o Postgres está aceitando conexões antes de subir o server.
+      test: ["CMD-SHELL", "pg_isready -U aluno_ -d prefect_distribuited"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ── PREFECT SERVER ─────────────────────────────────────────────────────────
+  # API + UI + scheduler de runs.
+  # Orquestra os deployments, agendamentos e estados — nunca executa flows.
+  # Só sobe após o Postgres estar saudável (depends_on + condition).
+  prefect-server:
+    image: prefecthq/prefect:3.4.24-python3.12
+    container_name: prefect-server
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Driver asyncpg obrigatório — o Prefect server usa I/O assíncrono.
+      # Referencia as credenciais do .env via interpolação do compose.
+      PREFECT_API_DATABASE_CONNECTION_URL: postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+
+      # Expõe a API para fora do container (0.0.0.0 = aceita de qualquer origem).
+      # Sem isso, só localhost interno do container responderia.
+      PREFECT_SERVER_API_HOST: "0.0.0.0"
+
+      # URL que o NAVEGADOR usa para chamar a API.
+      # Deve usar a porta do HOST (4201), não a do container (4200).
+      PREFECT_UI_API_URL: "http://localhost:4201/api"
+
+    command: prefect server start --host 0.0.0.0
+    ports:
+      # 4201 (host) → 4200 (container).
+      # O processo interno sempre ouve em 4200 — só o mapeamento muda.
+      - "4201:4200"
+    healthcheck:
+      # Aguarda a API responder em /api/health antes de liberar o prefect-init.
+      # retries: 12 × interval: 5s = até 60s para o server inicializar.
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:4200/api/health')"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  # ── PREFECT INIT ───────────────────────────────────────────────────────────
+  # Serviço one-shot: roda uma vez após o server estar saudável e encerra.
+  # Responsabilidade: garantir que o work pool existe no banco antes dos
+  # workers subirem. Idempotente — seguro rodar mesmo se o pool já existir.
+  prefect-init:
+    image: prefecthq/prefect:3.4.24-python3.12
+    container_name: prefect-init
+    restart: "no"
+    depends_on:
+      prefect-server:
+        condition: service_healthy
+    environment:
+      # Aponta para o server pelo nome do serviço na rede interna do compose.
+      # Dentro do Docker, containers se comunicam pelo nome do serviço,
+      # não por localhost nem pela porta mapeada no host.
+      PREFECT_API_URL: "http://prefect-server:4200/api"
+    # --overwrite: atualiza o pool se já existir (volume de sessão anterior).
+    # || echo ...: evita que o serviço falhe e impeça o compose de continuar.
+    command: >
+      bash -c "
+        prefect work-pool create lab-pool --type process --overwrite ||
+        echo 'pool ja existe, seguindo'
+      "
+
+# ── VOLUMES ────────────────────────────────────────────────────────────────
+# Volume nomeado gerenciado pelo Docker.
+# Persiste os dados do Postgres entre reinícios do compose.
+# Localização: /var/lib/docker/volumes/prefect_postgres/
+volumes:
+  prefect_postgres:

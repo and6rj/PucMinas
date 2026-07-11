@@ -1,0 +1,50 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# WORKER — imagem de execução dos flows (a "caixa verde").
+#
+# Responsabilidade: executar os flows despachados pelo scheduler.
+# O código dos flows está EMBUTIDO nesta imagem (COPY flows/).
+#
+# Consequência: qualquer mudança de código exige rebuild desta imagem.
+# Para atualizar sem rebuild, use o modelo prefect-distribuido-github.
+#
+# Build:
+#   docker compose -f docker-compose.worker.yml build
+#
+# Registrar deployments (roda dentro da imagem para os caminhos baterem):
+#   docker compose -f docker-compose.worker.yml run --rm prefect-worker python deploy.py
+#
+# Subir N workers:
+#   docker compose -f docker-compose.worker.yml up -d --scale prefect-worker=3
+# ══════════════════════════════════════════════════════════════════════════════
+
+# Versão fixada — garante que scheduler e workers usam o mesmo binário Prefect.
+# Nunca use 3-latest em produção: uma atualização automática pode quebrar
+# a compatibilidade entre server e worker.
+# Tags disponíveis: https://hub.docker.com/r/prefecthq/prefect/tags
+FROM prefecthq/prefect:3.4.24-python3.12
+
+# Diretório de trabalho dentro do container.
+# O deploy.py usa Path(__file__).parent para resolver caminhos — precisa
+# bater com o WORKDIR para o entrypoint do deployment funcionar em runtime.
+WORKDIR /opt/prefect
+
+# ── DEPENDÊNCIAS ──────────────────────────────────────────────────────────────
+# Copiado antes do código para aproveitar o cache de camadas do Docker.
+# Se só o código mudar (flows/), esta camada não é reconstruída.
+# Se requirements.txt mudar, esta camada e todas as seguintes são invalidadas.
+# Prefect já vem na imagem base — adicione aqui só as libs extras do flow.
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# ── CÓDIGO ────────────────────────────────────────────────────────────────────
+# Flows e script de deploy embutidos na imagem.
+# Qualquer alteração aqui exige: build → up → deploy.py
+COPY flows/ ./flows/
+COPY deploy.py .
+
+# ── COMANDO PADRÃO ────────────────────────────────────────────────────────────
+# O container sobe como worker escutando o pool "lab-pool".
+# Se o pool não existir no backend, o worker o cria automaticamente.
+# O deploy.py é rodado separadamente (docker compose run --rm ... python deploy.py)
+# para registrar os deployments após o build.
+CMD ["prefect", "worker", "start", "--pool", "lab-pool"]

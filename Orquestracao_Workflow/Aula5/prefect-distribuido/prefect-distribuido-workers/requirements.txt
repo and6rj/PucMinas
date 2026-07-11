@@ -1,0 +1,3 @@
+# prefect ja vem instalado na imagem base prefecthq/prefect:3.4.24-python3.12
+# Aqui ficam apenas as dependencias extras do seu flow.
+requests
