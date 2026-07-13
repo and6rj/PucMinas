@@ -2,7 +2,7 @@
 
 **Aluno:** André Cardoso de Oliveira  
 **Pasta:** `Conteinerizacao_Kubernets/Trabalho2_AndreOliveira`  
-**Repositório:** https://github.com/and6rj/PucMinas/Conteinerizacao_Kubernets/Trabalho2_AndreOliveira
+**Repositório:** https://github.com/and6rj/PucMinas/tree/main/Conteinerizacao_Kubernets/Trabalho2_AndreOliveira
 
 Implementação em **Kubernetes** da stack containerizada do jogo `guess_game`, sem Ingress Controller.
 
