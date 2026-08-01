@@ -1,0 +1,317 @@
+# =============================================================================
+# Trabalho 3 — Monitoramento de Inflação de Alimentos (IPCA / IBGE SIDRA)
+# Apache Airflow (CeleryExecutor) + MLflow + PostgreSQL + Redis
+#
+# Uso:
+#   echo "AIRFLOW_UID=$(id -u)" > .env   # ajuste permissões no Linux
+#   docker compose up -d --build --scale airflow-worker=3
+#   (cache-clean roda automaticamente antes de MLflow, Airflow e Flower)
+#
+# Limpeza manual (sem subir a stack):
+#   bash scripts/clean-airflow-cache.sh
+#
+# UIs:
+#   Airflow  → http://localhost:8080  (admin / admin)
+#   Flower   → http://localhost:5555
+#   MLflow   → http://localhost:5000
+#   Postgres → localhost:5432
+# =============================================================================
+
+name: trabalho3-ipca
+
+x-airflow-common: &airflow-common
+  build:
+    context: .
+    dockerfile: Dockerfile
+  image: trabalho3-airflow:latest
+  user: "${AIRFLOW_UID:-50000}:0"
+  env_file:
+    - .env
+  environment: &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+    AIRFLOW__CELERY__BROKER_URL: redis://redis:6379/0
+    AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres:5432/airflow
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DEFAULT_TIMEZONE: America/Sao_Paulo
+    AIRFLOW__WEBSERVER__DEFAULT_UI_TIMEZONE: America/Sao_Paulo
+    AIRFLOW__WEBSERVER__SECRET_KEY: "trabalho3-ipca-secret"
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+    AIRFLOW__WEBSERVER__WORKERS: "2"
+    AIRFLOW__WEBSERVER__WEB_SERVER_MASTER_TIMEOUT: "300"
+    AIRFLOW__API__AUTH_BACKENDS: "airflow.api.auth.backend.basic_auth"
+    AIRFLOW__LOGGING__LOGGING_LEVEL: INFO
+    MLFLOW_TRACKING_URI: http://mlflow:5000
+    IPCA_DB_CONN: postgresql+psycopg2://ipca:ipca@postgres:5432/ipca
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - mlflow-artifacts:/mlflow/artifacts
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+  networks:
+    - ipca-net
+
+services:
+  # ---------------------------------------------------------------------------
+  # PostgreSQL — backend Airflow, backend MLflow e Target DB (IPCA)
+  # ---------------------------------------------------------------------------
+  postgres:
+    image: postgres:16
+    container_name: trabalho3-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 10s
+      retries: 5
+      start_period: 10s
+    networks:
+      - ipca-net
+
+  # ---------------------------------------------------------------------------
+  # Redis — message broker do Celery
+  # ---------------------------------------------------------------------------
+  redis:
+    image: redis:7.2
+    container_name: trabalho3-redis
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    networks:
+      - ipca-net
+
+  # ---------------------------------------------------------------------------
+  # Cache Clean — limpa logs, __pycache__, metadados Airflow e fila Redis
+  # Roda uma vez antes de MLflow, airflow-init, webserver, scheduler, worker e Flower.
+  # ---------------------------------------------------------------------------
+  cache-clean:
+    <<: *airflow-common
+    container_name: trabalho3-cache-clean
+    user: "0:0"
+    entrypoint: /bin/bash
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./scripts:/scripts:ro
+      - mlflow-artifacts:/mlflow/artifacts
+    command:
+      - -c
+      - |
+        set -euo pipefail
+        echo "==> [cache-clean] Limpando logs locais..."
+        find /opt/airflow/logs -mindepth 1 ! -name '.gitkeep' -exec rm -rf {} + 2>/dev/null || true
+        echo "==> [cache-clean] Limpando __pycache__..."
+        find /opt/airflow/dags /opt/airflow/plugins -type d -name '__pycache__' -exec rm -rf {} + 2>/dev/null || true
+        find /opt/airflow/dags /opt/airflow/plugins -name '*.pyc' -delete 2>/dev/null || true
+        echo "==> [cache-clean] Resetando banco de metadados do Airflow..."
+        airflow db reset --yes
+        echo "==> [cache-clean] Limpando fila Redis (broker Celery)..."
+        python -c "import redis; redis.Redis(host='redis', port=6379).flushall()"
+        echo "==> [cache-clean] Limpando experimentos e artefatos MLflow..."
+        python /scripts/clean-mlflow-experiment.py
+        echo "==> [cache-clean] Ajustando permissões do volume MLflow..."
+        mkdir -p /mlflow/artifacts
+        chown -R "${AIRFLOW_UID:-50000}:0" /mlflow/artifacts
+        chmod -R 775 /mlflow/artifacts
+        chown -R "${AIRFLOW_UID:-50000}:0" /opt/airflow/{logs,dags,plugins}
+        find /opt/airflow/logs -type d -exec chmod 777 {} +
+        find /opt/airflow/logs -type f -exec chmod 666 {} + 2>/dev/null || true
+        echo "==> [cache-clean] Concluído."
+    environment:
+      <<: *airflow-common-env
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: "no"
+
+  # ---------------------------------------------------------------------------
+  # MLflow Server — tracking de experimentos e modelos
+  # ---------------------------------------------------------------------------
+  mlflow:
+    image: python:3.11-slim
+    container_name: trabalho3-mlflow
+    working_dir: /mlflow
+    command:
+      - bash
+      - -c
+      - |
+        pip install --no-cache-dir mlflow==2.17.2 psycopg2-binary==2.9.10 \
+        && mlflow server \
+             --backend-store-uri postgresql://mlflow:mlflow@postgres:5432/mlflow \
+             --default-artifact-root /mlflow/artifacts \
+             --serve-artifacts \
+             --host 0.0.0.0 \
+             --port 5000
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-artifacts:/mlflow/artifacts
+    depends_on:
+      postgres:
+        condition: service_healthy
+      cache-clean:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:5000/health')\""]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 120s
+    networks:
+      - ipca-net
+
+  # ---------------------------------------------------------------------------
+  # Airflow Init — migra metadados, cria usuário admin e connections
+  # ---------------------------------------------------------------------------
+  airflow-init:
+    <<: *airflow-common
+    container_name: trabalho3-airflow-init
+    user: "0:0"
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        mkdir -p /opt/airflow/logs /opt/airflow/dags /opt/airflow/plugins
+        chown -R "${AIRFLOW_UID}:0" /opt/airflow/{logs,dags,plugins}
+        find /opt/airflow/logs -type d -exec chmod 777 {} +
+        find /opt/airflow/logs -type f -exec chmod 666 {} + 2>/dev/null || true
+        chmod -R 775 /opt/airflow/{dags,plugins}
+        airflow db migrate
+        airflow users create \
+          --username ${_AIRFLOW_WWW_USER_USERNAME:-admin} \
+          --password ${_AIRFLOW_WWW_USER_PASSWORD:-admin} \
+          --firstname Admin \
+          --lastname Lab \
+          --role Admin \
+          --email admin@example.com \
+          || airflow users reset-password \
+          --username ${_AIRFLOW_WWW_USER_USERNAME:-admin} \
+          --password ${_AIRFLOW_WWW_USER_PASSWORD:-admin}
+        airflow connections delete postgres_ipca 2>/dev/null || true
+        airflow connections add postgres_ipca \
+          --conn-type postgres \
+          --conn-host postgres \
+          --conn-login ipca \
+          --conn-password ipca \
+          --conn-schema ipca \
+          --conn-port 5432
+        echo "=== Airflow inicializado | UI: http://localhost:8080 | Flower: http://localhost:5555 | MLflow: http://localhost:5000 ==="
+    environment:
+      <<: *airflow-common-env
+    depends_on:
+      cache-clean:
+        condition: service_completed_successfully
+    restart: "no"
+
+  # ---------------------------------------------------------------------------
+  # Airflow Webserver
+  # ---------------------------------------------------------------------------
+  airflow-webserver:
+    <<: *airflow-common
+    container_name: trabalho3-airflow-webserver
+    command: webserver
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 120s
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # ---------------------------------------------------------------------------
+  # Airflow Scheduler
+  # ---------------------------------------------------------------------------
+  airflow-scheduler:
+    <<: *airflow-common
+    container_name: trabalho3-airflow-scheduler
+    command: scheduler
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "airflow", "jobs", "check", "--job-type", "SchedulerJob", "--hostname", "$${HOSTNAME}"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+  # ---------------------------------------------------------------------------
+  # Airflow Worker — 3 réplicas para processamento paralelo (Celery)
+  # Nota: deploy.replicas exige Docker Swarm; em Compose local use também:
+  #   docker compose up -d --scale airflow-worker=3
+  # ---------------------------------------------------------------------------
+  airflow-worker:
+    <<: *airflow-common
+    command:
+      - bash
+      - -c
+      - >-
+        exec celery --app airflow.providers.celery.executors.celery_executor.app
+        worker -Q default -E
+    healthcheck:
+      test:
+        - "CMD-SHELL"
+        - 'celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: unless-stopped
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    deploy:
+      replicas: 3
+
+  # ---------------------------------------------------------------------------
+  # Airflow Flower — monitoramento dos workers Celery
+  # ---------------------------------------------------------------------------
+  airflow-flower:
+    <<: *airflow-common
+    container_name: trabalho3-airflow-flower
+    command: celery flower
+    ports:
+      - "5555:5555"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+
+volumes:
+  postgres-data:
+  mlflow-artifacts:
+
+networks:
+  ipca-net:
+    driver: bridge

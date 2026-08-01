@@ -1,0 +1,57 @@
+[2026-08-01T13:38:12.731+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-01T13:38:12.767+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: inflacao_alimentos_mlops.treinar_modelo scheduled__2026-08-01T03:00:00+00:00 [queued]>
+[2026-08-01T13:38:12.785+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: inflacao_alimentos_mlops.treinar_modelo scheduled__2026-08-01T03:00:00+00:00 [queued]>
+[2026-08-01T13:38:12.786+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2026-08-01T13:38:12.811+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): treinar_modelo> on 2026-08-01 03:00:00+00:00
+[2026-08-01T13:38:12.829+0000] {standard_task_runner.py:72} INFO - Started process 344 to run task
+[2026-08-01T13:38:12.834+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'inflacao_alimentos_mlops', 'treinar_modelo', 'scheduled__2026-08-01T03:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/inflacao_alimentos_mlops.py', '--cfg-path', '/tmp/tmpgtno48er']
+[2026-08-01T13:38:12.837+0000] {standard_task_runner.py:105} INFO - Job 10: Subtask treinar_modelo
+[2026-08-01T13:38:13.136+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andre.oliveira' AIRFLOW_CTX_DAG_ID='inflacao_alimentos_mlops' AIRFLOW_CTX_TASK_ID='treinar_modelo' AIRFLOW_CTX_EXECUTION_DATE='2026-08-01T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-01T03:00:00+00:00'
+[2026-08-01T13:38:13.138+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-08-01T13:38:13.212+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:13 INFO mlflow.tracking.fluent: Experiment with name 'ipca_alimentos_basicos' does not exist. Creating a new experiment.
+[2026-08-01T13:38:13.288+0000] {base.py:84} INFO - Retrieving connection 'postgres_***'
+[2026-08-01T13:38:13.304+0000] {sql.py:544} INFO - Running statement: 
+        SELECT mes_ano, codigo_alimento, produto, valor
+        FROM bronze.raw_***
+        ORDER BY codigo_alimento, mes_ano
+        , parameters: None
+[2026-08-01T13:38:13.314+0000] {sql.py:553} INFO - Rows affected: 144
+[2026-08-01T13:38:13.475+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:13 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2026-08-01T13:38:21.186+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:21 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+[2026-08-01T13:38:21.244+0000] {ml.py:111} INFO - Treino OK | produto=Arroz | rmse=2.2438 | tendencia=-0.1422
+[2026-08-01T13:38:21.276+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:21 INFO mlflow.tracking._tracking_service.client: 🏃 View run treino_arroz at: http://mlflow:5000/#/experiments/2/runs/ecadc5cde34447138077d4cfc46952e8.
+[2026-08-01T13:38:21.277+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:21 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow:5000/#/experiments/2.
+[2026-08-01T13:38:26.344+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:26 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+[2026-08-01T13:38:26.380+0000] {ml.py:111} INFO - Treino OK | produto=Pão Francês | rmse=0.3230 | tendencia=0.0103
+[2026-08-01T13:38:26.401+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:26 INFO mlflow.tracking._tracking_service.client: 🏃 View run treino_pão_francês at: http://mlflow:5000/#/experiments/2/runs/0c367698966247feb652a5829b282d59.
+[2026-08-01T13:38:26.402+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:26 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow:5000/#/experiments/2.
+[2026-08-01T13:38:31.206+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:31 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+[2026-08-01T13:38:31.253+0000] {ml.py:111} INFO - Treino OK | produto=Batata | rmse=1.7348 | tendencia=0.1854
+[2026-08-01T13:38:31.276+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:31 INFO mlflow.tracking._tracking_service.client: 🏃 View run treino_batata at: http://mlflow:5000/#/experiments/2/runs/35fc3cfba6f14686a6aa7809830cfb4b.
+[2026-08-01T13:38:31.277+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:31 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow:5000/#/experiments/2.
+[2026-08-01T13:38:36.052+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:36 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+[2026-08-01T13:38:36.091+0000] {ml.py:111} INFO - Treino OK | produto=Leite | rmse=1.9133 | tendencia=0.0802
+[2026-08-01T13:38:36.114+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:36 INFO mlflow.tracking._tracking_service.client: 🏃 View run treino_leite at: http://mlflow:5000/#/experiments/2/runs/cd1da2523b4f44498f9139968451f823.
+[2026-08-01T13:38:36.115+0000] {logging_mixin.py:190} WARNING - 2026/08/01 13:38:36 INFO mlflow.tracking._tracking_service.client: 🧪 View experiment at: http://mlflow:5000/#/experiments/2.
+[2026-08-01T13:38:36.144+0000] {inflacao_alimentos_mlops.py:127} INFO - Treinamento linear concluído | modelos=4
+[2026-08-01T13:38:36.145+0000] {python.py:240} INFO - Done. Returned value was: [{'codigo_alimento': '1101002', 'produto': 'Arroz', 'rmse': 2.2438151260504196, 'tendencia_alta': -0.14224369747899157, 'mlflow_run_id': 'ecadc5cde34447138077d4cfc46952e8', 'modelo': 'LinearRegression'}, {'codigo_alimento': '1102069', 'produto': 'Pão Francês', 'rmse': 0.32299159663865534, 'tendencia_alta': 0.010324929971988793, 'mlflow_run_id': '0c367698966247feb652a5829b282d59', 'modelo': 'LinearRegression'}, {'codigo_alimento': '1103003', 'produto': 'Batata', 'rmse': 1.7348403361344524, 'tendencia_alta': 0.18541176470588233, 'mlflow_run_id': '35fc3cfba6f14686a6aa7809830cfb4b', 'modelo': 'LinearRegression'}, {'codigo_alimento': '1111015', 'produto': 'Leite', 'rmse': 1.9133445378151257, 'tendencia_alta': 0.08024929971988794, 'mlflow_run_id': 'cd1da2523b4f44498f9139968451f823', 'modelo': 'LinearRegression'}]
+[2026-08-01T13:38:36.187+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-08-01T13:38:36.187+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=inflacao_alimentos_mlops, task_id=treinar_modelo, run_id=scheduled__2026-08-01T03:00:00+00:00, execution_date=20260801T030000, start_date=20260801T133812, end_date=20260801T133836
+[2026-08-01T13:38:36.230+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-08-01T13:38:36.261+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-08-01T13:38:36.266+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

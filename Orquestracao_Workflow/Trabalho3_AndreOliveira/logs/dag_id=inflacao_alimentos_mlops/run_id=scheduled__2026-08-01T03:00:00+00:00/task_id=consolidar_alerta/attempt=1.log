@@ -1,0 +1,27 @@
+[2026-08-01T13:38:40.368+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-01T13:38:40.405+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: inflacao_alimentos_mlops.consolidar_alerta scheduled__2026-08-01T03:00:00+00:00 [queued]>
+[2026-08-01T13:38:40.417+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: inflacao_alimentos_mlops.consolidar_alerta scheduled__2026-08-01T03:00:00+00:00 [queued]>
+[2026-08-01T13:38:40.418+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2026-08-01T13:38:40.439+0000] {taskinstance.py:2889} INFO - Executing <Task(_PythonDecoratedOperator): consolidar_alerta> on 2026-08-01 03:00:00+00:00
+[2026-08-01T13:38:40.453+0000] {standard_task_runner.py:72} INFO - Started process 393 to run task
+[2026-08-01T13:38:40.460+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'inflacao_alimentos_mlops', 'consolidar_alerta', 'scheduled__2026-08-01T03:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/inflacao_alimentos_mlops.py', '--cfg-path', '/tmp/tmphlzv28et']
+[2026-08-01T13:38:40.462+0000] {standard_task_runner.py:105} INFO - Job 11: Subtask consolidar_alerta
+[2026-08-01T13:38:40.743+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andre.oliveira' AIRFLOW_CTX_DAG_ID='inflacao_alimentos_mlops' AIRFLOW_CTX_TASK_ID='consolidar_alerta' AIRFLOW_CTX_EXECUTION_DATE='2026-08-01T03:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-01T03:00:00+00:00'
+[2026-08-01T13:38:40.745+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-08-01T13:38:40.773+0000] {base.py:84} INFO - Retrieving connection 'postgres_***'
+[2026-08-01T13:38:40.791+0000] {sql.py:544} INFO - Running statement: DELETE FROM gold.tb_alerta_inflacao WHERE run_id = %s, parameters: ('scheduled__2026-08-01T03:00:00+00:00',)
+[2026-08-01T13:38:40.803+0000] {sql.py:553} INFO - Rows affected: 0
+[2026-08-01T13:38:40.821+0000] {sql.py:544} INFO - Running statement: 
+        INSERT INTO gold.tb_alerta_inflacao
+            (codigo_alimento, produto, tendencia_alta, rmse, mlflow_run_id, run_id)
+        VALUES (%s, %s, %s, %s, %s, %s)
+    , parameters: ('1103003', 'Batata', 0.18541176470588233, 1.7348403361344524, '35fc3cfba6f14686a6aa7809830cfb4b', 'scheduled__2026-08-01T03:00:00+00:00')
+[2026-08-01T13:38:40.824+0000] {sql.py:553} INFO - Rows affected: 1
+[2026-08-01T13:38:40.829+0000] {ml.py:169} INFO - Fan-in consolidado | alerta=Batata | tendencia=0.1854
+[2026-08-01T13:38:40.829+0000] {inflacao_alimentos_mlops.py:149} INFO - Alerta de inflação | produto=Batata
+[2026-08-01T13:38:40.830+0000] {python.py:240} INFO - Done. Returned value was: {'run_id': 'scheduled__2026-08-01T03:00:00+00:00', 'alerta_produto': 'Batata', 'alerta_codigo': '1103003', 'tendencia_alta': 0.18541176470588233, 'rmse': 1.7348403361344524, 'total_produtos_avaliados': 4}
+[2026-08-01T13:38:40.915+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-08-01T13:38:40.916+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=inflacao_alimentos_mlops, task_id=consolidar_alerta, run_id=scheduled__2026-08-01T03:00:00+00:00, execution_date=20260801T030000, start_date=20260801T133840, end_date=20260801T133840
+[2026-08-01T13:38:40.956+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-08-01T13:38:40.992+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-01T13:38:40.997+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

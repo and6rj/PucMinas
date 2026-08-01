@@ -1,0 +1,19 @@
+[2026-08-01T13:39:04.497+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-08-01T13:39:04.561+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: inflacao_alimentos_mlops.persistir_raw manual__2026-08-01T13:37:44.151993+00:00 map_index=2 [queued]>
+[2026-08-01T13:39:04.583+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: inflacao_alimentos_mlops.persistir_raw manual__2026-08-01T13:37:44.151993+00:00 map_index=2 [queued]>
+[2026-08-01T13:39:04.584+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 4
+[2026-08-01T13:39:04.613+0000] {taskinstance.py:2889} INFO - Executing <Mapped(_PythonDecoratedOperator): persistir_raw> on 2026-08-01 13:37:44.151993+00:00
+[2026-08-01T13:39:04.640+0000] {standard_task_runner.py:72} INFO - Started process 424 to run task
+[2026-08-01T13:39:04.673+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'inflacao_alimentos_mlops', 'persistir_raw', 'manual__2026-08-01T13:37:44.151993+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/inflacao_alimentos_mlops.py', '--cfg-path', '/tmp/tmp48mkrp47', '--map-index', '2']
+[2026-08-01T13:39:04.677+0000] {standard_task_runner.py:105} INFO - Job 17: Subtask persistir_raw
+[2026-08-01T13:39:05.696+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='andre.oliveira' AIRFLOW_CTX_DAG_ID='inflacao_alimentos_mlops' AIRFLOW_CTX_TASK_ID='persistir_raw' AIRFLOW_CTX_EXECUTION_DATE='2026-08-01T13:37:44.151993+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-01T13:37:44.151993+00:00'
+[2026-08-01T13:39:05.702+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-08-01T13:39:05.747+0000] {base.py:84} INFO - Retrieving connection 'postgres_***'
+[2026-08-01T13:39:05.789+0000] {load.py:55} INFO - Bronze raw_*** | produto=Batata | tentativas=36 | inseridos=0
+[2026-08-01T13:39:05.790+0000] {inflacao_alimentos_mlops.py:105} INFO - Persistência raw | produto=Batata | inseridos=0
+[2026-08-01T13:39:05.791+0000] {python.py:240} INFO - Done. Returned value was: 0
+[2026-08-01T13:39:05.874+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-08-01T13:39:05.875+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=inflacao_alimentos_mlops, task_id=persistir_raw, run_id=manual__2026-08-01T13:37:44.151993+00:00, map_index=2, execution_date=20260801T133744, start_date=20260801T133904, end_date=20260801T133905
+[2026-08-01T13:39:05.959+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-08-01T13:39:06.013+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-01T13:39:06.018+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
