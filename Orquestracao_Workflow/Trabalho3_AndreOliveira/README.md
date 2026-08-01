@@ -1,8 +1,12 @@
 # Trabalho 3 — Monitoramento de Inflação de Alimentos Básicos (IPCA)
 
+**Instituição de Ensino:** PUC Minas  
+**Curso:** Engenharia de IA  
 **Disciplina:** Orquestração de Workflow  
+**Professor:** Reinaldo Carlos Mendes  
 **Projeto Final:** Pipeline ETL + ML com Apache Airflow distribuído  
-**Autor:** André Cardoso de Oliveira
+**Autor:** André Cardoso de Oliveira  
+**Repositório:** [GitHub](https://github.com/and6rj/PucMinas/tree/main/Orquestracao_Workflow/Trabalho3_AndreOliveira)
 
 Pipeline de dados que monitora a inflação de alimentos básicos no Brasil, consumindo a **API oficial do IBGE (SIDRA — Tabela 7060, IPCA)**, aplicando transformações em camadas, treinando modelos de previsão com **scikit-learn**, rastreando experimentos no **MLflow** e persistindo resultados em **PostgreSQL**. Toda a stack roda localmente via `docker compose up`.
 
@@ -255,7 +259,7 @@ docker compose down -v
 
 | Item | Status |
 |------|--------|
-| Repositório GitHub/GitLab | _link a publicar_ |
+| Repositório GitHub/GitLab | [and6rj/PucMinas — Trabalho3](https://github.com/and6rj/PucMinas/tree/main/Orquestracao_Workflow/Trabalho3_AndreOliveira) |
 | Documentação (este README) | ✅ |
 | Pitch em vídeo (5–10 min) | _link a publicar_ |
 
