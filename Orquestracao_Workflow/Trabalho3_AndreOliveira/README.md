@@ -261,15 +261,7 @@ docker compose down -v
 |------|--------|
 | Repositório GitHub/GitLab | [and6rj/PucMinas — Trabalho3](https://github.com/and6rj/PucMinas/tree/main/Orquestracao_Workflow/Trabalho3_AndreOliveira) |
 | Documentação (este README) | ✅ |
-| Pitch em vídeo (5–10 min) | _link a publicar_ |
-
-**Acesso ao professor:** incluir usuário `reinaldocm-prof` no repositório (se privado).
-
-**Pitch — roteiro sugerido:**
-1. Problema: monitoramento da inflação de alimentos básicos.
-2. Arquitetura: Airflow distribuído + MLflow + PostgreSQL Medallion.
-3. Demo: `docker compose up`, trigger da DAG, Flower com 3 workers, MLflow com métricas.
-4. Decisões: CeleryExecutor, idempotência, integração MLflow.
+| Pitch em vídeo (5–10 min) | [Vídeos do pitch (Parte 1 e 2)](https://github.com/and6rj/PucMinas/tree/main/Orquestracao_Workflow/Trabalho3_AndreOliveira/videos) |
 
 ---
 
