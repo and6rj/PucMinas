@@ -1,0 +1,152 @@
+
+Felipe Henrique Pereira Alves
+0 210:21
+Felipe Henrique Pereira Alves 0 minutos 21 segundos
+E uma na última vez vocês veem minha tela, certo?
+Felipe Henrique Pereira Alves 0 minutos 24 segundos
+apresentação.
+L
+
+Luciano Eustaquio de Magalhães
+0 290:29
+Luciano Eustaquio de Magalhães 0 minutos 29 segundos
+Search.
+
+Felipe Henrique Pereira Alves
+0 330:33
+Felipe Henrique Pereira Alves 0 minutos 33 segundos
+Só redimensionando vocês aqui para conseguir acompanhar o chat e os slides e não ficar perdido só um segundo.
+Felipe Henrique Pereira Alves 0 minutos 42 segundos
+Yes.
+L
+
+Luciano Eustaquio de Magalhães
+0 430:43
+Luciano Eustaquio de Magalhães 0 minutos 43 segundos
+o professor fazer um Eu particularmente fazer fazer uma solicitação básica é Inicial que geralmente eu costumo pedir para os professores quando o Senhor tiver explanando um produto no sua página dá um encontro mais para ela ficar mais próximo
+
+Felipe Henrique Pereira Alves
+0 440:44
+Felipe Henrique Pereira Alves 0 minutos 44 segundos
+Passos. Passos.
+Felipe Henrique Pereira Alves 0 minutos 49 segundos
+Lopes.
+L
+
+Luciano Eustaquio de Magalhães
+1 21:02
+Luciano Eustaquio de Magalhães 1 minuto 2 segundos
+Porque no vídeo, quando eu assisti aqui o vídeo, ele vai estar distante, então se você aproximar ela no vídeo vai ficar joinha, tá bom? Na medida do possível, na medida do possível.
+
+Felipe Henrique Pereira Alves
+1 minuto 11 segundos1:11
+Felipe Henrique Pereira Alves 1 minuto 11 segundos
+Perfeito.
+Felipe Henrique Pereira Alves 2 horas 13 minutos 46 segundos
+Algum caso que possam querer usar?
+Felipe Henrique Pereira Alves 2 horas 13 minutos 50 segundos
+Como?
+Felipe Henrique Pereira Alves 2 horas 13 minutos 52 segundos
+Como projeto para esse trabalho final em trilha de machine learning clássico.
+Felipe Henrique Pereira Alves 2 horas 14 minutos 1 segundo
+No, spell então a descrição, beleza?
+Felipe Henrique Pereira Alves 2 horas 14 minutos 5 segundos
+E a outra?
+Felipe Henrique Pereira Alves 2 horas 14 minutos 7 segundos
+É a trilha de LLM Rag. Vai ser uma suíte de testes para o modelo baseado em LLM Rag, com avaliação das respostas, alucinação, fernas e regressão de prompts.
+Felipe Henrique Pereira Alves 2 horas 14 minutos 19 segundos
+Dúvida, alguém aqui já trabalhou com Rag, sabe o que que é um Rag.
+Felipe Henrique Pereira Alves 2 horas 14 minutos 31 segundos
+No.
+Felipe Henrique Pereira Alves 2 horas 14 minutos 34 segundos
+Okay.
+Felipe Henrique Pereira Alves 2 horas 14 minutos 37 segundos
+Então, eu
+Felipe Henrique Pereira Alves 2 horas 14 minutos 43 segundos
+Sabe, mas nunca criou. Perfeito é dando a explicação sobre o Hag. Ele é um sistema, é um.
+Felipe Henrique Pereira Alves 2 horas 14 minutos 55 segundos
+Get revol augmented generated.
+Felipe Henrique Pereira Alves 2 horas 15 minutos
+Acredito que seja essa a sigla generation, acredito que seja essa a sigla correta, mas é basicamente um sistema que usa IA para fazer os embeds ali do arquivo, então você tem um documento, sei lá, uma política de uma empresa, você tem essa política.
+Felipe Henrique Pereira Alves 2 horas 15 minutos 16 segundos
+Você vai subir ela no Rag, a sua IA vai criar os inbeds, montar um banco vetorial dela ali e para fazer a busca, a IA também faz a busca e o retrieval nesse caso.
+Felipe Henrique Pereira Alves 2 horas 15 minutos 28 segundos
+Ele recupera o dado ali, em geral ele faz a busca semântica, que é o que a gente comentou aqui mais cedo.
+Felipe Henrique Pereira Alves 2 horas 15 minutos 35 segundos
+Já fiz o teste para estudo, beleza? Então ele faz a busca, acha aquele trecho do documento que responde aquela pergunta ou que tem mais fit com aquele prompt que foi enviado. E aí, a partir da resposta do texto,
+Felipe Henrique Pereira Alves 2 horas 15 minutos 51 segundos
+Aí OA letra a é de aumentação, então ele pega esse texto e aumenta. Ele coloca num texto mais, vamos chamar assim, mais bonitinho ali para o usuário final, né? Mais formatado, com mais contexto para o usuário final. Então é um sistema de buscas e de perguntas e respostas.
+Felipe Henrique Pereira Alves 2 horas 16 minutos 9 segundos
+Mas com base nos dados que você subiu nele, pode ser um documento, pode ser.
+Felipe Henrique Pereira Alves 2 horas 16 minutos 14 segundos
+Paulo de dados, enfim, então aí nesse caso.
+Felipe Henrique Pereira Alves 2 horas 16 minutos 18 segundos
+O Hag ele pode ter alguns problemas dependendo da construção dele ou do modelo que apoia ali na sua recuperação ou aumentação. Então a resposta ela pode vir incorreta. Ele pode não pegar o trecho correto ali do documento que responde aquela pergunta.
+Felipe Henrique Pereira Alves 2 horas 16 minutos 36 segundos
+Ou ele pode buscar na internet ou em alguma outra fonte, no próprio treinamento. Algo que responda aquela pergunta que foi feita. O que seria errado no caso de um Hag, que ele deveria
+Felipe Henrique Pereira Alves 2 horas 16 minutos 52 segundos
+Se recuperar estritamente dos documentos que foram carregados, ele pode alucinar.
+Felipe Henrique Pereira Alves 2 horas 16 minutos 57 segundos
+É um exemplo, ele pode pegar, recuperar o trecho correto do documento que responde aquilo, mas não usar aquilo como resposta, usar outra coisa ou realmente fazer uma alucinação ali. O Pernas já está para o lado ali dos vieses. Aí depende também do treinamento do modelo.
+Felipe Henrique Pereira Alves 2 horas 17 minutos 14 segundos
+Regressão do prompt, a que a gente vem trabalhando prompt, as respostas também pode começar a ter problemas ali com base no nos retreinos do modelo ou qualquer outra mudança no retreino, talvez o parâmetro de temperatura de recuperação.
+Felipe Henrique Pereira Alves 2 horas 17 minutos 29 segundos
+Enfim, mas em resumo, o Hag ele.
+Felipe Henrique Pereira Alves 2 horas 17 minutos 33 segundos
+Responde com base na base com base na base que ele tem conhecimento. Deve ser só aí é. Tem que ser essa a única fonte de dados dele. E a ideia aqui desse projeto seria criar as ferramentas, as formas de usar as técnicas para.
+Felipe Henrique Pereira Alves 2 horas 17 minutos 50 segundos
+A gente testar e garantir que ele não vai gerar nenhum tipo de problema ali. Então, para esse caso aqui, eu estou considerando já disponibilizar o RAG, então a ideia seria, de fato, trabalhar na construção dos testes e não do RAG.
+Felipe Henrique Pereira Alves 2 horas 18 minutos 6 segundos
+A ideia do trabalho final é esse.
+A
+André Cardoso de Oliveira
+2 horas 18 minutos 10 segundos2:18:10
+André Cardoso de Oliveira 2 horas 18 minutos 10 segundos
+Desculpa, Professor Constituição Duke, nesse caso do Hag.
+
+Felipe Henrique Pereira Alves
+2 horas 18 minutos 11 segundos2:18:11
+Felipe Henrique Pereira Alves 2 horas 18 minutos 11 segundos
+Quero dar uma recapitulação aqui do que?
+Felipe Henrique Pereira Alves 2 horas 18 minutos 15 segundos
+O Rag. A minha ideia é já disponibilizar um Rag para vocês funcional e AOA trilha aqui do projeto final para quem escolher LLM Rag é trabalhar nos testes desse Rag. Então, avaliar qualidade da resposta, alucinação, regressão de prompt e não a construção do Rag em si, tá?
+A
+André Cardoso de Oliveira
+2 horas 18 minutos 20 segundos2:18:20
+André Cardoso de Oliveira 2 horas 18 minutos 20 segundos
+No.
+André Cardoso de Oliveira 2 horas 18 minutos 27 segundos
+And.
+
+Felipe Henrique Pereira Alves
+2 horas 18 minutos 36 segundos2:18:36
+Felipe Henrique Pereira Alves 2 horas 18 minutos 36 segundos
+Quero trazer aqui o que a gente viu hoje, que a gente trabalhou aqui sobre a diferença do teste de um software tradicional com um teste de IA.
+Felipe Henrique Pereira Alves 2 horas 18 minutos 50 segundos
+Eu estava vendo lá no board, é, não vi ninguém pelo menos comentando ter experiência com teste de software em si, então.
+Felipe Henrique Pereira Alves 2 horas 19 minutos 1 segundo
+É, são conceitos bem diferentes. Quando você vê, é de fato o que é o teste manual ali numa aplicação tradicional com teste de modelo, eu fiquei, fica evidente isso aí, vi ali que não tem.
+Felipe Henrique Pereira Alves 2 horas 19 minutos 17 segundos
+Ninguém com essa experiência, mas só para ressaltar que é muito diferente, tá? Falamos aqui um pouquinho das estratégias de teste de código, dados, modelos e sistemas que a gente vai se aprofundar nas próximas aulas. Aqui foi só para trazer esses tópicos. O teste unitário, integração e regressão.
+Felipe Henrique Pereira Alves 2 horas 19 minutos 32 segundos
+aplicados a Machado Learning. E fizemos essa prática aí com o PyTest. Para a próxima aula, a ideia é trazer já um trabalho intermediário, que é o trabalho um. Vou deixar o enunciado no final da próxima aula.
+Felipe Henrique Pereira Alves 2 horas 19 minutos 49 segundos
+Vai ser relacionado a temas que a gente já viu hoje, que vai ver na próxima aula e.
+Felipe Henrique Pereira Alves 2 horas 19 minutos 56 segundos
+É isso por hoje.
+Felipe Henrique Pereira Alves 2 horas 19 minutos 59 segundos
+Vou acabar aqui um pouquinho bastante mais cedo, na verdade são 9 e 32. Eu vou revisar aqui o que veio de resposta do quiz, vou dar uma olhadinha aqui em outros materiais e vou compartilhar com vocês também alguns materiais de estudo offline.
+Felipe Henrique Pereira Alves 2 horas 20 minutos 17 segundos
+Para vocês _irem acompanhando, mas basicamente o tema proposto para hoje eram esses 3 tipos de teste que a gente cobriu, é.
+Felipe Henrique Pereira Alves 2 horas 20 minutos 28 segundos
+Alguém tem alguma dúvida? Querem fazer alguma pergunta?
+Felipe Henrique Pereira Alves 2 horas 20 minutos 34 segundos
+Alguma sugestão?
+Felipe Henrique Pereira Alves 2 horas 20 minutos 41 segundos
+Nathan.
+Felipe Henrique Pereira Alves 2 horas 20 minutos 43 segundos
+Então vou parar de compartilhar aqui.
+Felipe Henrique Pereira Alves 2 horas 20 minutos 47 segundos
+Oh, para.
+Felipe Henrique Pereira Alves 2 horas 20 minutos 51 segundos
+parágrafo, gravação também.

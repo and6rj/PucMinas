@@ -1,0 +1,162 @@
+
+
+O conteúdo gerado por IA pode estar incorreto
+
+Felipe Henrique Pereira Alves começou a transcrição
+
+Felipe Henrique Pereira Alves
+0 minutos 4 segundos0:04
+Felipe Henrique Pereira Alves 0 minutos 4 segundos
+Vamos lá, gravação de ciúme. Hoje o tema da aula é.
+Felipe Henrique Pereira Alves 0 minutos 10 segundos
+Essa aqui é a disciplina. Hoje a gente vai tratar aqui na nossa disciplina bugs reais, TDD aplicada a machine learning, testes baseados em propriedades em variantes, prática em colab e vou falar do trabalho um sobre a última aula que a gente falou de
+Felipe Henrique Pereira Alves 0 minutos 26 segundos
+Testes unitários e teste de integração, teste de regressão. Alguém ficou com alguma dúvida aí durante a última semana quer trazer alguma pergunta?
+Felipe Henrique Pereira Alves 0 minutos 42 segundos
+Ninguém, então, okay.
+Felipe Henrique Pereira Alves 0 minutos 50 segundos
+Então, antes de tudo, eu vou lá no board que eu vi que já tem algumas dúvidas aqui, tá? Pode deixar algumas separadas.
+Felipe Henrique Pereira Alves 0 minutos 58 segundos
+Então.
+Felipe Henrique Pereira Alves 1 minuto 1 segundo
+Entendo que as três perguntas são a mesma, tá? Então vou responder as três de uma só vez. A nota de participação. Para quem está aqui na aula, vocês já costumam postar aqui no chat o
+Felipe Henrique Pereira Alves 1 minuto 17 segundos
+A execução do notebook que vocês fazem, correção, dúvidas, etc. Tem quiz também que eu lanço ao longo da aula. Então por ali já consigo ir vendo a participação e também vou lançar alguns fóruns com alguns questionários, algumas coisas mais práticas, outras teóricas.
+Felipe Henrique Pereira Alves 1 minuto 36 segundos
+Então vou fazer essa adaptação, porque entendi aqui que tem algumas pessoas que também não entram, assiste a gravação. Então não vai ficar limitado só aqui ao chat, nem só aos exercícios ao vivo e nem ao e nem só aqui é o board, tá? No do Santospark.
+Felipe Henrique Pereira Alves 1 minuto 52 segundos
+Então vai ter essa interação também via fórum. Então vou fazer uma combinação aí de alguns métodos de avaliação, mas podem ficar tranquilos que não é obrigatório estar ali atendendo a todos, todas as formas de avaliação para essa participação.
+Felipe Henrique Pereira Alves 2 horas 45 minutos 24 segundos
+falar do trabalho
+Felipe Henrique Pereira Alves 2 horas 45 minutos 27 segundos
+Então, o trabalho.
+Felipe Henrique Pereira Alves 2 horas 45 minutos 30 segundos
+A ideia vai ser criar um TDD completo e evidenciado. O que eu quero dizer com esse evidenciado?
+Felipe Henrique Pereira Alves 2 horas 45 minutos 39 segundos
+Aqui esse ciclo do
+Felipe Henrique Pereira Alves 2 horas 45 minutos 42 segundos
+vermelho, verde, evaturação tem que estar visível. Aí pode ser duas formas para evidenciar. Pode ter um histórico de commit, se você estiver usando um repositório. Ou descreva como você fez passo a passo. Primeiro, eu criei esse teste aqui, executei.
+Felipe Henrique Pereira Alves 2 horas 45 minutos 58 segundos
+Falhou, depois eu fiz aqui o código. Então, um relato escrito também funciona. Então, a ideia vai ser teu DDD completo e evidenciado. Pelo menos uma propriedade aqui.
+Felipe Henrique Pereira Alves 2 horas 46 minutos 14 segundos
+E uma prova de que essa propriedade pegaria um bug real. Então precisa ter uma versão bugada ali da função também para mostrar que pegaria um bug.
+Felipe Henrique Pereira Alves 2 horas 46 minutos 25 segundos
+Pode reaproveitar o exemplo da aula, só que tentem não ficar muito no óbvio ali, só replicar o que que teve, o que que teve ali no exemplo.
+Felipe Henrique Pereira Alves 2 horas 46 minutos 37 segundos
+Então vai ser isso, vou deixar isso por escrito lá no Canvas, vai estar detalhado aqui, posso colocar algum exemplo lá também para ajudar vocês e a data de entrega que ficaria.
+Felipe Henrique Pereira Alves 2 horas 46 minutos 53 segundos
+Pro pra próxima aula, eu ia colocar até a próxima aula, mas eu vou colocar até a próxima sexta.
+Felipe Henrique Pereira Alves 2 horas 47 minutos 2 segundos
+Na verdade, vou colocar até o próximo fim de semana. Por que que eu não quero colocar até a próxima aula? E se houver alguma dúvida, eu quero ter o espaço para vocês trazerem na próxima aula e a gente conversa sobre o trabalho. Aí fica mais alguns dias ali para.
+Felipe Henrique Pereira Alves 2 horas 47 minutos 18 segundos
+para concluir ele se se for o caso até amanhã eu coloco o
+Felipe Henrique Pereira Alves 2 horas 47 minutos 25 segundos
+trabalho disponível lá no canvas para vocês.
+Felipe Henrique Pereira Alves 2 horas 47 minutos 29 segundos
+Então não vai ser para a próxima aula.
+Felipe Henrique Pereira Alves 2 horas 47 minutos 37 segundos
+A passet.
+Felipe Henrique Pereira Alves 2 horas 47 minutos 39 segundos
+Ah, o que a gente viu hoje só faz OPA, tira aí.
+L
+Luciano Eustaquio de Magalhães
+2 horas 47 minutos 40 segundos2:47:40
+Luciano Eustaquio de Magalhães 2 horas 47 minutos 40 segundos
+O professor, espera, eu não entendi bem. É, você falou que é para essas, é para essa sexta, você vai é para entregar na próxima aula. Então, por exemplo, a próxima aula seria na outra semana, na quinta-feira.
+Luciano Eustaquio de Magalhães 2 horas 47 minutos 56 segundos
+Seria isso?
+
+Felipe Henrique Pereira Alves
+2 horas 47 minutos 59 segundos2:47:59
+Felipe Henrique Pereira Alves 2 horas 47 minutos 59 segundos
+A ideia original seria deixar o prazo até a próxima aula. Mas aí eu estou pensando direitinho, vou estender. Próxima aula, vou deixar até o fim de semana seguinte. Que aí a gente tem a próxima aula para tirar alguma dúvida que tenha ficado, se alguém não conseguiu evoluir.
+L
+Luciano Eustaquio de Magalhães
+2 horas 48 minutos 3 segundos2:48:03
+Luciano Eustaquio de Magalhães 2 horas 48 minutos 3 segundos
+Então.
+Luciano Eustaquio de Magalhães 2 horas 48 minutos 10 segundos
+Ah, tá, entendi.
+Luciano Eustaquio de Magalhães 2 horas 48 minutos 17 segundos
+Thank you, thank you.
+
+Carine A. Vieira
+2 horas 48 minutos 17 segundos2:48:17
+Carine A. Vieira 2 horas 48 minutos 17 segundos
+Dia 23, então, professor.
+
+Felipe Henrique Pereira Alves
+2 horas 48 minutos 21 segundos2:48:21
+Felipe Henrique Pereira Alves 2 horas 48 minutos 21 segundos
+23 a 23 domingo, 23 é um bom dia. Tá bom, tenho quem? Não conseguir fazer até lá, tem o fim de semana para fazer também. Fica melhor, então vai ser até o dia 23, que é um domingo.
+Felipe Henrique Pereira Alves 2 horas 48 minutos 38 segundos
+E só recapitulando o que a gente viu hoje, a gente viu o TDD, técnica ali do vermelho, verde refatoração e como seguir o design, os testes das propriedades.
+Felipe Henrique Pereira Alves 2 horas 48 minutos 51 segundos
+A gente variando os exemplos em vez de ser caso único e a biblioteca de hipóteses, gerando o caso de teste automaticamente. Na próxima aula, teste de integração em pipeline de machine learning.
+Felipe Henrique Pereira Alves 2 horas 49 minutos 7 segundos
+Validação de dados, verificação de comportamento dos modelos e isso aqui desconsidera trabalho um. A gente conversa sobre ele na próxima aula, sobre evolução, dúvidas, mas entrega fica para o dia 23 e só rapidinho fazer uma correlação aqui.
+Felipe Henrique Pereira Alves 2 horas 49 minutos 22 segundos
+Sobre hipóteses, testes de propriedade, só para lembrar daqueles exemplos que eu trouxe no começo dos bugs, então acho que agora.
+Felipe Henrique Pereira Alves 2 horas 49 minutos 32 segundos
+Depois de tanto exercício, depois de ter conversado tanto um pouco mais claro ali, coisas que a gente, que a gente não, que poderiam ter feito lá na época do desenvolvimento ali, tanto do carro autônomo quanto do foguete.
+Felipe Henrique Pereira Alves 2 horas 49 minutos 47 segundos
+Enfim, que poderiam ter reduzido danos ali, né? Tanto material quanto de vidas. Só para ficar a reflexão aí que não, de fato, não é trivial teste software, pode.
+Felipe Henrique Pereira Alves 2 horas 50 minutos 1 segundo
+evitar muitos danos. E é isso. Por hoje é isso, pessoal. Vou ficando por aqui. Obrigado para todo mundo que ficou até o final aí. Semana que vem a gente conversa, se precisar pode colocar dúvida lá no Word, pode mandar mensagem, enfim.
+Felipe Henrique Pereira Alves 2 horas 50 minutos 17 segundos
+Sempre que puder, eu vou respondendo vocês. Obrigado, viu?
+H
+Henrique Gesler Medeiros Ferreira
+2 horas 50 minutos 21 segundos2:50:21
+Henrique Gesler Medeiros Ferreira 2 horas 50 minutos 21 segundos
+So, só uma dúvida.
+V
+
+Vinicius Gama Valory Frauches
+2 horas 50 minutos 21 segundos2:50:21
+Vinicius Gama Valory Frauches 2 horas 50 minutos 21 segundos
+Hello, Rossini.
+
+Felipe Henrique Pereira Alves
+2 horas 50 minutos 22 segundos2:50:22
+Felipe Henrique Pereira Alves 2 horas 50 minutos 22 segundos
+Pode falar.
+H
+Henrique Gesler Medeiros Ferreira
+2 horas 50 minutos 24 segundos2:50:24
+Henrique Gesler Medeiros Ferreira 2 horas 50 minutos 24 segundos
+É a entrega, não poderia ser por um estilo de notebook, porque mostra, conseguiria mostrar exatamente essas etapas, tipo falhou.
+Henrique Gesler Medeiros Ferreira 2 horas 50 minutos 34 segundos
+Aí aqui tem o Green, aqui está o refec.
+
+Felipe Henrique Pereira Alves
+2 horas 50 minutos 37 segundos2:50:37
+Felipe Henrique Pereira Alves 2 horas 50 minutos 37 segundos
+Pode, pode ser também. Só precisa ter a evidência ali que seguiu a técnica do TDD. Pode ser um notebook, pode ser um TXT também, tendo ali a descrição de como você executou. Funciona.
+H
+Henrique Gesler Medeiros Ferreira
+2 horas 50 minutos 39 segundos2:50:39
+Henrique Gesler Medeiros Ferreira 2 horas 50 minutos 39 segundos
+So.
+Henrique Gesler Medeiros Ferreira 2 horas 50 minutos 49 segundos
+Okay.
+
+Felipe Henrique Pereira Alves
+2 horas 50 minutos 55 segundos2:50:55
+Felipe Henrique Pereira Alves 2 horas 50 minutos 55 segundos
+Quer mais alguém que eu perguntar alguma coisa?
+Felipe Henrique Pereira Alves 2 horas 51 minutos 3 segundos
+No.
+Felipe Henrique Pereira Alves 2 horas 51 minutos 5 segundos
+Obrigado. Para a gravação.
+
+Carine A. Vieira
+2 horas 51 minutos 8 segundos2:51:08
+Carine A. Vieira 2 horas 51 minutos 8 segundos
+Boa noite professor, tchau tchau, obrigada, bom final de semana.
+M
+
+Marcos Antonio Santos Peixoto
+2 horas 51 minutos 8 segundos2:51:08
+Marcos Antonio Santos Peixoto 2 horas 51 minutos 8 segundos
+Okay.
