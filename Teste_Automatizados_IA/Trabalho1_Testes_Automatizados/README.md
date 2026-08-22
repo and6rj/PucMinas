@@ -1,7 +1,7 @@
 # Trabalho 1 — TDD e propriedades em pipelines de ML
 
 Disciplina: **Testes Automatizados** (Pós em IA — PUC Minas).  
-Este repositório documenta e implementa o Trabalho 1. O desenvolvimento da função ainda será iniciado.
+Este repositório documenta e implementa o Trabalho 1. A evidência do TDD é o histórico de commits (`red` / `green` / `refactor`).
 
 ## Enunciado
 
@@ -37,12 +37,14 @@ Registrar como tratar casos de borda aplicáveis à função escolhida, por exem
 
 ## Função escolhida
 
-> A definir. Escolher uma das opções do enunciado (ou equivalente) antes de começar o ciclo TDD.
+`minmax_transform(scores, feature_min, feature_max)` — normalização min-max de um lote usando **estatísticas congeladas do treino**.
+
+Não calcula min/max no lote da hora (antipadrão de *train/serve skew* da Aula 2). O mesmo score, com os mesmos stats, sempre cai no mesmo valor — em treino e em serving.
 
 ## Status
 
-- [ ] Escolher a função do pipeline de ML
-- [ ] Red — teste que falha
+- [x] Escolher a função do pipeline de ML
+- [x] Red — teste que falha
 - [ ] Green — implementação mínima que faz o teste passar
 - [ ] Refactor — código limpo sem mudar o comportamento
 - [ ] Teste de propriedade (Hypothesis)
@@ -53,16 +55,14 @@ Registrar como tratar casos de borda aplicáveis à função escolhida, por exem
 
 ```
 Trabalho1_Testes_Automatizados/
-├── README.md                 # enunciado, decisões de design e como executar
+├── README.md
+├── pytest.ini
+├── requirements.txt
 ├── src/
 │   ├── __init__.py
-│   ├── <funcao>.py           # implementação correta
-│   └── <funcao>_buggy.py     # versão propositalmente bugada
-├── tests/
-│   ├── test_<funcao>.py      # testes unitários (TDD)
-│   └── test_<funcao>_properties.py
-├── requirements.txt
-└── RELATO.md                 # relato Red/Green/Refactor (se não usar 1 commit por fase)
+│   └── minmax_transform.py
+└── tests/
+    └── test_minmax_transform.py
 ```
 
 ## Decisões de design
