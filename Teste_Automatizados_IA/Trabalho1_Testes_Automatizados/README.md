@@ -1,87 +1,79 @@
 # Trabalho 1 — TDD e propriedades em pipelines de ML
 
 Disciplina: **Testes Automatizados** (Pós em IA — PUC Minas).  
-Este repositório documenta e implementa o Trabalho 1. A evidência do TDD é o histórico de commits (`red` / `green` / `refactor`).
+**Aluno:** Andre Cardoso de Oliveira
 
-## Enunciado
+A entrega é o notebook Colab `Trabalho1_TesteIA_Andre_Oliveira.ipynb`, no mesmo formato das aulas (`ipytest` + `hypothesis`).
 
-Implementar uma função Python relacionada a **pipelines de ML**. Exemplos aceitos:
+## Função
 
-- validação de score
-- normalização de lote
-- deduplicação de dados
-- seleção de classe
-- detecção de outliers
-- outra função equivalente
+`most_confident_class(scores)` — **seleção de classe** depois de um `softmax`.
 
-A entrega deve demonstrar, de forma visível, **quatro elementos**:
+Recebe uma lista de scores (um por classe) e devolve o **índice** do maior valor (`argmax`).
 
-### 1. Ciclo TDD completo (Red → Green → Refactor)
+## Os 4 elementos do enunciado
 
-Evidenciado por **uma** das opções:
+| # | Pedido | Onde está |
+|---|---|---|
+| 1 | TDD Red → Green → Refactor | Células do notebook + 1 commit por fase no Git |
+| 2 | Teste de propriedade (Hypothesis) | Seção 2 do notebook |
+| 3 | Propriedade pega um bug real | Seção 3: `most_confident_class_buggy` sempre devolve `0` |
+| 4 | Decisões de design | Seção 4 do notebook (resumo abaixo) |
 
-- histórico de commits no Git, com **1 commit por fase** (`red` / `green` / `refactor`);
-- relato escrito passo a passo, mostrando o teste falhando, o código mínimo que faz passar e o refactor final.
+### Histórico Git (evidência do TDD)
 
-### 2. Pelo menos 1 teste de propriedade (invariante)
+Na pasta deste trabalho:
 
-De preferência com a biblioteca **Hypothesis**, testando um comportamento que vale para **qualquer entrada válida** — não apenas um exemplo pontual.
+```bash
+git log --oneline
+```
 
-### 3. Prova de que a propriedade pega um bug real
+Esperado, nesta ordem (do mais antigo ao mais novo):
 
-Criar uma versão propositalmente **bugada** da função e mostrar que o teste de propriedade **falha** contra ela (ou seja, o teste realmente teria pego o bug em produção).
+1. `red: teste de most_confident_class que ainda falha`
+2. `green: implementação mínima de most_confident_class`
+3. `refactor: documenta e clareia most_confident_class sem mudar o comportamento`
 
-### 4. Documentação breve das decisões de design
+Há commits extras depois do TDD (prova do bug e, se houver, docs). O ciclo pedido pelo enunciado são os três primeiros.
 
-Registrar como tratar casos de borda aplicáveis à função escolhida, por exemplo: `NaN`, `inf`, divisão por zero, empates, etc.
+## Decisões de design
 
-## Função escolhida
+| Tópico | Decisão |
+|---|---|
+| **Empate** | Menor índice (primeira ocorrência). `list.index(max(scores))`. |
+| **Lista vazia** | Entrada inválida. Fora do domínio (`min_size=1`). |
+| **NaN** | Score inválido. Fora da propriedade (`allow_nan=False`). Validar é etapa anterior ao `argmax`. |
+| **inf / -inf** | Score inválido (`allow_infinity=False`). |
+| **Divisão por zero** | Não se aplica — a função não divide. |
+| **Tipos** | Lista de `float`. Não converte `bool` nem string. |
+| **Entrada inválida** | Sem sentinela e sem “conserto” silencioso. O contrato é lista não vazia de scores finitos. |
 
-`minmax_transform(scores, feature_min, feature_max)` — normalização min-max de um lote usando **estatísticas congeladas do treino**.
+A propriedade (`scores[idx] == max(scores)`) não escolhe entre dois máximos iguais. O menor índice é decisão extra, coberta pelo teste de exemplo do Green.
 
-Não calcula min/max no lote da hora (antipadrão de *train/serve skew* da Aula 2). O mesmo score, com os mesmos stats, sempre cai no mesmo valor — em treino e em serving.
+## Como executar
 
-## Status
+1. Abra o Google Colab.
+2. **Arquivo → Fazer upload do notebook** e escolha `Trabalho1_TesteIA_Andre_Oliveira.ipynb`.
+3. Rode as células de cima para baixo.
 
-- [x] Escolher a função do pipeline de ML
-- [x] Red — teste que falha
-- [ ] Green — implementação mínima que faz o teste passar
-- [ ] Refactor — código limpo sem mudar o comportamento
-- [ ] Teste de propriedade (Hypothesis)
-- [ ] Versão bugada + evidência de que a propriedade falha
-- [ ] Documentar decisões de design neste README
+Ordem esperada do `pytest`:
 
-## Estrutura prevista
+- Red: **FAILED** (`NameError` — função ainda não existe)
+- Green *fake it*: **PASSED** no caso pontual
+- Segundo teste com o fake: **FAILED**
+- Implementação real e Refactor: **PASSED**
+- Propriedade (função correta): **PASSED**
+- Propriedade contra a versão bugada: **FAILED** (contraexemplo do Hypothesis)
+
+## Estrutura
 
 ```
 Trabalho1_Testes_Automatizados/
 ├── README.md
-├── pytest.ini
-├── requirements.txt
-├── src/
-│   ├── __init__.py
-│   └── minmax_transform.py
-└── tests/
-    └── test_minmax_transform.py
-```
-
-## Decisões de design
-
-Serão preenchidas após a escolha da função. Itens a cobrir, quando aplicáveis:
-
-- `NaN` e `inf`
-- divisão por zero / lote vazio
-- empates (ex.: duas classes com o mesmo score)
-- tipos e faixas de entrada aceitos
-- o que a função retorna em caso de entrada inválida (exceção vs. valor sentinela)
-
-## Como executar (a preencher)
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-pytest -v
+├── Trabalho1_TesteIA_Andre_Oliveira.ipynb
+├── evidencias_git/
+│   └── git_log.txt    # cópia do git log para envio no Canvas
+└── .git/              # histórico original (enviar no zip)
 ```
 
 ## Referências
