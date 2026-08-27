@@ -1,45 +1,29 @@
-31c9582 red: teste de most_confident_class que ainda falha
-a64700b green: implementação mínima de most_confident_class
-ea6e862 refactor: documenta e clareia most_confident_class sem mudar o comportamento
-1988b57 prova: propriedade falha contra most_confident_class_buggy
-f979c53 docs: decisões de design de most_confident_class
+commit a66ba522e2c09747f6b2b0ce62551bde85aa21c8
+Author: Andre Oliveira <and6rj@gmail.com>
+Date:   Wed Aug 26 21:09:00 2026 -0300
 
-commit 31c95828a253e8927a6a2b1f746540fcc7ad5546
-Author:     Andre Oliveira <and6rj@gmail.com>
-AuthorDate: Sat Aug 22 19:01:50 2026 -0300
-Commit:     Andre Oliveira <and6rj@gmail.com>
-CommitDate: Sat Aug 22 19:01:50 2026 -0300
+    docs: decisões de design de precision
 
-    red: teste de most_confident_class que ainda falha
+commit b82a5863294fa5aa8411c49436f0dde9b70abbb4
+Author: Andre Oliveira <and6rj@gmail.com>
+Date:   Wed Aug 26 21:04:00 2026 -0300
 
-commit a64700b2a5224737f28d1cd82ac6964a15e8a92e
-Author:     Andre Oliveira <and6rj@gmail.com>
-AuthorDate: Sat Aug 22 19:16:56 2026 -0300
-Commit:     Andre Oliveira <and6rj@gmail.com>
-CommitDate: Sat Aug 22 19:16:56 2026 -0300
+    prova: propriedade falha contra precision_buggy
 
-    green: implementação mínima de most_confident_class
+commit 002393f22efeb39b653d5896a50dbc578c58e271
+Author: Andre Oliveira <and6rj@gmail.com>
+Date:   Wed Aug 26 20:56:00 2026 -0300
 
-commit ea6e862212417622223dce6329ef117cbf67e142
-Author:     Andre Oliveira <and6rj@gmail.com>
-AuthorDate: Sat Aug 22 19:21:52 2026 -0300
-Commit:     Andre Oliveira <and6rj@gmail.com>
-CommitDate: Sat Aug 22 19:21:52 2026 -0300
+    refactor: documenta e clareia precision sem mudar o comportamento
 
-    refactor: documenta e clareia most_confident_class sem mudar o comportamento
+commit eda4a9a469680f9dc7099748556248b51c4fddd8
+Author: Andre Oliveira <and6rj@gmail.com>
+Date:   Wed Aug 26 20:50:00 2026 -0300
 
-commit 1988b571e4e2b97b0dedf18fef3f50c0555e48d5
-Author:     Andre Oliveira <and6rj@gmail.com>
-AuthorDate: Sat Aug 22 19:29:03 2026 -0300
-Commit:     Andre Oliveira <and6rj@gmail.com>
-CommitDate: Sat Aug 22 19:29:03 2026 -0300
+    green: implementação mínima de precision
 
-    prova: propriedade falha contra most_confident_class_buggy
+commit 08c6fddab9b79b425e15e75f88f4e57c1bc37a78
+Author: Andre Oliveira <and6rj@gmail.com>
+Date:   Wed Aug 26 20:40:00 2026 -0300
 
-commit f979c53fd75edacda0a0ba4e08f276d43ece0d5e
-Author:     Andre Oliveira <and6rj@gmail.com>
-AuthorDate: Sat Aug 22 19:32:34 2026 -0300
-Commit:     Andre Oliveira <and6rj@gmail.com>
-CommitDate: Sat Aug 22 19:32:34 2026 -0300
-
-    docs: decisões de design de most_confident_class
+    red: teste de precision que ainda falha
