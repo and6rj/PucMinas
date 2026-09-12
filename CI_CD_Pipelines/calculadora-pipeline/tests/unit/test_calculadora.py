@@ -5,7 +5,7 @@ from src.calculadora import calcular_desconto, calcular_imposto, calcular_preco_
 @pytest.mark.unit
 class TestCalcularDesconto:
     def test_desconto_normal(self):
-        assert calcular_desconto(100.0, 10) == 999.0 #90.0
+        assert calcular_desconto(100.0, 10) == 90.0
 
     def test_desconto_zero(self):
         assert calcular_desconto(100.0, 0) == 100.0
