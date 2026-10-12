@@ -1,0 +1,8 @@
+Código: GRAO-003
+Título: Trecho operacional é a perna física
+
+O trecho operacional é o deslocamento consecutivo entre duas localidades da viagem, uma perna. Serve para lotação, vagas, embarque, desembarque, excesso e passageiro sem bilhete.
+
+A taxa de lotação da perna é ocupantes divididos pela capacidade daquela perna. Essa taxa não é o IAP.
+
+Perguntas como "onde o ônibus encheu" e "quantas vagas sobraram no trecho" usam este grão. Receita e quantidade de bilhetes vendidos não usam este grão.

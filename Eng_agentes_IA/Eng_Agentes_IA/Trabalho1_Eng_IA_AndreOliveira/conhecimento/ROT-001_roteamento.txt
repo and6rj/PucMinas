@@ -1,0 +1,12 @@
+Código: ROT-001
+Título: Qual ferramenta responde qual pergunta
+
+Receita, quantidade de bilhetes, ticket médio, canal, ponto de venda, antecedência e passageiro-quilômetro: consultar a base de vendas, no grão do bilhete.
+
+Lotação, vagas, embarque, desembarque, excesso e passageiro sem bilhete: consultar a base de ocupação, no grão da perna.
+
+Definição de serviço, bilhete, perna, SKU ou IAP, e a regra de não misturar os grãos: consultar a base de conhecimento. Não responda essas regras só com o conhecimento genérico do modelo.
+
+Data de venda não é data de viagem. Esta amostra operacional está filtrada pela data da viagem.
+
+Ponto de venda é onde o bilhete foi emitido. Não é a cidade de embarque nem a cidade de destino.

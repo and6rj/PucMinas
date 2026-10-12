@@ -1,0 +1,13 @@
+Código: AMO-001
+Título: Onde estão os fatos e o que a base não contém
+
+Os fatos operacionais não ficam no repositório. O notebook baixa dois CSVs de uma pasta pública do Google Drive:
+
+- ticket_viagem.csv: um bilhete por linha, empresa modal
+- ocupacao.csv: uma perna física por linha, empresa modal
+
+A base cobre várias linhas e várias datas. Passe à ferramenta a linha e a data que a pergunta citar. Se o filtro não achar registro, o retorno é ausência. Ausência não se completa com outra linha nem com outro dia.
+
+A demonstração usa a linha mg/belo horizonte - rj/rio de janeiro na data de viagem 2026-04-05. Há linhas parecidas, com sufixo no destino, como rio de janeiro(rio2). Elas não são a mesma linha. Use o nome canônico.
+
+A base não contém quilômetro oficial do serviço, calendário de feriado nem receita por SKU comercial. Sem o quilômetro oficial o IAP não é calculável. A taxa de lotação da perna continua disponível.

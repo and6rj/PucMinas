@@ -1,0 +1,8 @@
+Código: GRAO-004
+Título: Trecho comercial é o mercado origem-destino
+
+O trecho comercial é o par origem-destino vendido, o SKU. Num serviço A, B, C existem os mercados A-B, B-C e A-C, mesmo quando um deles não vendeu.
+
+A receita de um bilhete A-C fica inteira no SKU A-C. Não se rateia entre as pernas A-B e B-C.
+
+Esta entrega não traz a fato de trecho comercial. Se a pergunta pedir share de receita por mercado origem-destino, declare que a evidência não está na amostra.

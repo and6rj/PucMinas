@@ -1,0 +1,8 @@
+Código: GRAO-002
+Título: Bilhete é a venda, no grão da passagem
+
+Cada bilhete é uma passagem emitida. Receita, quantidade de passagens, ticket médio, canal, ponto de venda, antecedência e passageiro-quilômetro pertencem a este grão.
+
+Não calcule faturamento a partir das pernas. Um bilhete atravessa várias pernas físicas. Somar receita em cada perna infla o faturamento.
+
+A origem e o destino do bilhete são o embarque e o desembarque do passageiro. Não são a origem e o destino do ônibus, nem a parada intermediária.

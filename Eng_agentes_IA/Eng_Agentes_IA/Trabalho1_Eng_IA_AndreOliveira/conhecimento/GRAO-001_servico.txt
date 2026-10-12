@@ -1,0 +1,8 @@
+Código: GRAO-001
+Título: Serviço é oferta, não é o ônibus inteiro
+
+Um serviço é uma classe de poltrona ofertada dentro de uma viagem, por exemplo leito ou semi-leito. Um ônibus físico pode conter mais de um serviço. O serviço representa a oferta: horários, capacidade e quilometragem. O bilhete representa a demanda.
+
+A linha é a rota macro, de uma ponta a outra. O nome da linha agrega os dois sentidos. O número da linha separa ida e volta. O serviço corre dentro da linha, na linha inteira ou em parte.
+
+Classe de conforto não é tipo de frota. Capacidade é o número de assentos ofertados naquele serviço.

@@ -1,0 +1,8 @@
+Código: IAP-001
+Título: IAP não é lotação da perna
+
+O IAP do serviço é a distância transportada nos bilhetes dividida pelo ASK. O ASK é a capacidade de assentos multiplicada pelo quilômetro oficial do serviço. O resultado é uma razão entre 0 e 1. Em percentual, multiplica-se por 100.
+
+A lotação da perna, ocupantes sobre capacidade, não substitui o IAP. Ela ignora a distância.
+
+Nesta amostra operacional não há quilômetro oficial do serviço. O agente pode informar a taxa de lotação da perna e o passageiro-quilômetro dos bilhetes, e deve dizer que o IAP não é calculável enquanto faltar o ASK. Não invente o percentual de IAP.
